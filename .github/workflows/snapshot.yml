@@ -1,0 +1,52 @@
+name: snapshot-page
+# Saves revivalhub.com (raw + JavaScript-rendered) into snapshots/ for parser debugging.
+on:
+  workflow_dispatch:
+  push:
+    paths: [".github/workflows/snapshot.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Raw HTML
+        run: |
+          mkdir -p snapshots
+          curl -sSL -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36" \
+            -D snapshots/headers.txt -o snapshots/source.html -w "%{http_code} %{size_download}\n" https://revivalhub.com/ \
+            | tee snapshots/status.txt || true
+      - name: Rendered HTML + network requests
+        run: |
+          pip install -q playwright && playwright install --with-deps chromium > /dev/null
+          python - <<'PY' || true
+          import json
+          from playwright.sync_api import sync_playwright
+          reqs = []
+          with sync_playwright() as p:
+              b = p.chromium.launch()
+              page = b.new_page()
+              page.on("request", lambda r: reqs.append({"url": r.url, "type": r.resource_type, "method": r.method}))
+              page.goto("https://revivalhub.com/", wait_until="networkidle", timeout=60000)
+              page.wait_for_timeout(3000)
+              open("snapshots/rendered.html", "w").write(page.content())
+              page.screenshot(path="snapshots/screenshot.png", full_page=False)
+              b.close()
+          json.dump(reqs, open("snapshots/requests.json", "w"), indent=1)
+          PY
+      - name: Commit snapshot
+        run: |
+          ls -la snapshots
+          git config user.name "ticketlord-bot"
+          git config user.email "ticketlord-bot@users.noreply.github.com"
+          git add snapshots
+          git diff --cached --quiet && exit 0
+          git commit -m "Snapshot revivalhub.com [skip ci]"
+          git pull --rebase && git push
