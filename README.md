@@ -34,14 +34,14 @@ Install **ntfy** ([iOS](https://apps.apple.com/app/ntfy/id1625396347) / [Android
 and subscribe to a topic with a hard-to-guess name, e.g. `ticketlord-7f3k2q9x`. Anyone who knows the name can read the topic.
 
 ### 2a. Run it for free on GitHub Actions (recommended)
-This repo includes `.github/workflows/check.yml`. It runs every 10 minutes and commits `state/seen.json` back to the repo.
+This repo includes `.github/workflows/check.yml`. It runs twice an hour and commits `state/seen.json` back to the repo.
 
 1. Repo **Settings → Secrets and variables → Actions → Secrets**: add `NTFY_TOPIC` (and/or the Pushover/Telegram secrets).
 2. Optionally, list keywords one per line in `keywords.txt`, and/or under **Variables** add `TICKETLORD_KEYWORDS` (comma-separated). Both lists apply. Add `TICKETLORD_ONLY_KEYWORDS=1` to mute non-matches.
 3. **Actions → Check screenings → Run workflow** once to seed. Tick **Also send a test push to my phone** to confirm notifications arrive. Scheduled runs take over from there.
 
-> GitHub only runs scheduled workflows on the default branch, and it may delay them by a few minutes at busy times.
-> If you need faster alerts, use 2b.
+> GitHub only runs scheduled workflows on the default branch, and it may delay or skip runs at busy times.
+> Revival Hub publishes new listings in batches and its feed is cached for up to an hour, so faster checks gain little.
 
 ### 2b. Or run it on your own machine / a Raspberry Pi / a VPS
 ```bash

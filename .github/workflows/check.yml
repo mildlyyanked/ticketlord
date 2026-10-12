@@ -2,7 +2,9 @@ name: Check screenings
 
 on:
   schedule:
-    - cron: "*/10 * * * *"   # GitHub may delay scheduled runs by a few minutes
+    # Twice an hour, off the busy :00 slot. GitHub silently drops many runs of very frequent
+    # schedules, and the Revival Hub feed is cached for up to an hour anyway.
+    - cron: "7,37 * * * *"
   workflow_dispatch:
     inputs:
       test_notification:
