@@ -1,4 +1,4 @@
-name: snapshot-page
+name: Snapshot page (debugging)
 # Saves revivalhub.com (raw + JavaScript-rendered) into snapshots/ for parser debugging.
 on:
   workflow_dispatch:

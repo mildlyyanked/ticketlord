@@ -1,4 +1,4 @@
-name: check-screenings
+name: Check screenings
 
 on:
   schedule:
@@ -37,7 +37,12 @@ jobs:
           PUSHOVER_APP_TOKEN: ${{ secrets.PUSHOVER_APP_TOKEN }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: ticketlord check
+        run: |
+          if [ -z "$NTFY_TOPIC$PUSHOVER_USER_KEY$TELEGRAM_BOT_TOKEN" ]; then
+            echo "::warning::No notification channel set up yet. Add an NTFY_TOPIC secret under Settings > Secrets and variables > Actions."
+            exit 0
+          fi
+          ticketlord check
       - name: Save seen screenings
         if: always()
         run: |
