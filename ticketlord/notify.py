@@ -103,6 +103,7 @@ def send_all(notifiers: list[Notifier], s: Screening, urgent: bool = False) -> b
     for n in notifiers:
         try:
             n.send(s, urgent=urgent)
+            log.info("%s: delivered %r", n.name, s.title)
             ok = True
         except requests.RequestException as e:
             log.error("%s notification failed for %r: %s", n.name, s.title, e)
