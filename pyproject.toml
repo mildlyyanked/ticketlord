@@ -1,12 +1,13 @@
 [project]
 name = "ticketlord"
 version = "0.1.0"
-description = "Watch revivalhub.com for newly listed screenings and push ticket links to your phone"
+description = "Get a phone push with the ticket link whenever Revival Hub lists a new LA screening"
 requires-python = ">=3.10"
 dependencies = [
     "requests>=2.31",
     "beautifulsoup4>=4.12",
     "lxml>=4.9",
+    "tzdata; sys_platform == 'win32'",
 ]
 
 [project.optional-dependencies]

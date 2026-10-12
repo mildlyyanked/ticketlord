@@ -1,0 +1,327 @@
+{
+ "screenings": [
+  {
+   "venue": "rec48AVVKakrz4Clb",
+   "additionalInfo": "Three film portraits by Jeffrey Skoller / Conversation between Skoller and Diego Robles / L.A. Premieres",
+   "categories": [
+    "Premiere",
+    "Q&A / Discussion",
+    "Short Film"
+   ],
+   "venue_type": "Indoor",
+   "organization_0": "recMLp1546T8jSGvl",
+   "organizations": [
+    "recMLp1546T8jSGvl"
+   ],
+   "formats": [],
+   "searchTags": [
+    "Premiere",
+    "Q&A / Discussion",
+    "Short Film"
+   ],
+   "date": "2026-10-12",
+   "utc_start": 1791772200000,
+   "films": [
+    {
+     "name": "History from Below: The Unimagined Lives of Our Neighbors",
+     "directors": "Jeffrey Skoller",
+     "posterImagePath": "JS_98as7uhfoialsdfasdfdaf.png"
+    }
+   ],
+   "screening_times": [
+    "2026-10-12T02:30:00.000Z"
+   ],
+   "ticket_urls": [
+    "https://www.lafilmforum.org/schedule/summer-fall-2026/jefrey-skoller-in-person/"
+   ],
+   "poster-image-path": "JS_98as7uhfoialsdfasdfdaf.png",
+   "id": "recrbSak8W2r5GkfP"
+  },
+  {
+   "venue": "rec3pxveRm2MxNEf9",
+   "categories": [
+    "Foreign"
+   ],
+   "formats": [
+    "4K DCP"
+   ],
+   "venue_type": "Indoor",
+   "format_0": "4K DCP",
+   "searchTags": [
+    "4K DCP",
+    "Foreign"
+   ],
+   "date": "2026-11-03",
+   "utc_start": 1793685300000,
+   "films": [
+    {
+     "name": "Portrait of a Lady on Fire",
+     "year": 2019,
+     "directors": "Celine Sciamma",
+     "tmdb_id": 531428,
+     "posterImagePath": "rUDuOKpkKBHxx41BScqKej72iT3.jpg"
+    }
+   ],
+   "screening_times": [
+    "2026-11-03T05:55:00.000Z"
+   ],
+   "ticket_urls": [
+    "https://www.egyptiantheatre.com/film/egyptian-portrait-of-a-lady-on-fire"
+   ],
+   "poster-image-path": "rUDuOKpkKBHxx41BScqKej72iT3.jpg",
+   "id": "recPAnyOeKGFsNVQL"
+  },
+  {
+   "venue": "recbyIGqgug8C3O0L",
+   "additionalInfo": "Preceded by John Carptenter's short film 'Captain Voyeur'",
+   "categories": [
+    "Short Film"
+   ],
+   "formats": [
+    "DCP"
+   ],
+   "venue_type": "Indoor",
+   "format_0": "DCP",
+   "searchTags": [
+    "DCP",
+    "Short Film"
+   ],
+   "date": "2026-10-23",
+   "utc_start": 1792722600000,
+   "films": [
+    {
+     "name": "Dark Star",
+     "year": 1974,
+     "directors": "John Carpenter",
+     "tmdb_id": 1410,
+     "posterImagePath": "aiqLBiH0IWrog2Q78dZTT8Ad9Sp.jpg"
+    },
+    {
+     "name": "Dark Star",
+     "year": 1974,
+     "directors": "John Carpenter",
+     "tmdb_id": 1410,
+     "posterImagePath": "aiqLBiH0IWrog2Q78dZTT8Ad9Sp.jpg"
+    }
+   ],
+   "screening_times": [
+    "2026-10-23T02:30:00.000Z"
+   ],
+   "ticket_urls": [
+    "https://www.academymuseum.org/en/programs/detail/captain-voyeur-with-dark-star-019fcdcc-e90f-643a-99a9-df2b6043372d"
+   ],
+   "poster-image-path": "aiqLBiH0IWrog2Q78dZTT8Ad9Sp.jpg",
+   "poster-image-path-2": "aiqLBiH0IWrog2Q78dZTT8Ad9Sp.jpg",
+   "id": "recRrEdH5crxwbwBq"
+  },
+  {
+   "venue": "rec48AVVKakrz4Clb",
+   "additionalInfo": "The film\u2019s two chapters will be presented with a short intermission featuring international snacks / Barbara T. Smith in conversation with Michael J. Masucci / Filmforum 50, Program 17 / Co-presented by EZTV",
+   "categories": [
+    "Q&A / Discussion",
+    "Special Event"
+   ],
+   "venue_type": "Indoor",
+   "organization_0": "recMLp1546T8jSGvl",
+   "organization_1": "recm5je6jD6YRBhzz",
+   "organizations": [
+    "recMLp1546T8jSGvl",
+    "recm5je6jD6YRBhzz"
+   ],
+   "formats": [],
+   "searchTags": [
+    "Q&A / Discussion",
+    "Special Event"
+   ],
+   "date": "2026-10-17",
+   "utc_start": 1792267200000,
+   "films": [
+    {
+     "name": "The 21st Century Odyssey",
+     "directors": "Barbara T. Smith",
+     "posterImagePath": "BarbTSmith_0a9s89dufhalsndfadf.png"
+    }
+   ],
+   "screening_times": [
+    "2026-10-17T20:00:00.000Z"
+   ],
+   "ticket_urls": [
+    "https://www.lafilmforum.org/schedule/summer-fall-2026/filmforum-50-program-14-the-21st-century-odyssey-2/"
+   ],
+   "poster-image-path": "BarbTSmith_0a9s89dufhalsndfadf.png",
+   "id": "recbs9ZWwposIdgf4"
+  },
+  {
+   "venue": "recbyIGqgug8C3O0L",
+   "formats": [
+    "70mm"
+   ],
+   "venue_type": "Indoor",
+   "format_0": "70mm",
+   "searchTags": [
+    "70mm"
+   ],
+   "date": "2026-10-11",
+   "utc_start": 1791752400000,
+   "films": [
+    {
+     "name": "Aliens",
+     "year": 1986,
+     "directors": "James Cameron",
+     "tmdb_id": 679,
+     "posterImagePath": "r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg"
+    }
+   ],
+   "screening_times": [
+    "2026-10-11T21:00:00.000Z"
+   ],
+   "ticket_urls": [
+    "https://www.academymuseum.org/en/programs/detail/aliens-019fce46-5898-ade3-4872-08b52c0324a2"
+   ],
+   "poster-image-path": "r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg",
+   "id": "recstj9wp9ImXAQ1B"
+  },
+  {
+   "venue": "recbyIGqgug8C3O0L",
+   "additionalInfo": "In person: cartoonist Nathan Gelgud and critic A. S. Hamrah",
+   "categories": [
+    "Q&A / Discussion"
+   ],
+   "formats": [
+    "35mm"
+   ],
+   "venue_type": "Indoor",
+   "format_0": "35mm",
+   "searchTags": [
+    "35mm",
+    "Q&A / Discussion"
+   ],
+   "date": "2026-10-27",
+   "utc_start": 1793068200000,
+   "films": [
+    {
+     "name": "They Live by Night",
+     "year": 1949,
+     "directors": "Nicholas Ray",
+     "tmdb_id": 44190,
+     "posterImagePath": "p9ifSgroa8eoh13OLFUAMwiFByV.jpg"
+    }
+   ],
+   "screening_times": [
+    "2026-10-27T02:30:00.000Z"
+   ],
+   "ticket_urls": [
+    "https://www.academymuseum.org/en/programs/detail/they-live-by-night-with-a-s-hamrah-and-nathan-gelgud-019fce87-a827-bf83-b8a9-0fc6ac7bc84d"
+   ],
+   "poster-image-path": "p9ifSgroa8eoh13OLFUAMwiFByV.jpg",
+   "id": "recoz1fvgo5VkS3p2"
+  }
+ ],
+ "venues": [
+  {
+   "name": "Egyptian Theatre",
+   "type": "Indoor",
+   "website": "https://www.egyptiantheatre.com/",
+   "phone_number": "(323) 306-4302",
+   "address": "6712 Hollywood Blvd, Los Angeles, CA 90028",
+   "number_of_seats": 516,
+   "email_contact": "egyptianla@netflix.com",
+   "instagram": "https://www.instagram.com/egyptianla/",
+   "featured_organizations": [
+    "recXvfBECWCkCZgOz"
+   ],
+   "include_in_index": "INDEX",
+   "lat": 34.100816,
+   "lng": -118.3366604,
+   "geohash": "9q5cgpvge",
+   "neighborhoodId": "recydhLpeqPAYqniU",
+   "main-image-path": "PS_Egyptian_01.png",
+   "icon": "PS_Egyptian_01_SC.png",
+   "outdoor_images": [
+    "PHOTO_Egyptian_02.png"
+   ],
+   "indoor_images": [
+    "PHOTO_Egyptian_01.png"
+   ],
+   "id": "rec3pxveRm2MxNEf9"
+  },
+  {
+   "name": "2220 Arts + Archives",
+   "type": "Indoor",
+   "website": "https://www.2220arts.org/",
+   "phone_number": "(213) 277-1987",
+   "address": "2220 Beverly Blvd, Los Angeles, CA 90057, USA",
+   "number_of_seats": 120,
+   "email_contact": "events@2220arts.org",
+   "description": "\"Operating as a volunteer-run community arts center, 2220 is an interdisciplinary event space that is focused on experimentation, improvisation and adventure across a broad spectrum of artists and art practices. Its calendar is curated and cooperatively programmed by roughly a dozen LA-based independent programmers and cultural nonprofits, including many that are longstanding in the city. We host concerts, readings and film series, as well as archival projects, from groups like Acropolis Cinema, Black Editions, LA Filmforum, Late Breakfast, Lightstruck, Mezzanine, Mythscience, Pehrspace, Poetic Research Bureau, Rotations, and Wild Up.\"",
+   "instagram": "https://www.instagram.com/2220arts/",
+   "featured_organizations": [
+    "recc9nREqwVkadCY9",
+    "recJTxo4CtxyPeCAN",
+    "recX2DqRp2cJfjUWA",
+    "recMLp1546T8jSGvl",
+    "rec0jVqX6RnWWTyCW",
+    "recl5gZoaV8M36sMY"
+   ],
+   "include_in_index": "INDEX",
+   "lat": 34.0672037,
+   "lng": -118.2721626,
+   "geohash": "9q5cu9szf",
+   "neighborhoodId": "recBiEtZ0AMgJ5DrC",
+   "main-image-path": "PS_2220_01.png",
+   "icon": "PS_2220_01_SC.png",
+   "outdoor_images": [
+    "PHOTO_2220_01.png"
+   ],
+   "indoor_images": [
+    "PHOTO_2220_02.png"
+   ],
+   "id": "rec48AVVKakrz4Clb"
+  },
+  {
+   "name": "Academy Museum",
+   "type": "Indoor",
+   "website": "https://www.academymuseum.org/en",
+   "phone_number": "(323) 930-3000",
+   "address": "6067 Wilshire Blvd, Los Angeles, CA 90036",
+   "number_of_seats": 966,
+   "email_contact": "academymuseum@oscars.org",
+   "description": "\"The Academy Museum of Motion Pictures is the largest museum in the United States devoted to the arts, sciences, and artists of moviemaking. Global in outlook and grounded in the unparalleled collections and expertise of the Academy of Motion Picture Arts and Sciences, the Academy Museum offers exceptional exhibitions and programs that illuminate the world of cinema. They are immersive and dynamic and tell the many stories of the movies\u2014their art, technology, artists, history, and social impact\u2014through a variety of diverse and engaging voices. The Academy Museum tells complete stories of moviemaking\u2014celebratory, educational, and sometimes critical or uncomfortable.\"",
+   "instagram": "https://www.instagram.com/academymuseum/",
+   "include_in_index": "INDEX",
+   "lat": 34.0638179,
+   "lng": -118.3608348,
+   "geohash": "9q5cf9hk0",
+   "neighborhoodId": "recWSNtV5DNKyvCS3",
+   "main-image-path": "PS_Academy_01.png",
+   "icon": "PS_Academy_01_SC.png",
+   "outdoor_images": [
+    "PHOTOS_Academy_01.png"
+   ],
+   "indoor_images": [
+    "PHOTOS_Academy_03.png",
+    "PHOTOS_Academy_04.png"
+   ],
+   "id": "recbyIGqgug8C3O0L"
+  }
+ ],
+ "organizations": [
+  {
+   "name": "LA Filmforum",
+   "website": "https://www.lafilmforum.org/schedule/",
+   "instagram": "https://www.instagram.com/lafilmforum/",
+   "host_venues": [
+    "rec48AVVKakrz4Clb"
+   ],
+   "main-image-path": "PS_LAFF_01.png",
+   "id": "recMLp1546T8jSGvl"
+  },
+  {
+   "name": "Hollywood Entertainment",
+   "website": "https://www.hollywood-entertainment.com/",
+   "instagram": "https://www.instagram.com/hollyw00dentertainment/",
+   "main-image-path": "PS_HollywoodEntertainment.png",
+   "id": "recm5je6jD6YRBhzz"
+  }
+ ]
+}

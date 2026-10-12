@@ -28,6 +28,8 @@ jobs:
           TICKETLORD_URL: ${{ vars.TICKETLORD_URL || 'https://revivalhub.com/' }}
           TICKETLORD_KEYWORDS: ${{ vars.TICKETLORD_KEYWORDS }}
           TICKETLORD_ONLY_KEYWORDS: ${{ vars.TICKETLORD_ONLY_KEYWORDS }}
+          TICKETLORD_BATCH_OVER: ${{ vars.TICKETLORD_BATCH_OVER }}
+          TICKETLORD_INCLUDE_AMC: ${{ vars.TICKETLORD_INCLUDE_AMC }}
           TICKETLORD_STATE_FILE: state/seen.json
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}

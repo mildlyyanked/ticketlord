@@ -20,10 +20,11 @@ def format_message(s: Screening) -> tuple[str, str]:
     title = f"🎬 {s.title}"
     if s.sold_out:
         title += " (sold out)"
-    lines = [x for x in (s.when, s.venue) if x]
-    if s.details and not lines:
-        lines.append(s.details[:200])
+    lines = [" · ".join(x for x in (s.when, s.venue) if x)]
+    if s.details:
+        lines.append(s.details[:600])
     lines.append(s.url)
+    lines = [x for x in lines if x]
     return title, "\n".join(lines)
 
 

@@ -2,8 +2,6 @@ name: snapshot-page
 # Saves revivalhub.com (raw + JavaScript-rendered) into snapshots/ for parser debugging.
 on:
   workflow_dispatch:
-  push:
-    paths: [".github/workflows/snapshot.yml"]
 
 permissions:
   contents: write
