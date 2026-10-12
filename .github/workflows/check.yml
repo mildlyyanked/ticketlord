@@ -1,0 +1,47 @@
+name: check-screenings
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # GitHub may delay scheduled runs by a few minutes
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: check-screenings
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install .
+      - name: Check revivalhub for new screenings
+        env:
+          TICKETLORD_URL: ${{ vars.TICKETLORD_URL || 'https://revivalhub.com/' }}
+          TICKETLORD_KEYWORDS: ${{ vars.TICKETLORD_KEYWORDS }}
+          TICKETLORD_ONLY_KEYWORDS: ${{ vars.TICKETLORD_ONLY_KEYWORDS }}
+          TICKETLORD_STATE_FILE: state/seen.json
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+          PUSHOVER_USER_KEY: ${{ secrets.PUSHOVER_USER_KEY }}
+          PUSHOVER_APP_TOKEN: ${{ secrets.PUSHOVER_APP_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: ticketlord check
+      - name: Save seen screenings
+        if: always()
+        run: |
+          git config user.name "ticketlord-bot"
+          git config user.email "ticketlord-bot@users.noreply.github.com"
+          git add state/seen.json 2>/dev/null || exit 0
+          git diff --cached --quiet && exit 0
+          git commit -m "Update seen screenings [skip ci]"
+          git pull --rebase && git push
