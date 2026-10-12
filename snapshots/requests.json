@@ -1,0 +1,237 @@
+[
+ {
+  "url": "https://revivalhub.com/",
+  "type": "document",
+  "method": "GET"
+ },
+ {
+  "url": "https://storage.googleapis.com/revival-hub-ab2a8.firebasestorage.app/airtable-uploads/data-import.json",
+  "type": "other",
+  "method": "GET"
+ },
+ {
+  "url": "https://revivalhub.com/assets/index-CSNdHi7T.js",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "https://revivalhub.com/assets/vendor-Dxn1aKrn.js",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "https://revivalhub.com/assets/mantine-DruYnKAO.js",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "https://revivalhub.com/assets/firebase-BEFQw-AU.js",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "https://revivalhub.com/assets/index-DkgniVFU.css",
+  "type": "stylesheet",
+  "method": "GET"
+ },
+ {
+  "url": "https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "https://revivalhub.com/vyun/",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "https://revivalhub.com/fonts/Cubano%20Sharp.ttf",
+  "type": "font",
+  "method": "GET"
+ },
+ {
+  "url": "https://revivalhub.com/fonts/Work%20Sans%20Regular.ttf",
+  "type": "font",
+  "method": "GET"
+ },
+ {
+  "url": "https://revivalhub.com/revival-hub-logo-combined-white.png",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "https://revivalhub.com/api/geolocate",
+  "type": "fetch",
+  "method": "GET"
+ },
+ {
+  "url": "https://revivalhub.com/assets/index.esm-CCaU9x2w.js",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "https://revivalhub.com/assets/index.esm2017-BgCMFs5k.js",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "https://revivalhub.com/vyun/h6MX6WQ1Nvmk4iMG6_FY8rp3mUfEnOggETnAnSscVK_SX2LO",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NRZ794FH&gtg_health=1",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "https://firebasestorage.googleapis.com/v0/b/revival-hub-ab2a8.firebasestorage.app/o/airtable-uploads%2Famc-import.json?alt=media",
+  "type": "fetch",
+  "method": "GET"
+ },
+ {
+  "url": "https://revivalhub.com/join-the-patreon.png",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "https://revivalhub.com/blue_square_TMDB.svg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "https://revivalhub.com/vyun/ga/g/c?v=2&tid=G-CSJZF5VHMC&gtm=45g92e6a72v9134748302za20szb9232455301zd9232455301xf4&_p=1791789541893&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dYzg1YT&_uip=%3A%3A&cid=967989238.1791789543&fp=1&frm=0&ngs=1&pscdl=noapi&rcb=10&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-us&ur=US-AZ&_gsid=XJR1S9HvnXjX-cCLtXPgvQCIEuB7BqBU9g&_s=1&tag_exp=115616985~115938466~115938468~118897920~118897930~120213116~120385423~120469145~120469153~121046263~121046271~121246026~121246034&sid=1791789543&sct=1&seg=0&dl=https%3A%2F%2Frevivalhub.com%2F&dt=Revival%20Hub%20%7C%20LA%27s%20Home%20for%20Repertory%20Cinema%20Since%202017&gtb=1&en=page_view&_fv=1&_nsi=1&_ss=1&gap.gtb=1&tfd=1515",
+  "type": "fetch",
+  "method": "POST"
+ },
+ {
+  "url": "https://www.google-analytics.com/g/s/collect?v=2&_gsid=XJR1S9HvnXjX-cCLtXPgvQCIEuB7BqBU9g&gtm=45g92e6a72v9134748302za20szb9232455301zd9232455301xf4",
+  "type": "ping",
+  "method": "POST"
+ },
+ {
+  "url": "https://image.tmdb.org/t/p/w500/by4D4Q9NlUjFSEUA1yrxq6ksXmk.jpg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "https://image.tmdb.org/t/p/w500/z7xXihu5wHuSMWymq5VAulPVuvg.jpg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "https://image.tmdb.org/t/p/w500/lNz2Ow0wGCAvzckW7EOjE03KcYv.jpg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "https://image.tmdb.org/t/p/w500/3nm6kWMFzxGtJb4UEuDB0lDWpcD.jpg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "https://image.tmdb.org/t/p/w500/4RERYb1NIQrJHYY5e8nUlYM7t2z.jpg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "https://image.tmdb.org/t/p/w500/geoYKcLBlTHfuFLyQy9GHH8M9Hh.jpg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "https://image.tmdb.org/t/p/w500/y1k7eiOFc6fzm8XeTa1kNGx6JIs.jpg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "https://image.tmdb.org/t/p/w500/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "https://image.tmdb.org/t/p/w500/czsyPHosFNbh4PPqXfqWu1aBXnA.jpg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "https://image.tmdb.org/t/p/w500/rwxTYjOZmX2rGhz7avLe1qsjNqe.jpg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "https://image.tmdb.org/t/p/w500/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "https://image.tmdb.org/t/p/w500/aRxbYOYHS8T73nzR8hsLousoplR.jpg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "https://image.tmdb.org/t/p/w500/hPNSToNIIpRO6y5Rh973leqQqNr.jpg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "https://image.tmdb.org/t/p/w500/gpai5oUFyFGLHOCsYTvVMqlbY7A.jpg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "https://revivalhub.com/cdn-cgi/rum?",
+  "type": "xhr",
+  "method": "POST"
+ },
+ {
+  "url": "https://firebaseinstallations.googleapis.com/v1/projects/revival-hub-ab2a8/installations",
+  "type": "fetch",
+  "method": "POST"
+ },
+ {
+  "url": "https://firebaseremoteconfig.googleapis.com/v1/projects/revival-hub-ab2a8/namespaces/fireperf:fetch?key=AIzaSyBZc1VyjoWb0Z2JFXtRc20O3nAHR39h1gw",
+  "type": "fetch",
+  "method": "POST"
+ },
+ {
+  "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NRZ794FH",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "https://revivalhub.com/assets/index.esm-DTaqLZ2y.js",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "https://firebase.googleapis.com/v1alpha/projects/-/apps/1:176365549636:web:7e470800f9e44afcd72411/webConfig",
+  "type": "fetch",
+  "method": "GET"
+ },
+ {
+  "url": "https://www.googletagmanager.com/gtag/js?l=dataLayer&id=G-CQHE3W95MD",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "https://revivalhub.com/vyun/h6MX6WQ1Nvmk4CEZnpM3j7pwmUfEnOggETnAnSscVK_SX2LO",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-CQHE3W95MD&gtm=45je6a72h1v9202447075za208zb9232455301zd9232455301xf1&_p=1791789541893&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dYzg1YT&_fid=eVGwPioKIuqtYKv4m2KMo4&cid=967989238.1791789543&frm=0&ngs=1&pscdl=noapi&rcb=0&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153~121046263~121046271~121246026~121246034&sid=1791789546&sct=1&seg=0&dl=https%3A%2F%2Frevivalhub.com%2F&dt=Revival%20Hub%20%7C%20LA%27s%20Home%20for%20Repertory%20Cinema%20Since%202017&en=page_view&_fv=1&_ss=1&_ee=1&ep.origin=firebase&tfd=5228",
+  "type": "fetch",
+  "method": "POST"
+ },
+ {
+  "url": "https://revivalhub.com/vyun/ga/g/c?v=2&tid=G-CSJZF5VHMC&gtm=45g92e6a72v9134748302z89232455301za20kzb9232455301zd9232455301xf4&_p=1791789541893&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dYzg1YT&_eu=AAAAAAQ&_uip=%3A%3A&cid=967989238.1791789543&fp=1&frm=0&ngs=1&pscdl=noapi&rcb=10&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-us&ur=US-AZ&_gsid=XJR1S9HvnXjX-cCLtXPgvQCIEuB7BqBU9g&_s=2&tag_exp=115616985~115938466~115938468~118897920~118897930~120213116~120385423~120469145~120469153~121046263~121046271~121246026~121246034&sid=1791789543&sct=1&seg=0&dl=https%3A%2F%2Frevivalhub.com%2F&dt=Revival%20Hub%20%7C%20LA%27s%20Home%20for%20Repertory%20Cinema%20Since%202017&gtb=1&en=GA4%20Configuration%20-%20Revival%20Hub&gap.gtb=1&_et=7&tfd=6525",
+  "type": "fetch",
+  "method": "POST"
+ }
+]
