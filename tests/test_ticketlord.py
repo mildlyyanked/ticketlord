@@ -176,3 +176,10 @@ def test_unchanged_feed_leaves_state_file_untouched(run):
     before = Path("seen.json").read_text()
     check()
     assert Path("seen.json").read_text() == before
+
+
+def test_keywords_file_adds_to_env(run, monkeypatch):
+    check, sent, _ = run
+    Path("keywords.txt").write_text("# my list\nSciamma\n\n70mm  # big film\n")
+    monkeypatch.setenv("TICKETLORD_KEYWORDS", "q&a")
+    assert cli.keywords() == ["70mm", "q&a", "sciamma"]

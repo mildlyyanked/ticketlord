@@ -43,7 +43,12 @@ def env_flag(name: str) -> bool:
 
 
 def keywords() -> list[str]:
-    return [k.strip().lower() for k in os.environ.get("TICKETLORD_KEYWORDS", "").split(",") if k.strip()]
+    """TICKETLORD_KEYWORDS (comma-separated) plus keywords.txt (one per line, # for comments)."""
+    words = os.environ.get("TICKETLORD_KEYWORDS", "").split(",")
+    path = Path(os.environ.get("TICKETLORD_KEYWORDS_FILE") or "keywords.txt")
+    if path.exists():
+        words += [line.split("#", 1)[0] for line in path.read_text().splitlines()]
+    return sorted({w.strip().lower() for w in words if w.strip()})
 
 
 def matches_keywords(s: Screening, words: list[str]) -> bool:

@@ -1,0 +1,2 @@
+# Screenings matching any line here arrive as urgent alerts (on top of the TICKETLORD_KEYWORDS variable).
+# One per line, case-insensitive. Matches title, director, venue, format, category and notes.
