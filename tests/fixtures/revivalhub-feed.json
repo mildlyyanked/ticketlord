@@ -320,6 +320,13 @@
    "main-image-path": "PS_Frida_01.png",
    "icon": "PS_Frida_01_SC.png",
    "id": "recT5ZheeMFv6dq6N"
+  },
+  {
+   "name": "Wide Release",
+   "type": "Indoor",
+   "include_in_index": "HIDE",
+   "wide_release": true,
+   "id": "rechpOzzeEZX9nyA2"
   }
  ],
  "organizations": [

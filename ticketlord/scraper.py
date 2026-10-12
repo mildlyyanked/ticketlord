@@ -66,6 +66,7 @@ class Screening:
     venue: str | None = None
     details: str | None = None
     sold_out: bool = False
+    wide_release: bool = False  # nationwide event (Fathom etc.), not a local screening
     source: str = "html"
     id: str = field(default="", compare=False)
 

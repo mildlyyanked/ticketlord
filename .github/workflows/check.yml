@@ -36,6 +36,7 @@ jobs:
           TICKETLORD_BATCH_OVER: ${{ vars.TICKETLORD_BATCH_OVER }}
           TICKETLORD_INCLUDE_AMC: ${{ vars.TICKETLORD_INCLUDE_AMC }}
           TICKETLORD_REGIONS: ${{ vars.TICKETLORD_REGIONS }}
+          TICKETLORD_WIDE_RELEASE: ${{ vars.TICKETLORD_WIDE_RELEASE }}
           TICKETLORD_STATE_FILE: state/seen.json
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}

@@ -24,6 +24,9 @@ FEED_URL = "https://storage.googleapis.com/revival-hub-ab2a8.firebasestorage.app
 # AMC's showtimes, which the site merges in. Mostly first-run chain showtimes, so off by default.
 AMC_FEED_URL = "https://firebasestorage.googleapis.com/v0/b/revival-hub-ab2a8.firebasestorage.app/o/airtable-uploads%2Famc-import.json?alt=media"
 TZ = ZoneInfo("America/Los_Angeles")
+# Distributors of nationwide event re-releases (anniversary runs, Ghibli Fest, TCM classics...).
+# Their screenings count as wide releases even when listed at a specific local theater.
+WIDE_RELEASE_PRESENTERS = {"fathom events", "fathom entertainment", "gkids"}
 
 
 def _get_json(url: str, timeout: int = 60):
@@ -133,6 +136,9 @@ def to_screenings(
             venue=venue,
             details=details or None,
             sold_out=bool(s.get("isSoldOut")),
+            wide_release=bool(venues.get(s.get("venue"), {}).get("wide_release"))
+            or any(p.lower() in WIDE_RELEASE_PRESENTERS for p in presenters)
+            or "ghibli fest" in (s.get("additionalInfo") or "").lower(),
             source=source,
         )))
     out.sort(key=lambda pair: pair[0])

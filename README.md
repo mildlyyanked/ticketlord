@@ -21,7 +21,8 @@ Each screening comes with a stable ID, its films (with year and director), venue
 presenting organization and ticket URL. If the feed ever moves, ticketlord finds its new location on the homepage.
 Only screenings in Revival Hub's **Los Angeles** region (LA County) are reported. The feed also covers Orange County,
 Ventura County and San Bernardino County; set `TICKETLORD_REGIONS` (e.g. `Los Angeles,Orange County`, or `all`) to change that.
-Nationwide "Wide Release" events have no venue and are always included. Set `TICKETLORD_INCLUDE_AMC=1` to also include the AMC showtimes the site merges in.
+Nationwide "Wide Release" events (Fathom anniversary re-releases, Ghibli Fest...) are skipped unless they
+include a Q&A; set `TICKETLORD_WIDE_RELEASE` to other words, `all` or `none` to change that. Set `TICKETLORD_INCLUDE_AMC=1` to also include the AMC showtimes the site merges in.
 
 For any other site (`TICKETLORD_URL=...`), a generic HTML scraper reads schema.org Event data, ticket links
 (Eventbrite, Veezi, Eventive, DICE, Tixr, ...) and links to event pages.

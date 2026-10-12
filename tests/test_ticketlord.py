@@ -6,7 +6,7 @@ import pytest
 import copy
 
 from ticketlord import cli, feed, notify
-from ticketlord.scraper import parse
+from ticketlord.scraper import Screening, parse
 
 FIXTURES = Path(__file__).parent / "fixtures"
 FIXTURE = (FIXTURES / "listings.html").read_text()
@@ -211,3 +211,28 @@ def test_regions_env(monkeypatch):
     monkeypatch.setenv("TICKETLORD_REGIONS", "all")
     cli.get_screenings("https://revivalhub.com/")
     assert calls == [{"los angeles"}, {"los angeles", "orange county"}, None]
+
+
+def test_wide_releases_need_a_q_and_a(run, monkeypatch):
+    check, sent, data = run
+    wide = next(v for v in FEED["venues"] if v.get("wide_release"))
+    check()
+    add_screening(data, "recWR1", "Spirited Away", venue=wide["id"], categories=["Anniversary"])
+    add_screening(data, "recWR2", "Pan's Labyrinth", venue=wide["id"], categories=["Q&A / Discussion"])
+    add_screening(data, "recLOCAL", "Stalker", categories=["Anniversary"])
+    data["organizations"].append({"id": "recFATHOM", "name": "Fathom Events"})
+    add_screening(data, "recFATHOM1", "It's a Wonderful Life", organizations=["recFATHOM"])
+    check()
+    assert sorted(t for t, _ in sent) == ["Pan's Labyrinth", "Stalker"]
+
+
+def test_wide_release_setting(monkeypatch):
+    wide = Screening(title="Spirited Away", url="x", wide_release=True)
+    local = Screening(title="Stalker", url="y")
+    assert cli.filter_wide_releases([wide, local]) == [local]
+    monkeypatch.setenv("TICKETLORD_WIDE_RELEASE", "all")
+    assert cli.filter_wide_releases([wide, local]) == [wide, local]
+    monkeypatch.setenv("TICKETLORD_WIDE_RELEASE", "ghibli,spirited")
+    assert cli.filter_wide_releases([wide, local]) == [wide, local]
+    monkeypatch.setenv("TICKETLORD_WIDE_RELEASE", "none")
+    assert cli.filter_wide_releases([wide, local]) == [local]

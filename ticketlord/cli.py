@@ -56,12 +56,25 @@ def matches_keywords(s: Screening, words: list[str]) -> bool:
     return any(w in haystack for w in words)
 
 
+def filter_wide_releases(screenings: list[Screening]) -> list[Screening]:
+    """Nationwide re-releases (Fathom, Ghibli Fest...) only count if they match these words.
+
+    TICKETLORD_WIDE_RELEASE: comma-separated words (default "q&a"), "all" to keep every one, "none" to drop them all.
+    """
+    setting = (os.environ.get("TICKETLORD_WIDE_RELEASE") or "q&a").strip().lower()
+    if setting == "all":
+        return screenings
+    words = [] if setting == "none" else [w.strip() for w in setting.split(",") if w.strip()]
+    return [s for s in screenings if not s.wide_release or (words and matches_keywords(s, words))]
+
+
 def get_screenings(url: str, debug_dir: str | None = None) -> list[Screening]:
     if urlparse(url).netloc.removeprefix("www.") == "revivalhub.com":
         # Revival Hub regions to keep; "all" for every region.
         wanted = (os.environ.get("TICKETLORD_REGIONS") or "Los Angeles").strip().lower()
         only = None if wanted == "all" else {r.strip() for r in wanted.split(",") if r.strip()}
-        return feed.fetch_screenings(include_amc=env_flag("TICKETLORD_INCLUDE_AMC"), only_regions=only)
+        screenings = feed.fetch_screenings(include_amc=env_flag("TICKETLORD_INCLUDE_AMC"), only_regions=only)
+        return filter_wide_releases(screenings)
     # Any other site: generic HTML scraping.
     html = fetch(url, render_js=env_flag("TICKETLORD_RENDER_JS"))
     if debug_dir:
