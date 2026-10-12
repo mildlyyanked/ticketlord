@@ -23,7 +23,9 @@ class State:
         return screening_id not in self.seen
 
     def mark(self, screening_id: str, title: str) -> None:
-        now = int(time.time())
+        # Day resolution: the file (and the bot's commit) only changes when something new shows up,
+        # or once a day, instead of on every 10-minute run.
+        now = int(time.time()) // 86400 * 86400
         entry = self.seen.setdefault(screening_id, {"title": title, "first_seen": now})
         entry["last_seen"] = now
 

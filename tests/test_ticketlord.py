@@ -168,3 +168,11 @@ def test_other_sites_use_html_scraper(tmp_path, monkeypatch, capsys):
     monkeypatch.setattr(cli, "fetch", lambda url, render_js=False: FIXTURE)
     assert cli.main(["inspect", "https://example-cinema.com/"]) == 0
     assert "2001: A Space Odyssey" in capsys.readouterr().out
+
+
+def test_unchanged_feed_leaves_state_file_untouched(run):
+    check, _, _ = run
+    check()
+    before = Path("seen.json").read_text()
+    check()
+    assert Path("seen.json").read_text() == before
