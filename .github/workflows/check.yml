@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "*/10 * * * *"   # GitHub may delay scheduled runs by a few minutes
   workflow_dispatch:
+    inputs:
+      test_notification:
+        description: "Also send a test push to my phone"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -42,6 +47,7 @@ jobs:
             echo "::warning::No notification channel set up yet. Add an NTFY_TOPIC secret under Settings > Secrets and variables > Actions."
             exit 0
           fi
+          if [ "${{ inputs.test_notification }}" = "true" ]; then ticketlord test-notify; fi
           ticketlord check
       - name: Save seen screenings
         if: always()

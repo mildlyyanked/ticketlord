@@ -35,7 +35,7 @@ This repo includes `.github/workflows/check.yml`. It runs every 10 minutes and c
 
 1. Repo **Settings → Secrets and variables → Actions → Secrets**: add `NTFY_TOPIC` (and/or the Pushover/Telegram secrets).
 2. Optionally, under **Variables**, add `TICKETLORD_KEYWORDS` (comma-separated) and `TICKETLORD_ONLY_KEYWORDS=1`.
-3. **Actions → Check screenings → Run workflow** once to seed. Scheduled runs take over from there.
+3. **Actions → Check screenings → Run workflow** once to seed. Tick **Also send a test push to my phone** to confirm notifications arrive. Scheduled runs take over from there.
 
 > GitHub only runs scheduled workflows on the default branch, and it may delay them by a few minutes at busy times.
 > If you need faster alerts, use 2b.
