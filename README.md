@@ -19,7 +19,9 @@ revivalhub.com is a JavaScript app, so its screenings aren't in the page HTML. T
 JSON export of the site's database (`data-import.json` on Google Cloud Storage), and ticketlord reads that same feed.
 Each screening comes with a stable ID, its films (with year and director), venue, start time, formats, categories,
 presenting organization and ticket URL. If the feed ever moves, ticketlord finds its new location on the homepage.
-Set `TICKETLORD_INCLUDE_AMC=1` to also include the AMC showtimes the site merges in.
+Only screenings in Revival Hub's **Los Angeles** region (LA County) are reported. The feed also covers Orange County,
+Ventura County and San Bernardino County; set `TICKETLORD_REGIONS` (e.g. `Los Angeles,Orange County`, or `all`) to change that.
+Nationwide "Wide Release" events have no venue and are always included. Set `TICKETLORD_INCLUDE_AMC=1` to also include the AMC showtimes the site merges in.
 
 For any other site (`TICKETLORD_URL=...`), a generic HTML scraper reads schema.org Event data, ticket links
 (Eventbrite, Veezi, Eventive, DICE, Tixr, ...) and links to event pages.

@@ -303,6 +303,23 @@
     "PHOTOS_Academy_04.png"
    ],
    "id": "recbyIGqgug8C3O0L"
+  },
+  {
+   "name": "Frida Cinema",
+   "type": "Indoor",
+   "website": "https://thefridacinema.org/",
+   "phone_number": "(714) 285-9422",
+   "address": "305 E 4th St, Santa Ana, CA 92701",
+   "number_of_seats": 400,
+   "instagram": "https://www.instagram.com/thefridacinema/",
+   "include_in_index": "INDEX",
+   "lat": 33.7481143,
+   "lng": -117.8652516,
+   "geohash": "9mupvztjh",
+   "neighborhoodId": "recgBHFRFeP6nimmP",
+   "main-image-path": "PS_Frida_01.png",
+   "icon": "PS_Frida_01_SC.png",
+   "id": "recT5ZheeMFv6dq6N"
   }
  ],
  "organizations": [
@@ -322,6 +339,70 @@
    "instagram": "https://www.instagram.com/hollyw00dentertainment/",
    "main-image-path": "PS_HollywoodEntertainment.png",
    "id": "recm5je6jD6YRBhzz"
+  }
+ ],
+ "neighborhoods": [
+  {
+   "name": "Westlake",
+   "regionId": "recPuAt2CP9B4IoVt",
+   "centerLat": 34.062941,
+   "centerLng": -118.273213,
+   "id": "recBiEtZ0AMgJ5DrC"
+  },
+  {
+   "name": "Mid-Wilshire",
+   "regionId": "recPuAt2CP9B4IoVt",
+   "centerLat": 34.056742,
+   "centerLng": -118.346315,
+   "id": "recWSNtV5DNKyvCS3"
+  },
+  {
+   "name": "Hollywood",
+   "regionId": "recPuAt2CP9B4IoVt",
+   "centerLat": 34.1017,
+   "centerLng": -118.3267,
+   "id": "recydhLpeqPAYqniU"
+  },
+  {
+   "name": "Santa Ana",
+   "regionId": "rechXc9vj3oc6iKfo",
+   "centerLat": 33.744883,
+   "centerLng": -117.867377,
+   "id": "recgBHFRFeP6nimmP"
+  }
+ ],
+ "regions": [
+  {
+   "name": "Los Angeles",
+   "lat": 34.0522,
+   "lng": -118.2437,
+   "timezone": "America/Los_Angeles",
+   "isDefault": "true",
+   "id": "recPuAt2CP9B4IoVt"
+  },
+  {
+   "name": "San Bernardino County",
+   "lat": 34.96,
+   "lng": -116.42,
+   "timezone": "America/Los_Angeles",
+   "isDefault": "false",
+   "id": "recXwlcZxsGqQB8in"
+  },
+  {
+   "name": "Ventura County",
+   "lat": 34.3705,
+   "lng": -119.1177,
+   "timezone": "America/Los_Angeles",
+   "isDefault": "false",
+   "id": "recbuPoLG7JqsgyQE"
+  },
+  {
+   "name": "Orange County",
+   "lat": 33.6719,
+   "lng": -117.778427,
+   "timezone": "America/Los_Angeles",
+   "isDefault": "false",
+   "id": "rechXc9vj3oc6iKfo"
   }
  ]
 }

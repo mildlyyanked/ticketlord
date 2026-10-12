@@ -58,7 +58,10 @@ def matches_keywords(s: Screening, words: list[str]) -> bool:
 
 def get_screenings(url: str, debug_dir: str | None = None) -> list[Screening]:
     if urlparse(url).netloc.removeprefix("www.") == "revivalhub.com":
-        return feed.fetch_screenings(include_amc=env_flag("TICKETLORD_INCLUDE_AMC"))
+        # Revival Hub regions to keep; "all" for every region.
+        wanted = (os.environ.get("TICKETLORD_REGIONS") or "Los Angeles").strip().lower()
+        only = None if wanted == "all" else {r.strip() for r in wanted.split(",") if r.strip()}
+        return feed.fetch_screenings(include_amc=env_flag("TICKETLORD_INCLUDE_AMC"), only_regions=only)
     # Any other site: generic HTML scraping.
     html = fetch(url, render_js=env_flag("TICKETLORD_RENDER_JS"))
     if debug_dir:

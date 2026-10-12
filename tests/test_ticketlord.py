@@ -183,3 +183,31 @@ def test_keywords_file_adds_to_env(run, monkeypatch):
     Path("keywords.txt").write_text("# my list\nSciamma\n\n70mm  # big film\n")
     monkeypatch.setenv("TICKETLORD_KEYWORDS", "q&a")
     assert cli.keywords() == ["70mm", "q&a", "sciamma"]
+
+
+def test_only_la_region_by_default(run, monkeypatch):
+    frida = next(v for v in FEED["venues"] if v["name"] == "Frida Cinema")
+    data = copy.deepcopy(FEED)
+    add_screening(data, "recOC1", "Stalker", venue=frida["id"])
+    la = {s.title for s in feed.to_screenings(data, include_past=True, only_regions={"los angeles"})}
+    assert "Stalker" not in la and "Portrait of a Lady on Fire" in la
+    oc = {s.title for s in feed.to_screenings(data, include_past=True, only_regions={"orange county"})}
+    assert oc == {"Stalker"}
+
+
+def test_region_falls_back_to_nearest_center():
+    regions = feed.Regions(FEED)
+    assert regions.of({"lat": 33.75, "lng": -117.87}) == "Orange County"  # Santa Ana, no region set
+    assert regions.of({"lat": 34.05, "lng": -118.25}) == "Los Angeles"
+    assert regions.of({}) is None  # Wide Release: no location, kept
+
+
+def test_regions_env(monkeypatch):
+    calls = []
+    monkeypatch.setattr(feed, "fetch_screenings", lambda **k: calls.append(k["only_regions"]) or [])
+    cli.get_screenings("https://revivalhub.com/")
+    monkeypatch.setenv("TICKETLORD_REGIONS", "Los Angeles, Orange County")
+    cli.get_screenings("https://revivalhub.com/")
+    monkeypatch.setenv("TICKETLORD_REGIONS", "all")
+    cli.get_screenings("https://revivalhub.com/")
+    assert calls == [{"los angeles"}, {"los angeles", "orange county"}, None]

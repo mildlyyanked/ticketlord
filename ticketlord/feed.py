@@ -62,7 +62,38 @@ def format_when(utc_ms: int | None) -> str | None:
     return dt.strftime("%a %b %-d, %-I:%M%p").replace("AM", "am").replace("PM", "pm")
 
 
-def to_screenings(data: dict, include_past: bool = False, source: str = "revivalhub") -> list[Screening]:
+class Regions:
+    """Works out which of Revival Hub's regions (Los Angeles, Orange County, ...) a venue is in."""
+
+    def __init__(self, data: dict):
+        self.regions = {r["id"]: r for r in data.get("regions", []) if isinstance(r, dict) and "id" in r}
+        self.neighborhoods = {n["id"]: n for n in data.get("neighborhoods", []) if isinstance(n, dict) and "id" in n}
+
+    def of(self, venue: dict) -> str | None:
+        region_id = venue.get("regionId") or self.neighborhoods.get(venue.get("neighborhoodId"), {}).get("regionId")
+        if region_id in self.regions:
+            return self.regions[region_id].get("name")
+        # Venues without a region (e.g. the AMC feed's): nearest region center.
+        try:
+            lat, lng = float(venue["lat"]), float(venue["lng"])
+        except (KeyError, TypeError, ValueError):
+            return None  # no location at all, e.g. nationwide "Wide Release" events
+        centers = [r for r in self.regions.values() if r.get("lat") is not None and r.get("lng") is not None]
+        if not centers:
+            return None
+        nearest = min(centers, key=lambda r: (float(r["lat"]) - lat) ** 2 + (float(r["lng"]) - lng) ** 2)
+        return nearest.get("name")
+
+
+def to_screenings(
+    data: dict,
+    include_past: bool = False,
+    source: str = "revivalhub",
+    regions: Regions | None = None,
+    only_regions: set[str] | None = None,
+) -> list[Screening]:
+    """only_regions: lowercase region names to keep; screenings with no known location are kept."""
+    regions = regions or Regions(data)
     venues = {v["id"]: v for v in data.get("venues", []) if isinstance(v, dict) and "id" in v}
     orgs = {o["id"]: o for o in data.get("organizations", []) if isinstance(o, dict) and "id" in o}
     now_ms = time.time() * 1000
@@ -73,6 +104,9 @@ def to_screenings(data: dict, include_past: bool = False, source: str = "revival
             continue
         start = s.get("utc_start")
         if start and not include_past and int(start) < now_ms:
+            continue
+        region = regions.of(venues.get(s.get("venue"), {}))
+        if only_regions and region and region.lower() not in only_regions:
             continue
         title = " + ".join(clean(f["name"]) for f in films)
         tickets = [u for u in s.get("ticket_urls") or [] if u] or ([s["purchaseUrl"]] if s.get("purchaseUrl") else [])
@@ -105,11 +139,18 @@ def to_screenings(data: dict, include_past: bool = False, source: str = "revival
     return [s for _, s in out]
 
 
-def fetch_screenings(include_amc: bool = False, include_past: bool = False) -> list[Screening]:
-    screenings = to_screenings(load_feed(), include_past=include_past)
+def fetch_screenings(
+    include_amc: bool = False, include_past: bool = False, only_regions: set[str] | None = None
+) -> list[Screening]:
+    data = load_feed()
+    regions = Regions(data)
+    screenings = to_screenings(data, include_past=include_past, regions=regions, only_regions=only_regions)
     if include_amc:
         try:
-            screenings += to_screenings(_get_json(AMC_FEED_URL), include_past=include_past, source="amc")
+            screenings += to_screenings(
+                _get_json(AMC_FEED_URL), include_past=include_past, source="amc",
+                regions=regions, only_regions=only_regions,
+            )
         except (requests.RequestException, ValueError) as e:
             log.warning("AMC feed failed: %s", e)
     return screenings
