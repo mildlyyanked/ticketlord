@@ -1,7 +1,12 @@
 name: Snapshot page (debugging)
-# Saves revivalhub.com (raw + JavaScript-rendered) into snapshots/ for parser debugging.
+# Saves pages (raw + JavaScript-rendered), a screenshot, every network request and the JSON
+# responses the page loads into snapshots/<host>/, to find where a site's listings come from.
 on:
   workflow_dispatch:
+    inputs:
+      urls:
+        description: "Space-separated URLs"
+        default: "https://revivalhub.com/"
 
 permissions:
   contents: write
@@ -9,42 +14,66 @@ permissions:
 jobs:
   snapshot:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-      - name: Raw HTML
+      - run: pip install -q playwright && playwright install --with-deps chromium > /dev/null
+      - name: Snapshot
+        env:
+          URLS: ${{ inputs.urls }}
         run: |
-          mkdir -p snapshots
-          curl -sSL -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36" \
-            -D snapshots/headers.txt -o snapshots/source.html -w "%{http_code} %{size_download}\n" https://revivalhub.com/ \
-            | tee snapshots/status.txt || true
-      - name: Rendered HTML + network requests
-        run: |
-          pip install -q playwright && playwright install --with-deps chromium > /dev/null
-          python - <<'PY' || true
-          import json
+          python - <<'PY'
+          import json, os, re
+          from urllib.parse import urlparse
           from playwright.sync_api import sync_playwright
-          reqs = []
+          UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
           with sync_playwright() as p:
-              b = p.chromium.launch()
-              page = b.new_page()
-              page.on("request", lambda r: reqs.append({"url": r.url, "type": r.resource_type, "method": r.method}))
-              page.goto("https://revivalhub.com/", wait_until="networkidle", timeout=60000)
-              page.wait_for_timeout(3000)
-              open("snapshots/rendered.html", "w").write(page.content())
-              page.screenshot(path="snapshots/screenshot.png", full_page=False)
-              b.close()
-          json.dump(reqs, open("snapshots/requests.json", "w"), indent=1)
+              browser = p.chromium.launch()
+              for i, url in enumerate(os.environ["URLS"].split()):
+                  u = urlparse(url)
+                  out = f"snapshots/{u.netloc}{re.sub(r'[^a-zA-Z0-9]+', '_', u.path).rstrip('_')}"
+                  os.makedirs(f"{out}/json", exist_ok=True)
+                  page = browser.new_page(user_agent=UA)
+                  reqs, n = [], 0
+                  def on_response(r):
+                      global n
+                      reqs.append({"url": r.url, "status": r.status, "type": r.request.resource_type, "method": r.request.method,
+                                   "ctype": r.headers.get("content-type", "")})
+                      if r.request.resource_type in ("fetch", "xhr") or "json" in r.headers.get("content-type", ""):
+                          try:
+                              body = r.body()
+                          except Exception:
+                              return
+                          n += 1
+                          name = re.sub(r"[^a-zA-Z0-9]+", "_", urlparse(r.url).path)[-60:]
+                          open(f"{out}/json/{n:02d}{name}.txt", "wb").write(r.url.encode() + b"\n\n" + body[:3_000_000])
+                  page.on("response", on_response)
+                  try:
+                      resp = page.goto(url, wait_until="networkidle", timeout=60000)
+                      page.wait_for_timeout(4000)
+                      page.mouse.wheel(0, 20000)  # trigger lazy loading
+                      page.wait_for_timeout(3000)
+                      open(f"{out}/rendered.html", "w").write(page.content())
+                      page.screenshot(path=f"{out}/screenshot.png")
+                      print(url, resp.status if resp else None)
+                  except Exception as e:
+                      print(url, "FAILED", e)
+                  json.dump(reqs, open(f"{out}/requests.json", "w"), indent=1)
+                  page.close()
+              browser.close()
           PY
+          for url in $URLS; do
+            dir="snapshots/$(echo "$url" | sed -E 's#https?://##; s#/.*##')"
+            curl -sSL -A "Mozilla/5.0" -o "$dir-source.html" -w "$url raw: %{http_code} %{size_download}\n" "$url" || true
+          done
       - name: Commit snapshot
         run: |
-          ls -la snapshots
           git config user.name "ticketlord-bot"
           git config user.email "ticketlord-bot@users.noreply.github.com"
           git add snapshots
           git diff --cached --quiet && exit 0
-          git commit -m "Snapshot revivalhub.com [skip ci]"
+          git commit -m "Snapshot pages [skip ci]"
           git pull --rebase && git push
