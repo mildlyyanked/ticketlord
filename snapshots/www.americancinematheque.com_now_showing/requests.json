@@ -1,0 +1,478 @@
+[
+ {
+  "url": "https://www.americancinematheque.com/now-showing/",
+  "status": 200,
+  "type": "document",
+  "method": "GET",
+  "ctype": "text/html; charset=UTF-8"
+ },
+ {
+  "url": "https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap",
+  "status": 200,
+  "type": "stylesheet",
+  "method": "GET",
+  "ctype": "text/css; charset=utf-8"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "text/javascript"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-content/themes/mf-theme/style.css?ver=2.49",
+  "status": 200,
+  "type": "stylesheet",
+  "method": "GET",
+  "ctype": "text/css"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-content/plugins/gravityforms/legacy/css/readyclass.min.css?ver=3.0.2",
+  "status": 200,
+  "type": "stylesheet",
+  "method": "GET",
+  "ctype": "text/css"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-content/plugins/column-shortcodes//assets/css/shortcodes.css?ver=1.0.1",
+  "status": 200,
+  "type": "stylesheet",
+  "method": "GET",
+  "ctype": "text/css"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-content/plugins/gravityforms/legacy/css/browsers.min.css?ver=3.0.2",
+  "status": 200,
+  "type": "stylesheet",
+  "method": "GET",
+  "ctype": "text/css"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-content/plugins/gravityforms/legacy/css/formsmain.min.css?ver=3.0.2",
+  "status": 200,
+  "type": "stylesheet",
+  "method": "GET",
+  "ctype": "text/css"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "text/javascript"
+ },
+ {
+  "url": "https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "text/javascript;charset=UTF-8"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-content/plugins/gravityforms/legacy/css/formreset.min.css?ver=3.0.2",
+  "status": 200,
+  "type": "stylesheet",
+  "method": "GET",
+  "ctype": "text/css"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-content/themes/mf-theme/public/main.css?ver=2.59",
+  "status": 200,
+  "type": "stylesheet",
+  "method": "GET",
+  "ctype": "text/css"
+ },
+ {
+  "url": "https://kit.fontawesome.com/b8c7eb40d7.js",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "text/javascript"
+ },
+ {
+  "url": "https://assets.americancinematheque.com/wp-content/uploads/2023/05/09141629/About-Megamenu-1.png",
+  "status": 200,
+  "type": "image",
+  "method": "GET",
+  "ctype": "image/png"
+ },
+ {
+  "url": "https://assets.americancinematheque.com/wp-content/uploads/2023/05/09142138/Become-A-Member-Home-Page.png",
+  "status": 200,
+  "type": "image",
+  "method": "GET",
+  "ctype": "image/png"
+ },
+ {
+  "url": "https://ka-p.fontawesome.com/releases/v6.7.2/css/pro-v5-font-face.min.css?token=b8c7eb40d7",
+  "status": 200,
+  "type": "fetch",
+  "method": "GET",
+  "ctype": "text/css"
+ },
+ {
+  "url": "https://ka-p.fontawesome.com/releases/v6.7.2/css/pro-v4-shims.min.css?token=b8c7eb40d7",
+  "status": 200,
+  "type": "fetch",
+  "method": "GET",
+  "ctype": "text/css"
+ },
+ {
+  "url": "https://ka-p.fontawesome.com/releases/v6.7.2/css/pro.min.css?token=b8c7eb40d7",
+  "status": 200,
+  "type": "fetch",
+  "method": "GET",
+  "ctype": "text/css"
+ },
+ {
+  "url": "https://ka-p.fontawesome.com/assets/b8c7eb40d7/64304216/custom-icons.css?token=b8c7eb40d7",
+  "status": 200,
+  "type": "fetch",
+  "method": "GET",
+  "ctype": "text/css"
+ },
+ {
+  "url": "https://ka-p.fontawesome.com/releases/v6.7.2/css/pro-v4-font-face.min.css?token=b8c7eb40d7",
+  "status": 200,
+  "type": "fetch",
+  "method": "GET",
+  "ctype": "text/css"
+ },
+ {
+  "url": "https://assets.americancinematheque.com/wp-content/uploads/2025/05/29102337/LAC_logo_primary_resize-1.png",
+  "status": 200,
+  "type": "image",
+  "method": "GET",
+  "ctype": "image/png"
+ },
+ {
+  "url": "https://assets.americancinematheque.com/wp-content/uploads/2020/12/23013035/ac_logo_primary_stacked_black.svg",
+  "status": 200,
+  "type": "image",
+  "method": "GET",
+  "ctype": "image/svg+xml"
+ },
+ {
+  "url": "https://assets.americancinematheque.com/wp-content/uploads/2022/08/24205807/Vault_American_Cinematheque_MM.jpg",
+  "status": 200,
+  "type": "image",
+  "method": "GET",
+  "ctype": "image/jpeg"
+ },
+ {
+  "url": "https://assets.americancinematheque.com/wp-content/uploads/2021/05/22193239/Now-Showing_Megamenu.png",
+  "status": 200,
+  "type": "image",
+  "method": "GET",
+  "ctype": "image/png"
+ },
+ {
+  "url": "https://assets.americancinematheque.com/wp-content/uploads/2023/05/09141631/About-Megamenu-2.png",
+  "status": 200,
+  "type": "image",
+  "method": "GET",
+  "ctype": "image/png"
+ },
+ {
+  "url": "https://fonts.gstatic.com/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDptfpA4Q.woff2",
+  "status": 200,
+  "type": "font",
+  "method": "GET",
+  "ctype": "font/woff2"
+ },
+ {
+  "url": "https://fonts.gstatic.com/s/petrona/v38/mtG64_NXL7bZo9XXgXJYtUkS0CQ.woff2",
+  "status": 200,
+  "type": "font",
+  "method": "GET",
+  "ctype": "font/woff2"
+ },
+ {
+  "url": "https://fonts.gstatic.com/s/worksans/v24/QGYqz_wNahGAdqQ43Rh_eZDrv_1i4_D2.woff2",
+  "status": 200,
+  "type": "font",
+  "method": "GET",
+  "ctype": "font/woff2"
+ },
+ {
+  "url": "https://www.bugherd.com/sidebarv2.js?apikey=vpw6z747qgjrytrokm9fyg",
+  "status": 302,
+  "type": "script",
+  "method": "GET",
+  "ctype": "text/html; charset=UTF-8"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=3.0.2",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "text/javascript"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "text/javascript"
+ },
+ {
+  "url": "https://assets.americancinematheque.com/wp-content/uploads/2022/08/24212419/AC_Website_Newsletter_Form.jpg",
+  "status": 200,
+  "type": "image",
+  "method": "GET",
+  "ctype": "image/jpeg"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-includes/js/dist/dom-ready.min.js?ver=3fe927cab37bf38d6a23",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "text/javascript"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-content/themes/mf-theme/public/fonts/fa-light-300.woff2",
+  "status": 200,
+  "type": "font",
+  "method": "GET",
+  "ctype": "font/woff2"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "text/javascript"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=a47d2ddc45fa71f5303d9c5936ccd281",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "text/javascript"
+ },
+ {
+  "url": "https://www.googletagmanager.com/gtm.js?id=GTM-KP28RL7",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "application/javascript; charset=UTF-8"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-includes/js/dist/a11y.min.js?ver=31c6cec5a4ff7aff483d",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "text/javascript"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=3.0.2",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "text/javascript"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=3.0.2",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "text/javascript"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=3f278756f0a3032bed328ff6a9f6c01d",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "text/javascript"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=b1d32e3bcae548735f8a8c723e228edd",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "text/javascript"
+ },
+ {
+  "url": "https://static.hotjar.com/c/hotjar-1616622.js?sv=6",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "application/javascript; charset=UTF-8"
+ },
+ {
+  "url": "https://www.americancinematheque.com/api/acnm",
+  "status": 204,
+  "type": "fetch",
+  "method": "POST",
+  "ctype": ""
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-content/themes/mf-theme/public/main.js?ver=2.40",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "text/javascript"
+ },
+ {
+  "url": "https://sidebar.bugherd.com/embed.js?apikey=vpw6z747qgjrytrokm9fyg",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "text/javascript; charset=utf-8"
+ },
+ {
+  "url": "blob:https://www.americancinematheque.com/4ccc5147-a7ab-442f-a728-592abe3eb876",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "text/javascript"
+ },
+ {
+  "url": "https://sidebar.bugherd.com/sidebar/embed_html?apikey=vpw6z747qgjrytrokm9fyg",
+  "status": 200,
+  "type": "document",
+  "method": "GET",
+  "ctype": "text/html; charset=utf-8"
+ },
+ {
+  "url": "https://www.google-analytics.com/analytics.js",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "text/javascript"
+ },
+ {
+  "url": "https://sidebar.bugherd.com/embed.js?apikey=vpw6z747qgjrytrokm9fyg",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "text/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://www.googletagmanager.com/gtag/js?id=G-B954R64R2K&cx=c&gtm=4e6a91",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "application/javascript; charset=UTF-8"
+ },
+ {
+  "url": "https://sidebar.bugherd.com/assets/bh_logo_short-1d6af89eca7e694074a6e0bd9201111a89f1683346b813c99cd5b395cf7d7e23.png",
+  "status": 200,
+  "type": "image",
+  "method": "GET",
+  "ctype": "image/png"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-content/themes/mf-theme/public/fonts/fa-regular-400.woff2",
+  "status": 200,
+  "type": "font",
+  "method": "GET",
+  "ctype": "font/woff2"
+ },
+ {
+  "url": "https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1503334028&t=pageview&_s=1&dl=https%3A%2F%2Fwww.americancinematheque.com%2Fnow-showing%2F&ul=en-us&dt=Now%20Showing%20-%20American%20Cinematheque&sr=1280x720&vp=1280x720&_u=YGBACEABBAAAACAAI~&jid=1210164046&gjid=678317007&cid=2070906868.1791884837&tid=UA-154488643-1&_gid=426174982.1791884837&_r=1&_slc=1&gtm=45He6a91n81KP28RL7v830275455za200zd830275455xf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120385423~120469145~120469153~121046263~121046271~121246026~121246034&z=276106431",
+  "status": 200,
+  "type": "xhr",
+  "method": "POST",
+  "ctype": "text/plain"
+ },
+ {
+  "url": "https://script.hotjar.com/modules.1a21327ccc3eeb7fab6d.js",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-includes/js/wp-emoji-release.min.js?ver=7.1.2",
+  "status": 200,
+  "type": "script",
+  "method": "GET",
+  "ctype": "text/javascript"
+ },
+ {
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-B954R64R2K&gtm=45je6a91v9115506217za20ozb830275455zd830275455xf1&_p=1791884836224&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGAC&_ng=1&cid=2070906868.1791884837&frm=0&pscdl=noapi&rcb=17&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uam=&uamb=0&uap=macOS&uapv=10_15_7&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121046263~121046271~121246026~121246034&sid=1791884837&sct=1&seg=0&dl=https%3A%2F%2Fwww.americancinematheque.com%2Fnow-showing%2F&dt=Now%20Showing%20-%20American%20Cinematheque&en=page_view&_fv=1&_ss=1&tfd=1262",
+  "status": 204,
+  "type": "fetch",
+  "method": "POST",
+  "ctype": "text/plain"
+ },
+ {
+  "url": "https://stats.g.doubleclick.net/g/collect?v=2&_ng=1&tid=G-B954R64R2K&cid=2070906868.1791884837&gtm=45je6a91v9115506217za20ozb830275455zd830275455xf1&rcb=17&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121046263~121046271~121246026~121246034",
+  "status": 204,
+  "type": "ping",
+  "method": "POST",
+  "ctype": "text/plain"
+ },
+ {
+  "url": "https://www.americancinematheque.com/cdn-cgi/rum?",
+  "status": 204,
+  "type": "xhr",
+  "method": "POST",
+  "ctype": "text/plain"
+ },
+ {
+  "url": "https://sidebar.bugherd.com/sidebar/resources?apikey=vpw6z747qgjrytrokm9fyg",
+  "status": 200,
+  "type": "fetch",
+  "method": "GET",
+  "ctype": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-json/wp/v2/event/taxonomies",
+  "status": 200,
+  "type": "xhr",
+  "method": "GET",
+  "ctype": "application/json; charset=UTF-8"
+ },
+ {
+  "url": "https://ka-p.fontawesome.com/releases/v6.7.2/webfonts/pro-fa-regular-400-12.woff2",
+  "status": 200,
+  "type": "font",
+  "method": "GET",
+  "ctype": "font/woff2"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-content/themes/mf-theme/public/fonts/fa-solid-900.woff2",
+  "status": 200,
+  "type": "font",
+  "method": "GET",
+  "ctype": "font/woff2"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-json/wp/v2/algolia_get_events?environment=production_2026&startDate=1790726400&endDate=1793491200",
+  "status": 200,
+  "type": "fetch",
+  "method": "GET",
+  "ctype": "application/json; charset=UTF-8"
+ },
+ {
+  "url": "https://fonts.gstatic.com/s/petrona/v38/mtG64_NXL7bZo9XXgX1YtUkS0CSOFw.woff2",
+  "status": 200,
+  "type": "font",
+  "method": "GET",
+  "ctype": "font/woff2"
+ },
+ {
+  "url": "https://fonts.gstatic.com/s/petrona/v38/mtG64_NXL7bZo9XXgXxYtUkS0CSOFw.woff2",
+  "status": 200,
+  "type": "font",
+  "method": "GET",
+  "ctype": "font/woff2"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-json/wp/v2/active_runs?start=2026-10-01&end=2026-10-31",
+  "status": 200,
+  "type": "fetch",
+  "method": "GET",
+  "ctype": "application/json; charset=UTF-8"
+ },
+ {
+  "url": "https://www.americancinematheque.com/wp-json/wp/v2/active_runs?start=2026-10-01&end=2026-10-31",
+  "status": 200,
+  "type": "fetch",
+  "method": "GET",
+  "ctype": "application/json; charset=UTF-8"
+ }
+]
