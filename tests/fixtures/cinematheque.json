@@ -1,0 +1,325 @@
+{
+ "taxonomies": {
+  "event_access_type": {
+   "list": [
+    {
+     "term_id": 69,
+     "name": "Member Only"
+    },
+    {
+     "term_id": 56,
+     "name": "Public"
+    }
+   ]
+  },
+  "event_type": {
+   "list": [
+    {
+     "term_id": 191,
+     "name": "Advance Screening"
+    },
+    {
+     "term_id": 98,
+     "name": "Book Signing"
+    },
+    {
+     "term_id": 72,
+     "name": "Double Feature"
+    },
+    {
+     "term_id": 60,
+     "name": "Film"
+    },
+    {
+     "term_id": 330,
+     "name": "Free"
+    },
+    {
+     "term_id": 329,
+     "name": "Free (members only)"
+    },
+    {
+     "term_id": 161,
+     "name": "Introduction"
+    },
+    {
+     "term_id": 196,
+     "name": "Lecture"
+    },
+    {
+     "term_id": 185,
+     "name": "Limited Engagement"
+    },
+    {
+     "term_id": 77,
+     "name": "Marathon"
+    },
+    {
+     "term_id": 101,
+     "name": "Panel"
+    },
+    {
+     "term_id": 160,
+     "name": "Podcast"
+    },
+    {
+     "term_id": 169,
+     "name": "Premiere"
+    },
+    {
+     "term_id": 62,
+     "name": "Q&A"
+    },
+    {
+     "term_id": 61,
+     "name": "Series"
+    },
+    {
+     "term_id": 120,
+     "name": "Shorts Program"
+    },
+    {
+     "term_id": 314,
+     "name": "Single Feature"
+    },
+    {
+     "term_id": 319,
+     "name": "Television"
+    },
+    {
+     "term_id": 78,
+     "name": "Triple Feature"
+    }
+   ]
+  },
+  "event_location": {
+   "list": [
+    {
+     "term_id": 54,
+     "name": "Aero Theatre"
+    },
+    {
+     "term_id": 343,
+     "name": "Auditorium 1"
+    },
+    {
+     "term_id": 181,
+     "name": "Directors Village"
+    },
+    {
+     "term_id": 55,
+     "name": "Egyptian Theatre"
+    },
+    {
+     "term_id": 102,
+     "name": "Los Feliz Theatre"
+    },
+    {
+     "term_id": 68,
+     "name": "Other Venues"
+    },
+    {
+     "term_id": 342,
+     "name": "The Culver Theater"
+    },
+    {
+     "term_id": 59,
+     "name": "Virtual"
+    }
+   ]
+  },
+  "event_format": {
+   "list": [
+    {
+     "term_id": 333,
+     "name": "2K DCP"
+    },
+    {
+     "term_id": 336,
+     "name": "3-D DCP"
+    },
+    {
+     "term_id": 74,
+     "name": "35mm"
+    },
+    {
+     "term_id": 315,
+     "name": "4K DCP"
+    },
+    {
+     "term_id": 104,
+     "name": "4K Restoration"
+    },
+    {
+     "term_id": 79,
+     "name": "70mm"
+    },
+    {
+     "term_id": 83,
+     "name": "DCP"
+    },
+    {
+     "term_id": 103,
+     "name": "Digital"
+    },
+    {
+     "term_id": 334,
+     "name": "Nitrate"
+    },
+    {
+     "term_id": 80,
+     "name": "Nitrate Film"
+    },
+    {
+     "term_id": 341,
+     "name": "VHS"
+    },
+    {
+     "term_id": 82,
+     "name": "Virtual"
+    }
+   ]
+  }
+ },
+ "hits": [
+  {
+   "id": 5570875,
+   "title": "MULHOLLAND DRIVE",
+   "url": "https://www.americancinematheque.com/now-showing/mulholland-drive-10-16-2026/",
+   "post_type": "event",
+   "event_access_type": [
+    56
+   ],
+   "event_format": [
+    83
+   ],
+   "event_location": [
+    102
+   ],
+   "event_type": [
+    60
+   ],
+   "event_start_date": "20261016",
+   "event_start_time": "1:00 PM",
+   "event_start_date_unix": 1792155600,
+   "event_card_excerpt": "<p>Los Feliz 3 </p>"
+  },
+  {
+   "id": 5570489,
+   "title": "THE GOOD, THE BAD AND THE UGLY",
+   "url": "https://www.americancinematheque.com/now-showing/the-good-the-bad-and-the-ugly-10-10-2026/",
+   "post_type": "event",
+   "event_access_type": [
+    56
+   ],
+   "event_format": [
+    83
+   ],
+   "event_location": [
+    54
+   ],
+   "event_type": [
+    60,
+    161
+   ],
+   "event_start_date": "20261010",
+   "event_start_time": "3:30 PM",
+   "event_start_date_unix": 1791646200,
+   "event_card_excerpt": "<p>Aero Theatre | <em>Introduction by filmmaker Alex Cox</em></p>"
+  },
+  {
+   "id": 5570480,
+   "title": "POLTERGEIST",
+   "url": "https://www.americancinematheque.com/now-showing/poltergeist-10-31-2026/",
+   "post_type": "event",
+   "event_access_type": [
+    56
+   ],
+   "event_format": [
+    83
+   ],
+   "event_location": [
+    54
+   ],
+   "event_type": [
+    60
+   ],
+   "event_start_date": "20261031",
+   "event_start_time": "4:00 PM",
+   "event_start_date_unix": 1793462400,
+   "event_card_excerpt": "<p>Aero Theatre | <em>Happy Aeroween!</em></p>"
+  },
+  {
+   "id": 5570377,
+   "title": "KWAIDAN",
+   "url": "https://www.americancinematheque.com/now-showing/kwaidan-10-18-2026/",
+   "post_type": "event",
+   "event_access_type": [
+    56
+   ],
+   "event_format": [
+    104
+   ],
+   "event_location": [
+    55
+   ],
+   "event_type": [
+    60,
+    169,
+    61
+   ],
+   "event_start_date": "20261018",
+   "event_start_time": "11:30 AM",
+   "event_start_date_unix": 1792323000,
+   "event_card_excerpt": "<p>Egyptian Theatre | <em>L.A. Premiere of New 4K Restoration</em></p><p><em>'Transcendental Appointments'</em></p>"
+  },
+  {
+   "id": 5570354,
+   "title": "LEGEND",
+   "url": "https://www.americancinematheque.com/now-showing/legend-10-11-2026/",
+   "post_type": "event",
+   "event_access_type": [
+    56
+   ],
+   "event_format": [
+    83
+   ],
+   "event_location": [
+    54
+   ],
+   "event_type": [
+    60,
+    61
+   ],
+   "event_start_date": "20261011",
+   "event_start_time": "7:30 PM",
+   "event_start_date_unix": 1791747000,
+   "event_card_excerpt": "<p>Aero Theatre | <em>'Starring Tim Curry'</em></p>"
+  },
+  {
+   "id": 5570089,
+   "title": "PAN'S LABYRINTH",
+   "url": "https://www.americancinematheque.com/now-showing/pans-labyrinth-10-02-2026/",
+   "post_type": "event",
+   "event_access_type": [
+    56
+   ],
+   "event_format": [
+    315
+   ],
+   "event_location": [
+    181
+   ],
+   "event_type": [
+    60,
+    169,
+    62,
+    61
+   ],
+   "event_start_date": "20261002",
+   "event_start_time": "7:00 PM",
+   "event_start_date_unix": 1790967600,
+   "event_card_excerpt": "<p>Directors Village | <em>Beyond Fest 2026</em></p><p><em>Q&amp;A with filmmaker Guillermo Del Toro</em></p>"
+  }
+ ]
+}

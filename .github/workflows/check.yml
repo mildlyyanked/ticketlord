@@ -11,6 +11,10 @@ on:
         description: "Also send a test push to my phone"
         type: boolean
         default: false
+      preview:
+        description: "Only list what each source finds (no notifications)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -36,7 +40,7 @@ jobs:
           TICKETLORD_KEYWORDS: ${{ vars.TICKETLORD_KEYWORDS }}
           TICKETLORD_ONLY_KEYWORDS: ${{ vars.TICKETLORD_ONLY_KEYWORDS }}
           TICKETLORD_BATCH_OVER: ${{ vars.TICKETLORD_BATCH_OVER }}
-          TICKETLORD_INCLUDE_AMC: ${{ vars.TICKETLORD_INCLUDE_AMC }}
+          TICKETLORD_SOURCES: ${{ vars.TICKETLORD_SOURCES }}
           TICKETLORD_REGIONS: ${{ vars.TICKETLORD_REGIONS }}
           TICKETLORD_WIDE_RELEASE: ${{ vars.TICKETLORD_WIDE_RELEASE }}
           TICKETLORD_STATE_FILE: state/seen.json
@@ -47,6 +51,11 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
+          if [ "${{ inputs.preview }}" = "true" ]; then
+            ticketlord inspect > preview.txt || true
+            grep -A4 -E "\[(cinematheque|academy|amc)\]" preview.txt | head -150
+            exit 0
+          fi
           if [ -z "$NTFY_TOPIC$PUSHOVER_USER_KEY$TELEGRAM_BOT_TOKEN" ]; then
             echo "::warning::No notification channel set up yet. Add an NTFY_TOPIC secret under Settings > Secrets and variables > Actions."
             exit 0

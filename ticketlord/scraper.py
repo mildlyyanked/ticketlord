@@ -63,6 +63,7 @@ class Screening:
     ticket_url: str | None = None
     event_url: str | None = None
     when: str | None = None
+    date: str | None = None  # local date, YYYY-MM-DD
     venue: str | None = None
     details: str | None = None
     sold_out: bool = False
@@ -86,9 +87,10 @@ def make_id(s: Screening) -> str:
 
 
 def normalize_url(url: str) -> str:
-    url, _ = urldefrag(url)
+    url, _ = urldefrag(url.strip())
     # Strip common tracking params so the same link isn't seen as new.
     parsed = urlparse(url)
+    parsed = parsed._replace(scheme="https", netloc=parsed.netloc.lower().removeprefix("www."))
     if parsed.query:
         kept = [p for p in parsed.query.split("&") if not p.lower().startswith(("utm_", "fbclid", "gclid", "aff"))]
         parsed = parsed._replace(query="&".join(kept))

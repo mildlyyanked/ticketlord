@@ -133,10 +133,13 @@ def to_screenings(
             ticket_url=tickets[0] if tickets else None,
             event_url=event_url,
             when=format_when(start),
+            # Local date: the feed's own "date" is UTC, i.e. the next day for evening shows.
+            date=datetime.fromtimestamp(int(start) / 1000, TZ).strftime("%Y-%m-%d") if start else s.get("date"),
             venue=venue,
             details=details or None,
             sold_out=bool(s.get("isSoldOut")),
-            wide_release=bool(venues.get(s.get("venue"), {}).get("wide_release"))
+            wide_release=source == "amc"  # chain showtimes: only special (Q&A/guest) ones matter
+            or bool(venues.get(s.get("venue"), {}).get("wide_release"))
             or any(p.lower() in WIDE_RELEASE_PRESENTERS for p in presenters)
             or "ghibli fest" in (s.get("additionalInfo") or "").lower(),
             source=source,

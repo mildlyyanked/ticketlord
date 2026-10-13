@@ -97,7 +97,8 @@ def test_film_slug_matches_site_urls():
 
 def add_screening(data, rec_id, name, **extra):
     x = copy.deepcopy(data["screenings"][1])
-    x.update({"id": rec_id, "films": [{"name": name, "year": 1979, "directors": "Andrei Tarkovsky"}], **extra})
+    x.update({"id": rec_id, "films": [{"name": name, "year": 1979, "directors": "Andrei Tarkovsky"}],
+              "ticket_urls": [f"https://tickets.example.com/{rec_id}"], **extra})
     data["screenings"].append(x)
 
 
@@ -108,6 +109,7 @@ def run(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
     monkeypatch.setenv("TICKETLORD_STATE_FILE", str(tmp_path / "seen.json"))
     monkeypatch.setenv("NTFY_TOPIC", "test")
+    monkeypatch.setenv("TICKETLORD_SOURCES", "revivalhub")
     monkeypatch.setattr(feed, "fetch_screenings", lambda **k: feed.to_screenings(data, include_past=True))
     monkeypatch.setattr(notify.Ntfy, "send", lambda self, s, urgent=False: sent.append((s.title, urgent)))
     return lambda *a: cli.main(["check", *a]), sent, data
@@ -203,6 +205,7 @@ def test_region_falls_back_to_nearest_center():
 
 
 def test_regions_env(monkeypatch):
+    monkeypatch.setenv("TICKETLORD_SOURCES", "revivalhub")
     calls = []
     monkeypatch.setattr(feed, "fetch_screenings", lambda **k: calls.append(k["only_regions"]) or [])
     cli.get_screenings("https://revivalhub.com/")
@@ -236,3 +239,91 @@ def test_wide_release_setting(monkeypatch):
     assert cli.filter_wide_releases([wide, local]) == [wide, local]
     monkeypatch.setenv("TICKETLORD_WIDE_RELEASE", "none")
     assert cli.filter_wide_releases([wide, local]) == [local]
+
+
+def test_new_source_is_seeded_silently_and_dupes_across_sources_alert_once(run, monkeypatch):
+    check, sent, data = run
+    check()
+    # A second source shows up with two listings: recorded silently on its first run.
+    extra = []
+    monkeypatch.setattr(feed, "fetch_screenings", lambda **k: feed.to_screenings(data, include_past=True) + extra)
+    extra.append(Screening(id="cinematheque:1", title="Old", url="https://a.test/old", ticket_url="https://a.test/old", date="2026-11-01"))
+    check()
+    assert sent == []
+    # Later the theater's site lists something new: one alert...
+    extra.append(Screening(id="cinematheque:2", title="Stalker", url="https://www.a.test/stalker/", ticket_url="https://www.a.test/stalker/", date="2026-11-02"))
+    check()
+    assert sent == [("Stalker", False)]
+    # ...and none when Revival Hub picks up the same screening days later. (Its copied start time is
+    # Nov 3 05:55 UTC, i.e. Nov 2 in LA; Revival Hub's own "date" field says Nov 3.)
+    add_screening(data, "recLATER", "Stalker", ticket_urls=["https://a.test/stalker?utm_source=revivalhub"])
+    check()
+    assert sent == [("Stalker", False)]
+
+
+# ---------------------------------------------------------------- theaters' own sites
+
+from datetime import datetime, timezone
+
+from ticketlord import theaters
+
+AC = json.loads((FIXTURES / "cinematheque.json").read_text())
+ACADEMY = json.loads((FIXTURES / "academy.json").read_text())
+
+
+@pytest.fixture
+def sites(monkeypatch):
+    monkeypatch.setattr(theaters, "_now", lambda: datetime(2026, 10, 13, 9, 0, tzinfo=timezone.utc))
+
+    def fake_get(url, params=None, timeout=60):
+        if url.endswith("/event/taxonomies"):
+            return {"taxonomies": AC["taxonomies"]}
+        if url.endswith("/algolia_get_events"):
+            assert params["environment"] == "production_2026"
+            return {"hits": AC["hits"]}
+        if url == theaters.ACADEMY_API:
+            return ACADEMY
+        raise AssertionError(url)
+
+    monkeypatch.setattr(theaters, "_get_json", fake_get)
+
+
+def test_cinematheque_records(sites):
+    by = {s.title: s for s in theaters.cinematheque_screenings()}
+    s = by["Mulholland Drive"]
+    assert s.id == "cinematheque:5570875"
+    assert s.url == "https://www.americancinematheque.com/now-showing/mulholland-drive-10-16-2026/"
+    assert s.when == "Fri Oct 16, 1:00pm" and s.date == "2026-10-16"
+    assert s.venue == "Los Feliz Theatre"
+    assert "Pan's Labyrinth" not in by  # Oct 2: already past
+    assert "Premiere" in by["Kwaidan"].details  # event types become searchable details
+    assert theaters._title_case("PAN'S LABYRINTH") == "Pan's Labyrinth"
+    assert theaters._title_case("THE GOOD, THE BAD AND THE UGLY") == "The Good, the Bad and the Ugly"
+    assert theaters._title_case("NIGHT OF THE LIVING DEAD: A Q&A") == "Night of the Living Dead: A Q&A"  # event types become searchable details
+
+
+def test_academy_records(sites):
+    found = theaters.academy_screenings()
+    names = {s.title for s in found}
+    assert "Calm Morning: Stop-motion Stories of Family" not in names  # education programs skipped
+    s = next(s for s in found if s.title.startswith("Arrival"))
+    assert s.url.startswith("https://www.academymuseum.org/en/programs/detail/arrival-a-conversation-with-denis-villeneuve")
+    assert s.venue.startswith("Academy Museum")
+    assert s.date and s.when
+
+
+def test_all_sources_combined_and_failures_reported(sites, run, monkeypatch):
+    check, sent, data = run
+    monkeypatch.setenv("TICKETLORD_SOURCES", "revivalhub,cinematheque,academy")
+    calls = []
+    monkeypatch.setitem(theaters.SOURCES, "cinematheque", lambda: calls.append("ac") or theaters.cinematheque_screenings())
+
+    def broken():
+        raise ValueError("site changed")
+
+    monkeypatch.setitem(theaters.SOURCES, "academy", broken)
+    assert check() == 1  # academy broke: run marked failed...
+    state = json.loads(Path("seen.json").read_text())
+    assert set(state["sources"]) == {"revivalhub", "cinematheque"}  # ...but the others were recorded
+    assert any(k.startswith("cinematheque:") for k in state["seen"])
+    assert calls == ["ac"] and sent == []

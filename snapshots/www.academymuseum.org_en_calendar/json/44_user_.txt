@@ -1,3 +1,0 @@
-https://ct.pinterest.com/user/?tid=2613698218417&pd=%7B%22np%22%3A%22gtm%22%2C%22gtm_version%22%3A%22legacy%22%7D&cb=1791884850723&dep=2%2CPAGE_LOAD
-
-{"aemEnabled":true,"aemFnLnEnabled":true,"aemPhEnabled":true,"aemGeEnabled":true,"aemDbEnabled":true,"aemLocEnabled":true,"aemExternalIdEnabled":false,"aemProductMetadataEnabled":false,"ctEpikIframeEnabled":true,"chromeNewUserAgentEnabled":true,"isEu":false,"isUtilizingAdvertiser1pEnabled":true,"aemStorageEnabled":true,"isRestrictedRegion":false,"gaClientIdEnabled":false,"mdFrequency":0.0,"piaaEndPoint":"","noCodeCapiDomains":[]}

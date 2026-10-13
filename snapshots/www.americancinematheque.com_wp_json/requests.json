@@ -1,9 +1,0 @@
-[
- {
-  "url": "https://www.americancinematheque.com/wp-json/",
-  "status": 404,
-  "type": "document",
-  "method": "GET",
-  "ctype": "application/json; charset=UTF-8"
- }
-]

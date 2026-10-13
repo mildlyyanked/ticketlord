@@ -19,7 +19,7 @@ from pathlib import Path
 
 from urllib.parse import urlparse
 
-from . import feed, notify
+from . import feed, notify, theaters
 from .scraper import Screening, fetch, parse
 from .state import State
 
@@ -38,8 +38,9 @@ def load_dotenv(path: str = ".env") -> None:
         os.environ.setdefault(key.strip(), value.strip().strip("'\""))
 
 
-def env_flag(name: str) -> bool:
-    return os.environ.get(name, "").strip().lower() in ("1", "true", "yes", "on")
+def env_flag(name: str, default: bool = False) -> bool:
+    value = os.environ.get(name, "").strip().lower()
+    return default if not value else value in ("1", "true", "yes", "on")
 
 
 def keywords() -> list[str]:
@@ -56,24 +57,50 @@ def matches_keywords(s: Screening, words: list[str]) -> bool:
     return any(w in haystack for w in words)
 
 
-def filter_wide_releases(screenings: list[Screening]) -> list[Screening]:
-    """Nationwide re-releases (Fathom, Ghibli Fest...) only count if they match these words.
+GUEST_WORDS = "q&a,intro with,introduced by,in person,in-person,special guest,conversation with,live appearance"
 
-    TICKETLORD_WIDE_RELEASE: comma-separated words (default "q&a"), "all" to keep every one, "none" to drop them all.
+
+def filter_wide_releases(screenings: list[Screening]) -> list[Screening]:
+    """Nationwide re-releases (Fathom, Ghibli Fest...) and AMC chain showtimes only count if they
+    match these words, i.e. there's a Q&A or a guest.
+
+    TICKETLORD_WIDE_RELEASE: comma-separated words, "all" to keep every one, "none" to drop them all.
     """
-    setting = (os.environ.get("TICKETLORD_WIDE_RELEASE") or "q&a").strip().lower()
+    setting = (os.environ.get("TICKETLORD_WIDE_RELEASE") or GUEST_WORDS).strip().lower()
     if setting == "all":
         return screenings
     words = [] if setting == "none" else [w.strip() for w in setting.split(",") if w.strip()]
     return [s for s in screenings if not s.wide_release or (words and matches_keywords(s, words))]
 
 
+SOURCES = ("revivalhub", "amc", "cinematheque", "academy")
+FAILED_SOURCES: list[str] = []
+
+
 def get_screenings(url: str, debug_dir: str | None = None) -> list[Screening]:
     if urlparse(url).netloc.removeprefix("www.") == "revivalhub.com":
+        # TICKETLORD_SOURCES: comma-separated subset of SOURCES (default: all of them).
+        wanted_sources = [x.strip().lower() for x in (os.environ.get("TICKETLORD_SOURCES") or ",".join(SOURCES)).split(",")]
         # Revival Hub regions to keep; "all" for every region.
         wanted = (os.environ.get("TICKETLORD_REGIONS") or "Los Angeles").strip().lower()
         only = None if wanted == "all" else {r.strip() for r in wanted.split(",") if r.strip()}
-        screenings = feed.fetch_screenings(include_amc=env_flag("TICKETLORD_INCLUDE_AMC"), only_regions=only)
+        screenings: list[Screening] = []
+        FAILED_SOURCES.clear()
+        if "revivalhub" in wanted_sources:
+            screenings += feed.fetch_screenings(include_amc="amc" in wanted_sources, only_regions=only)
+        for name, fetcher in theaters.SOURCES.items():
+            if name not in wanted_sources:
+                continue
+            try:
+                found = fetcher()
+            except Exception as e:  # one broken site shouldn't stop the others
+                log.error("%s failed: %s", name, e)
+                FAILED_SOURCES.append(name)
+                continue
+            if not found:
+                log.error("%s returned 0 screenings", name)
+                FAILED_SOURCES.append(name)
+            screenings += found
         return filter_wide_releases(screenings)
     # Any other site: generic HTML scraping.
     html = fetch(url, render_js=env_flag("TICKETLORD_RENDER_JS"))
@@ -101,22 +128,29 @@ def check(args) -> int:
 
     words = keywords()
     only_kw = env_flag("TICKETLORD_ONLY_KEYWORDS")
-    # First ever run: remember everything currently listed instead of sending a flood.
-    seeding = not state.exists and not args.notify_existing
-    new = [s for s in screenings if state.is_new(s.id)]
-    log.info("%d screenings on page, %d new%s", len(screenings), len(new), " (first run: seeding)" if seeding else "")
+    # First run of a source (or of the whole app): remember everything it currently lists
+    # instead of sending a flood.
+    new_sources = {source_of(s) for s in screenings} - state.known_sources
+    if new_sources and not args.notify_existing:
+        log.info("first run for %s: recording current listings without notifying", ", ".join(sorted(new_sources)))
+
+    def seeding(s: Screening) -> bool:
+        return not args.notify_existing and source_of(s) in new_sources
+
+    new = [s for s in screenings if state.is_new(s)]
+    log.info("%d screenings listed, %d new", len(screenings), len(new))
 
     for s in screenings:
-        if not state.is_new(s.id):
-            state.mark(s.id, s.title)  # refresh last_seen
+        if not state.is_new(s):
+            state.mark(s)  # refresh last_seen
 
     to_send: list[tuple[Screening, bool]] = []
     for s in new:
         urgent = matches_keywords(s, words)
-        if not seeding and (urgent or not only_kw):
+        if not seeding(s) and (urgent or not only_kw):
             to_send.append((s, urgent))
         else:
-            state.mark(s.id, s.title)
+            state.mark(s)
 
     # One push per screening, unless a venue just dropped a whole calendar: then the
     # non-keyword ones are rolled into a single summary.
@@ -130,19 +164,27 @@ def check(args) -> int:
             continue
         log.info("NEW%s: %s | %s | %s -> %s", " [keyword]" if urgent else "", s.title, s.when, s.venue, s.url)
         if args.dry_run or notify.send_all(notifiers, s, urgent=urgent):
-            state.mark(s.id, s.title)  # on failure leave it unseen so the next run retries
+            state.mark(s)  # on failure leave it unseen so the next run retries
             sent += 1
     if batched:
         summary = summarize(batched)
         log.info("NEW (batched): %s", summary.title)
         if args.dry_run or notify.send_all(notifiers, summary):
             for s in batched:
-                state.mark(s.id, s.title)
+                state.mark(s)
             sent += 1
+    state.known_sources |= new_sources
     if not args.dry_run:
         state.save()
     log.info("sent %d notification(s)", sent)
+    if FAILED_SOURCES:
+        log.error("could not check: %s (see errors above)", ", ".join(FAILED_SOURCES))
+        return 1
     return 0
+
+
+def source_of(s: Screening) -> str:
+    return s.id.split(":", 1)[0]
 
 
 def summarize(screenings: list[Screening]) -> Screening:
@@ -165,12 +207,17 @@ def watch(args) -> int:
 def inspect(args) -> int:
     url = args.url or (os.environ.get("TICKETLORD_URL") or "https://revivalhub.com/")
     screenings = get_screenings(url, debug_dir="debug")
-    print(f"Found {len(screenings)} upcoming screenings on {url}\n", file=sys.stderr)
+    counts = {}
+    for s in screenings:
+        counts[s.source] = counts.get(s.source, 0) + 1
+    print(f"Found {len(screenings)} upcoming screenings: "
+          + ", ".join(f"{k} {v}" for k, v in sorted(counts.items()))
+          + (f" (failed: {', '.join(FAILED_SOURCES)})" if FAILED_SOURCES else "") + "\n", file=sys.stderr)
     if args.json:
         print(json.dumps([s.to_dict() for s in screenings], indent=2))
     else:
         for s in screenings:
-            print(f"• {s.title}  [{s.source}]")
+            print(f"• {s.title}  [{s.source}]{'  (sold out)' if s.sold_out else ''}")
             for label, val in (("when", s.when), ("venue", s.venue), ("info", s.details), ("tickets", s.url)):
                 if val:
                     print(f"    {label}: {val}")

@@ -13,19 +13,31 @@ the ticket page.
 - **Fails loudly:** if a check finds 0 screenings (site redesign, blocked request), it exits with an error
   instead of reporting nothing new.
 
-## How it finds screenings
+## Where it looks
 
-revivalhub.com is a JavaScript app, so its screenings aren't in the page HTML. The page loads them from a public
-JSON export of the site's database (`data-import.json` on Google Cloud Storage), and ticketlord reads that same feed.
-Each screening comes with a stable ID, its films (with year and director), venue, start time, formats, categories,
-presenting organization and ticket URL. If the feed ever moves, ticketlord finds its new location on the homepage.
-Only screenings in Revival Hub's **Los Angeles** region (LA County) are reported. The feed also covers Orange County,
-Ventura County and San Bernardino County; set `TICKETLORD_REGIONS` (e.g. `Los Angeles,Orange County`, or `all`) to change that.
-Nationwide "Wide Release" events (Fathom anniversary re-releases, Ghibli Fest...) are skipped unless they
-include a Q&A; set `TICKETLORD_WIDE_RELEASE` to other words, `all` or `none` to change that. Set `TICKETLORD_INCLUDE_AMC=1` to also include the AMC showtimes the site merges in.
+| Source | What | Why |
+|---|---|---|
+| **Revival Hub** | LA repertory, indie and microcinema listings | the broad net |
+| **American Cinematheque** | Aero, Egyptian, Los Feliz, straight from its own calendar | catches announcements before Revival Hub lists them |
+| **Academy Museum** | screenings and special events from its ticketing system | same |
+| **AMC** | LA AMC showtimes (Revival Hub's AMC feed) | only screenings with a Q&A or guest alert |
+
+All of these sites load their schedules as JSON, and ticketlord reads that same data: stable IDs, venue,
+Pacific start time, formats, categories, directors and ticket link. The same screening coming from two
+sources (a theater's site, then Revival Hub days later) alerts once: screenings are matched by ticket link and date.
+A newly added source records its current listings silently on its first run, so turning one on doesn't flood you.
+`TICKETLORD_SOURCES` picks which to use (default: all).
+
+Only Revival Hub's **Los Angeles** region (LA County) is reported. Its feed also covers Orange County,
+Ventura County and San Bernardino County; set `TICKETLORD_REGIONS` (e.g. `Los Angeles,Orange County`, or `all`).
+Nationwide "Wide Release" events (Fathom anniversary re-releases, Ghibli Fest...) and AMC showtimes are skipped
+unless they include a Q&A or guest; `TICKETLORD_WIDE_RELEASE` sets those words (`all` / `none` also work).
+
+If a source breaks (site redesign), the others keep working and the run turns red so GitHub emails you.
+**Actions → Check screenings → Run workflow → Only list what each source finds** shows what each one returns.
 
 For any other site (`TICKETLORD_URL=...`), a generic HTML scraper reads schema.org Event data, ticket links
-(Eventbrite, Veezi, Eventive, DICE, Tixr, ...) and links to event pages.
+and links to event pages.
 
 ## Setup (5 minutes)
 
