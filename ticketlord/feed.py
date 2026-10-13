@@ -98,6 +98,8 @@ def to_screenings(
     """only_regions: lowercase region names to keep; screenings with no known location are kept."""
     regions = regions or Regions(data)
     venues = {v["id"]: v for v in data.get("venues", []) if isinstance(v, dict) and "id" in v}
+    # The AMC feed's screenings refer to theaters by AMC's own number ("850" for "amc-850").
+    venues.update({str(v["chainId"]): v for v in list(venues.values()) if v.get("chainId") is not None})
     orgs = {o["id"]: o for o in data.get("organizations", []) if isinstance(o, dict) and "id" in o}
     now_ms = time.time() * 1000
     out = []

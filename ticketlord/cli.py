@@ -152,26 +152,34 @@ def check(args) -> int:
         else:
             state.mark(s)
 
-    # One push per screening, unless a venue just dropped a whole calendar: then the
-    # non-keyword ones are rolled into a single summary.
-    batch_over = int(os.environ.get("TICKETLORD_BATCH_OVER") or 5)
-    normal = [s for s, urgent in to_send if not urgent]
-    batched = normal if len(normal) > batch_over else []
-    batched_ids = {s.id for s in batched}
-    sent = 0
+    # Several showtimes of one film at one venue (a run, or an AMC Q&A on three nights) are one push.
+    groups: dict[tuple, list[tuple[Screening, bool]]] = {}
     for s, urgent in to_send:
-        if s.id in batched_ids:
+        groups.setdefault((source_of(s), s.title.lower(), s.venue), []).append((s, urgent))
+    alerts = [([s for s, _ in g], any(u for _, u in g)) for g in groups.values()]
+
+    # One push per film, unless a venue just dropped a whole calendar: then the non-keyword
+    # ones are rolled into a single summary.
+    batch_over = int(os.environ.get("TICKETLORD_BATCH_OVER") or 5)
+    normal = [members for members, urgent in alerts if not urgent]
+    batched = normal if len(normal) > batch_over else []
+    sent = 0
+    for members, urgent in alerts:
+        if batched and members in batched:
             continue
-        log.info("NEW%s: %s | %s | %s -> %s", " [keyword]" if urgent else "", s.title, s.when, s.venue, s.url)
-        if args.dry_run or notify.send_all(notifiers, s, urgent=urgent):
-            state.mark(s)  # on failure leave it unseen so the next run retries
+        alert = combine(members)
+        log.info("NEW%s: %s | %s | %s -> %s", " [keyword]" if urgent else "", alert.title, alert.when, alert.venue, alert.url)
+        if args.dry_run or notify.send_all(notifiers, alert, urgent=urgent):
+            for s in members:
+                state.mark(s)  # on failure leave them unseen so the next run retries
             sent += 1
     if batched:
-        summary = summarize(batched)
+        summary = summarize([combine(m) for m in batched])
         log.info("NEW (batched): %s", summary.title)
         if args.dry_run or notify.send_all(notifiers, summary):
-            for s in batched:
-                state.mark(s)
+            for members in batched:
+                for s in members:
+                    state.mark(s)
             sent += 1
     state.known_sources |= new_sources
     if not args.dry_run:
@@ -185,6 +193,19 @@ def check(args) -> int:
 
 def source_of(s: Screening) -> str:
     return s.id.split(":", 1)[0]
+
+
+def combine(members: list[Screening]) -> Screening:
+    """One alert for several showtimes of the same film at the same venue."""
+    first = members[0]
+    if len(members) == 1:
+        return first
+    times = ", ".join(s.when for s in members if s.when)
+    details = f"{len(members)} showtimes: {times}" + (f"\n{first.details}" if first.details else "")
+    return Screening(id=first.id, title=first.title, url=first.url, ticket_url=first.ticket_url,
+                     event_url=first.event_url, when=f"{first.when} (+{len(members) - 1} more)" if first.when else None,
+                     venue=first.venue, details=details, sold_out=all(s.sold_out for s in members),
+                     source=first.source)
 
 
 def summarize(screenings: list[Screening]) -> Screening:

@@ -91,6 +91,13 @@ def _ac_when(date: str, start_time: str) -> str | None:
     return dt.strftime("%a %b %-d, %-I:%M%p").replace("AM", "am").replace("PM", "pm")
 
 
+# Event types that mean "a film is shown". Panels, mixers, book signings etc. have none of these.
+AC_SCREENING_TYPES = {"Film", "Single Feature", "Double Feature", "Triple Feature", "Shorts Program", "Marathon",
+                      "Television", "Advance Screening", "Premiere", "Limited Engagement"}
+AC_NOT_A_SCREENING = re.compile(r"\b(ticket (bundle|pack)|badges?|passes?|mixer|hangout|mix & mingle)\b", re.I)
+AC_GENERIC_LOCATIONS = {"Other Venues", "Auditorium 1", "Directors Village"}
+
+
 def cinematheque_screenings() -> list[Screening]:
     terms = _ac_terms()
     now = int(_now().timestamp())
@@ -106,8 +113,16 @@ def cinematheque_screenings() -> list[Screening]:
         date = h.get("event_start_date") or ""
         if len(date) != 8 or date < _now().astimezone(TZ).strftime("%Y%m%d"):
             continue  # past
+        title = _title_case(clean(html.unescape(h.get("title") or "")))
+        all_types = names("event_type")
+        if not AC_SCREENING_TYPES & set(all_types) or AC_NOT_A_SCREENING.search(title):
+            continue  # festival panels, cocktail mixers, ticket bundles...
         excerpt = clean(html.unescape(re.sub(r"<[^>]+>", " ", h.get("event_card_excerpt") or "")))
-        types = [t for t in names("event_type") if t not in ("Film", "Single Feature")]
+        # "Other Venues" etc. aren't useful; the card text starts with the real room ("Culver Theater Aud. 1 | ...").
+        room = excerpt.split("|", 1)[0].strip() if "|" in excerpt else ""
+        if room and (not locations or set(locations) <= AC_GENERIC_LOCATIONS):
+            locations = [room]
+        types = [t for t in all_types if t not in ("Film", "Single Feature")]
         details = " · ".join(filter(None, [
             ", ".join(names("event_format")),
             ", ".join(types),
@@ -116,7 +131,7 @@ def cinematheque_screenings() -> list[Screening]:
         ]))
         out.append(Screening(
             id=f"cinematheque:{h.get('id')}",
-            title=_title_case(clean(html.unescape(h.get("title") or ""))),
+            title=title,
             url=h["url"],
             ticket_url=h["url"],
             event_url=h["url"],
@@ -126,7 +141,15 @@ def cinematheque_screenings() -> list[Screening]:
             details=details or None,
             source="cinematheque",
         ))
+    out.sort(key=lambda x: (x.date or "", _sort_time(x.when)))
     return out
+
+
+def _sort_time(when: str | None) -> str:
+    try:
+        return datetime.strptime(when.split(", ", 1)[1], "%I:%M%p").strftime("%H%M")
+    except (AttributeError, IndexError, ValueError):
+        return ""
 
 
 # ---------------------------------------------------------------- Academy Museum

@@ -327,3 +327,40 @@ def test_all_sources_combined_and_failures_reported(sites, run, monkeypatch):
     assert set(state["sources"]) == {"revivalhub", "cinematheque"}  # ...but the others were recorded
     assert any(k.startswith("cinematheque:") for k in state["seen"])
     assert calls == ["ac"] and sent == []
+
+
+def test_showtimes_of_one_film_are_one_alert(run, monkeypatch):
+    check, sent, data = run
+    monkeypatch.setenv("TICKETLORD_KEYWORDS", "q&a")
+    check()
+    for i in range(3):  # La Bola Negra, Q&A on three nights at one theater
+        add_screening(data, f"recQA{i}", "La Bola Negra", categories=["Q&A / Discussion"],
+                      utc_start=1792200000000 + i * 86400000)
+    check()
+    assert sent == [("La Bola Negra", True)]
+
+
+def test_cinematheque_skips_panels_and_bundles(sites, monkeypatch):
+    hit = dict(AC["hits"][0])
+    panel = dict(hit, id=1, title="NEXT STEPS: FROM A SHORT TO A FEATURE", event_type=[101, 61], url="https://x.test/1")
+    bundle = dict(hit, id=2, title="2026 PROOF FILM FESTIVAL AWARD SHOW TICKET BUNDLE", event_type=[61, 120], url="https://x.test/2")
+    other = dict(hit, id=3, event_location=[68], url="https://x.test/3",
+                 event_card_excerpt="<p>Culver Theater Aud. 1 | <em>PROOF</em></p>")
+    monkeypatch.setitem(AC, "hits", [hit, panel, bundle, other])
+    found = {s.id: s for s in theaters.cinematheque_screenings()}
+    assert set(found) == {"cinematheque:5570875", "cinematheque:3"}
+    assert found["cinematheque:3"].venue == "Culver Theater Aud. 1"
+
+
+def test_amc_venues_resolve_by_theater_number():
+    data = {
+        "regions": FEED["regions"],
+        "venues": [{"id": "amc-850", "chainId": 850, "name": "AMC South Bay Galleria 16", "lat": 33.87, "lng": -118.35},
+                   {"id": "amc-437", "chainId": 437, "name": "AMC Orange 30", "lat": 33.78, "lng": -117.89}],
+        "screenings": [
+            {"id": "a", "venue": "850", "films": [{"name": "Wicker"}], "utc_start": 1792200000000, "ticket_urls": ["https://amc.test/a"]},
+            {"id": "b", "venue": "437", "films": [{"name": "Wicker"}], "utc_start": 1792200000000, "ticket_urls": ["https://amc.test/b"]},
+        ],
+    }
+    found = feed.to_screenings(data, include_past=True, source="amc", only_regions={"los angeles"})
+    assert [(s.venue, s.wide_release) for s in found] == [("AMC South Bay Galleria 16", True)]  # Orange County one dropped
