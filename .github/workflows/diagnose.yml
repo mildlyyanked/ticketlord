@@ -1,0 +1,16 @@
+name: Diagnose (debugging)
+# Cross-checks that "0 new screenings" is real; see scripts/diagnose.py.
+on:
+  workflow_dispatch:
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install -q . playwright && playwright install --with-deps chromium > /dev/null
+      - run: python scripts/diagnose.py
