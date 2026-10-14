@@ -16,7 +16,9 @@ def _env(name: str) -> str:
     return os.environ.get(name, "").strip()
 
 
-def format_message(s: Screening) -> tuple[str, str]:
+def format_message(s: Screening, quiet: bool = False) -> tuple[str, str]:
+    if quiet:  # status message: no film emoji, no ticket link
+        return s.title, s.details or ""
     title = f"🎬 {s.title}"
     if s.sold_out:
         title += " (sold out)"
@@ -31,7 +33,8 @@ def format_message(s: Screening) -> tuple[str, str]:
 class Notifier:
     name = "base"
 
-    def send(self, s: Screening, urgent: bool = False) -> None:
+    def send(self, s: Screening, urgent: bool = False, quiet: bool = False) -> None:
+        """urgent: keyword match, break through Do Not Disturb. quiet: status message, no sound."""
         raise NotImplementedError
 
 
@@ -41,16 +44,16 @@ class Ntfy(Notifier):
     def __init__(self, topic: str, server: str, token: str = ""):
         self.topic, self.server, self.token = topic, server.rstrip("/"), token
 
-    def send(self, s: Screening, urgent: bool = False) -> None:
-        title, body = format_message(s)
+    def send(self, s: Screening, urgent: bool = False, quiet: bool = False) -> None:
+        title, body = format_message(s, quiet)
         payload = {
             "topic": self.topic,
             "title": title,
             "message": body,
             "click": s.url,
-            "priority": 5 if urgent else 3,
-            "tags": ["ticket"] + (["rotating_light"] if urgent else []),
-            "actions": [{"action": "view", "label": "Buy tickets", "url": s.url, "clear": True}],
+            "priority": 5 if urgent else 2 if quiet else 3,
+            "tags": ["white_check_mark"] if quiet else ["ticket"] + (["rotating_light"] if urgent else []),
+            "actions": [] if quiet else [{"action": "view", "label": "Buy tickets", "url": s.url, "clear": True}],
         }
         headers = {"Authorization": f"Bearer {self.token}"} if self.token else {}
         requests.post(self.server, json=payload, headers=headers, timeout=15).raise_for_status()
@@ -62,11 +65,11 @@ class Pushover(Notifier):
     def __init__(self, user: str, token: str):
         self.user, self.token = user, token
 
-    def send(self, s: Screening, urgent: bool = False) -> None:
-        title, body = format_message(s)
+    def send(self, s: Screening, urgent: bool = False, quiet: bool = False) -> None:
+        title, body = format_message(s, quiet)
         requests.post("https://api.pushover.net/1/messages.json", data={
             "token": self.token, "user": self.user, "title": title, "message": body,
-            "url": s.url, "url_title": "Buy tickets", "priority": 1 if urgent else 0,
+            "url": s.url, "url_title": "Open" if quiet else "Buy tickets", "priority": 1 if urgent else -1 if quiet else 0,
         }, timeout=15).raise_for_status()
 
 
@@ -76,13 +79,13 @@ class Telegram(Notifier):
     def __init__(self, bot_token: str, chat_id: str):
         self.bot_token, self.chat_id = bot_token, chat_id
 
-    def send(self, s: Screening, urgent: bool = False) -> None:
-        title, body = format_message(s)
+    def send(self, s: Screening, urgent: bool = False, quiet: bool = False) -> None:
+        title, body = format_message(s, quiet)
         requests.post(f"https://api.telegram.org/bot{self.bot_token}/sendMessage", json={
             "chat_id": self.chat_id,
             "text": f"{'🚨 ' if urgent else ''}{title}\n{body}",
-            "disable_notification": False,
-            "reply_markup": {"inline_keyboard": [[{"text": "🎟 Buy tickets", "url": s.url}]]},
+            "disable_notification": quiet,
+            **({} if quiet else {"reply_markup": {"inline_keyboard": [[{"text": "🎟 Buy tickets", "url": s.url}]]}}),
         }, timeout=15).raise_for_status()
 
 
@@ -97,12 +100,12 @@ def from_env() -> list[Notifier]:
     return out
 
 
-def send_all(notifiers: list[Notifier], s: Screening, urgent: bool = False) -> bool:
+def send_all(notifiers: list[Notifier], s: Screening, urgent: bool = False, quiet: bool = False) -> bool:
     """Returns True if at least one channel delivered."""
     ok = False
     for n in notifiers:
         try:
-            n.send(s, urgent=urgent)
+            n.send(s, urgent=urgent, quiet=quiet)
             log.info("%s: delivered %r", n.name, s.title)
             ok = True
         except requests.RequestException as e:

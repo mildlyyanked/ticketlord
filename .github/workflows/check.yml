@@ -43,6 +43,7 @@ jobs:
           TICKETLORD_SOURCES: ${{ vars.TICKETLORD_SOURCES }}
           TICKETLORD_REGIONS: ${{ vars.TICKETLORD_REGIONS }}
           TICKETLORD_WIDE_RELEASE: ${{ vars.TICKETLORD_WIDE_RELEASE }}
+          TICKETLORD_DIGEST_HOUR: ${{ vars.TICKETLORD_DIGEST_HOUR }}
           TICKETLORD_STATE_FILE: state/seen.json
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}

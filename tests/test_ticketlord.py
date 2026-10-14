@@ -111,7 +111,7 @@ def run(tmp_path, monkeypatch):
     monkeypatch.setenv("NTFY_TOPIC", "test")
     monkeypatch.setenv("TICKETLORD_SOURCES", "revivalhub")
     monkeypatch.setattr(feed, "fetch_screenings", lambda **k: feed.to_screenings(data, include_past=True))
-    monkeypatch.setattr(notify.Ntfy, "send", lambda self, s, urgent=False: sent.append((s.title, urgent)))
+    monkeypatch.setattr(notify.Ntfy, "send", lambda self, s, urgent=False, quiet=False: sent.append((s.title, urgent)))
     return lambda *a: cli.main(["check", *a]), sent, data
 
 
@@ -172,12 +172,12 @@ def test_other_sites_use_html_scraper(tmp_path, monkeypatch, capsys):
     assert "2001: A Space Odyssey" in capsys.readouterr().out
 
 
-def test_unchanged_feed_leaves_state_file_untouched(run):
+def test_unchanged_feed_leaves_seen_list_untouched(run):
     check, _, _ = run
     check()
-    before = Path("seen.json").read_text()
+    before = json.loads(Path("seen.json").read_text())["seen"]
     check()
-    assert Path("seen.json").read_text() == before
+    assert json.loads(Path("seen.json").read_text())["seen"] == before
 
 
 def test_keywords_file_adds_to_env(run, monkeypatch):
@@ -364,3 +364,63 @@ def test_amc_venues_resolve_by_theater_number():
     }
     found = feed.to_screenings(data, include_past=True, source="amc", only_regions={"los angeles"})
     assert [(s.venue, s.wide_release) for s in found] == [("AMC South Bay Galleria 16", True)]  # Orange County one dropped
+
+
+# ---------------------------------------------------------------- daily check-in
+
+
+@pytest.fixture
+def clock(monkeypatch):
+    now = {"t": datetime(2026, 10, 14, 15, 0, tzinfo=feed.TZ)}
+    monkeypatch.setattr(cli, "_now", lambda: now["t"])
+    return now
+
+
+@pytest.fixture
+def quiet_sent(monkeypatch):
+    got = []
+    real = notify.send_all
+    def spy(notifiers, s, urgent=False, quiet=False):
+        if quiet:
+            got.append(s)
+            return True
+        return real(notifiers, s, urgent=urgent, quiet=quiet)
+    monkeypatch.setattr(notify, "send_all", spy)
+    return got
+
+
+def test_daily_check_in_once_after_7pm(run, clock, quiet_sent, monkeypatch):
+    check, sent, data = run
+    check()                      # 3pm: no check-in yet
+    check()
+    assert quiet_sent == []
+    add_screening(data, "recNEW1", "Stalker")
+    clock["t"] = datetime(2026, 10, 14, 19, 40, tzinfo=feed.TZ)
+    check()                      # first check after 7pm sends it
+    assert [m.title for m in quiet_sent] == ["ticketlord · daily check-in"]
+    body = quiet_sent[0].details
+    assert "3 checks since the last check-in" in body and "1 new screening · 1 alert sent" in body
+    assert "Watching" in body and "Revival Hub" in body
+    check()                      # not again the same day
+    assert len(quiet_sent) == 1
+    clock["t"] = datetime(2026, 10, 15, 20, 5, tzinfo=feed.TZ)
+    check()                      # next day: counters were reset
+    assert quiet_sent[1].title == "ticketlord · all quiet"
+    assert "2 checks since the last check-in" in quiet_sent[1].details
+
+
+def test_check_in_flags_failing_sources(run, clock, quiet_sent, monkeypatch):
+    check, sent, data = run
+    clock["t"] = datetime(2026, 10, 14, 21, 0, tzinfo=feed.TZ)
+    data["screenings"].clear()   # site broken
+    assert check() == 1
+    assert quiet_sent[0].title == "ticketlord · needs a look"
+    assert "failed 1 of 1 checks" in quiet_sent[0].details
+
+
+def test_check_in_can_be_turned_off(run, clock, quiet_sent, monkeypatch):
+    check, *_ = run
+    monkeypatch.setenv("TICKETLORD_DIGEST_HOUR", "off")
+    clock["t"] = datetime(2026, 10, 14, 21, 0, tzinfo=feed.TZ)
+    check()
+    assert quiet_sent == []

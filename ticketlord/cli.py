@@ -15,6 +15,7 @@ import os
 import random
 import sys
 import time
+from datetime import datetime
 from pathlib import Path
 
 from urllib.parse import urlparse
@@ -124,6 +125,10 @@ def check(args) -> int:
     if not screenings:
         # Most likely the site changed layout or blocked us; don't silently report "nothing new".
         log.error("Parsed 0 screenings from %s. Run `ticketlord inspect` to debug.", url)
+        record_check(state, [], 0, 0, ["everything"])
+        if not args.dry_run:
+            maybe_send_digest(state, notifiers)
+            state.save()
         return 1
 
     words = keywords()
@@ -182,13 +187,71 @@ def check(args) -> int:
                     state.mark(s)
             sent += 1
     state.known_sources |= new_sources
+    record_check(state, screenings, sum(not seeding(s) for s in new), sent, FAILED_SOURCES)
     if not args.dry_run:
+        maybe_send_digest(state, notifiers)
         state.save()
     log.info("sent %d notification(s)", sent)
     if FAILED_SOURCES:
         log.error("could not check: %s (see errors above)", ", ".join(FAILED_SOURCES))
         return 1
     return 0
+
+
+SOURCE_NAMES = {"revivalhub": "Revival Hub", "cinematheque": "American Cinematheque",
+                "academy": "Academy Museum", "amc": "AMC"}
+
+
+def record_check(state: State, screenings: list[Screening], new: int, sent: int, failed: list[str]) -> None:
+    """Counters for the daily check-in, kept in the state file between runs."""
+    st = state.stats
+    st["checks"] = st.get("checks", 0) + 1
+    st["new"] = st.get("new", 0) + new
+    st["alerts"] = st.get("alerts", 0) + sent
+    for name in failed:
+        st.setdefault("failures", {})[name] = st.get("failures", {}).get(name, 0) + 1
+    st["last_check"] = int(time.time())
+    if screenings:
+        counts: dict[str, int] = {}
+        for s in screenings:
+            counts[source_of(s)] = counts.get(source_of(s), 0) + 1
+        st["tracked"] = counts
+
+
+def digest_message(st: dict) -> Screening:
+    checks, new, alerts = st.get("checks", 0), st.get("new", 0), st.get("alerts", 0)
+    last = datetime.fromtimestamp(st.get("last_check", time.time()), feed.TZ)
+    lines = [
+        f"{checks} check{'s' * (checks != 1)} since the last check-in, latest at {last.strftime('%-I:%M%p').lower()}",
+        f"{new} new screening{'s' * (new != 1)} · {alerts} alert{'s' * (alerts != 1)} sent",
+    ]
+    tracked = st.get("tracked") or {}
+    if tracked:
+        lines.append(f"Watching {sum(tracked.values()):,} upcoming: " + " · ".join(
+            f"{SOURCE_NAMES.get(k, k)} {v:,}" for k, v in sorted(tracked.items(), key=lambda kv: -kv[1])))
+    for name, n in sorted((st.get("failures") or {}).items()):
+        lines.append(f"⚠️ {SOURCE_NAMES.get(name, name)} failed {n} of {checks} checks")
+    title = "ticketlord · " + ("needs a look" if st.get("failures") else "all quiet" if not new else "daily check-in")
+    return Screening(id="digest", title=title, url=feed.SITE, details="\n".join(lines))
+
+
+def _now() -> datetime:
+    return datetime.now(feed.TZ)
+
+
+def maybe_send_digest(state: State, notifiers: list[notify.Notifier]) -> None:
+    """Once a day, with the first check after TICKETLORD_DIGEST_HOUR (Pacific, default 19 = 7pm)."""
+    setting = (os.environ.get("TICKETLORD_DIGEST_HOUR") or "19").strip().lower()
+    if setting in ("off", "none", "no") or not notifiers:
+        return
+    now = _now()
+    today = now.strftime("%Y-%m-%d")
+    if state.stats.get("last_digest") == today or now.hour < int(setting):
+        return
+    message = digest_message(state.stats)
+    log.info("daily check-in: %s", message.details.replace("\n", " | "))
+    if notify.send_all(notifiers, message, quiet=True):
+        state.stats = {"last_digest": today, "tracked": state.stats.get("tracked", {})}
 
 
 def source_of(s: Screening) -> str:

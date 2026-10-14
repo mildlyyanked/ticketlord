@@ -18,10 +18,12 @@ class State:
         self.path = Path(path)
         self.seen: dict[str, dict] = {}
         self.known_sources: set[str] = set()
+        self.stats: dict = {}  # counters for the daily check-in, since the last one was sent
         self.exists = self.path.exists()
         if self.exists:
             data = json.loads(self.path.read_text() or "{}")
             self.seen = data.get("seen", {})
+            self.stats = data.get("stats", {})
             # Older state files have no "sources" list; work it out from the ids.
             self.known_sources = set(data.get("sources") or
                                      (k.split(":", 1)[0] for k in self.seen if not k.startswith("url:")))
@@ -52,5 +54,5 @@ class State:
         self.seen = {k: v for k, v in self.seen.items() if v.get("last_seen", 0) >= cutoff}
         self.path.parent.mkdir(parents=True, exist_ok=True)
         tmp = self.path.with_suffix(".tmp")
-        tmp.write_text(json.dumps({"sources": sorted(self.known_sources), "seen": self.seen}, indent=1, sort_keys=True))
+        tmp.write_text(json.dumps({"sources": sorted(self.known_sources), "stats": self.stats, "seen": self.seen}, indent=1, sort_keys=True))
         tmp.replace(self.path)

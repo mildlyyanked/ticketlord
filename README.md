@@ -10,6 +10,9 @@ the ticket page.
   `Double Feature`, `Midnight`) and notes, so `kubrick, 70mm, q&a` works. You can also mute everything that doesn't match.
 - **Batching:** several showtimes of one film at one venue are one push; when a venue posts its whole month at once,
   the non-keyword ones arrive as one summary push, not 40.
+- **Daily check-in:** one quiet push each evening (first check after 7pm Pacific): how many checks ran, what was
+  found, how many screenings are being watched, and whether any source had trouble. Silence never has to mean
+  "is this thing on?". `TICKETLORD_DIGEST_HOUR` changes the hour, `off` disables it.
 - **No flood on day one:** the first run quietly records what's already listed. After that you only hear about new screenings.
 - **Fails loudly:** if a check finds 0 screenings (site redesign, blocked request), it exits with an error
   instead of reporting nothing new.
