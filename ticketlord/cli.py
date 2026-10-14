@@ -315,7 +315,32 @@ def test_notify(args) -> int:
         return 2
     s = Screening(title="ticketlord test", url=(os.environ.get("TICKETLORD_URL") or "https://revivalhub.com/"),
                   when="Tonight 7:30pm", venue="Your phone")
-    return 0 if notify.send_all(notifiers, s, urgent=args.urgent) else 1
+    ok = notify.send_all(notifiers, s, urgent=args.urgent)
+    for n in notifiers:
+        if isinstance(n, notify.Ntfy):
+            diagnose_ntfy(n)
+    return 0 if ok else 1
+
+
+def diagnose_ntfy(n: notify.Ntfy) -> None:
+    """Show what the ntfy server holds for the topic, to tell 'not sent' apart from 'phone not subscribed'."""
+    t = n.topic
+    print(f"ntfy server: {n.server}")
+    print(f"topic: {len(t)} characters, starts with {t[:2]!r}, "
+          f"{'has' if t != t.lower() else 'no'} capital letters, "
+          f"{'HAS' if any(c.isspace() for c in os.environ.get('NTFY_TOPIC', '')) else 'no'} spaces/newlines "
+          f"(topics are case-sensitive: the app must match exactly)")
+    try:
+        messages = n.recent()
+    except Exception as e:
+        print(f"could not read the topic back from ntfy: {e}")
+        return
+    print(f"ntfy is holding {len(messages)} message(s) for this topic from the last 24h:")
+    for m in messages:
+        when = datetime.fromtimestamp(m.get("time", 0), feed.TZ).strftime("%a %-I:%M%p")
+        print(f"  - {when}: {m.get('title') or m.get('message', '')[:60]}")
+    print("If messages are listed here but not on your phone, the app is subscribed to a different topic "
+          "or server: open https://ntfy.sh/<your topic> in your phone's browser to see them directly.")
 
 
 def main(argv: list[str] | None = None) -> int:

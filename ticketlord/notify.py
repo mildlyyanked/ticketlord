@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import logging
 import os
 
@@ -56,7 +57,18 @@ class Ntfy(Notifier):
             "actions": [] if quiet else [{"action": "view", "label": "Buy tickets", "url": s.url, "clear": True}],
         }
         headers = {"Authorization": f"Bearer {self.token}"} if self.token else {}
-        requests.post(self.server, json=payload, headers=headers, timeout=15).raise_for_status()
+        resp = requests.post(self.server, json=payload, headers=headers, timeout=15)
+        resp.raise_for_status()
+        log.debug("ntfy accepted message %s", resp.json().get("id"))
+
+    def recent(self, since: str = "24h") -> list[dict]:
+        """Messages the ntfy server is holding for this topic (it keeps them ~12h or more)."""
+        headers = {"Authorization": f"Bearer {self.token}"} if self.token else {}
+        resp = requests.get(f"{self.server}/{self.topic}/json", params={"poll": "1", "since": since},
+                            headers=headers, timeout=15)
+        resp.raise_for_status()
+        events = [json.loads(line) for line in resp.text.splitlines() if line.strip()]
+        return [e for e in events if e.get("event") == "message"]
 
 
 class Pushover(Notifier):

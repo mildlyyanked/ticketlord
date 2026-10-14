@@ -61,7 +61,7 @@ jobs:
             echo "::warning::No notification channel set up yet. Add an NTFY_TOPIC secret under Settings > Secrets and variables > Actions."
             exit 0
           fi
-          if [ "${{ inputs.test_notification }}" = "true" ]; then ticketlord test-notify; fi
+          if [ "${{ inputs.test_notification }}" = "true" ]; then ticketlord test-notify; echo "----"; fi
           ticketlord check
       - name: Save seen screenings
         if: always()
