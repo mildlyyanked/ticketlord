@@ -335,12 +335,17 @@ def diagnose_ntfy(n: notify.Ntfy) -> None:
     except Exception as e:
         print(f"could not read the topic back from ntfy: {e}")
         return
-    print(f"ntfy is holding {len(messages)} message(s) for this topic from the last 24h:")
+    if not messages:
+        # ntfy.sh doesn't always return recently pushed messages here, so this proves nothing either way.
+        print("ntfy returned no stored messages for this topic (it doesn't always keep them). "
+              "What matters: did the test reach your phone?")
+        return
+    print(f"ntfy returned {len(messages)} stored message(s) for this topic from the last 24h:")
     for m in messages:
         when = datetime.fromtimestamp(m.get("time", 0), feed.TZ).strftime("%a %-I:%M%p")
         print(f"  - {when}: {m.get('title') or m.get('message', '')[:60]}")
-    print("If messages are listed here but not on your phone, the app is subscribed to a different topic "
-          "or server: open https://ntfy.sh/<your topic> in your phone's browser to see them directly.")
+    print("If these aren't on your phone, the app is subscribed to a different topic or server: "
+          "open https://ntfy.sh/<your topic> in your phone's browser to see them directly.")
 
 
 def main(argv: list[str] | None = None) -> int:
