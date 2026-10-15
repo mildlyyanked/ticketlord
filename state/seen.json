@@ -15124,8 +15124,8 @@
  ],
  "stats": {
   "alerts": 5,
-  "checks": 8,
-  "last_check": 1792048716,
+  "checks": 9,
+  "last_check": 1792068576,
   "new": 7,
   "tracked": {
    "academy": 120,
