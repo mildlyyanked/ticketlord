@@ -730,6 +730,36 @@
    "last_seen": 1792022400,
    "title": "Hey Arnold!: A Spooktacular 30th Anniversary Screening"
   },
+  "cinematheque:5566038": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "Two Seasons, Two Strangers"
+  },
+  "cinematheque:5566040": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "D\u00e9j\u00e0 Vu"
+  },
+  "cinematheque:5566052": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "The Patsy"
+  },
+  "cinematheque:5566054": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "All the Long Nights"
+  },
+  "cinematheque:5566365": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "Kwaidan"
+  },
+  "cinematheque:5566367": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "Scream"
+  },
   "cinematheque:5566458": {
    "first_seen": 1791849600,
    "last_seen": 1792022400,
@@ -785,6 +815,11 @@
    "last_seen": 1792022400,
    "title": "Cameron Winter at Carnegie Hall"
   },
+  "cinematheque:5566965": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "Sam Wasson Presents ARSENIC AND OLD LACE"
+  },
   "cinematheque:5566967": {
    "first_seen": 1791849600,
    "last_seen": 1792022400,
@@ -800,6 +835,11 @@
    "last_seen": 1792022400,
    "title": "Her Wedding Night"
   },
+  "cinematheque:5567015": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "Bela Lugosi Meets a Brooklyn Gorilla"
+  },
   "cinematheque:5567021": {
    "first_seen": 1791849600,
    "last_seen": 1792022400,
@@ -809,6 +849,11 @@
    "first_seen": 1791849600,
    "last_seen": 1792022400,
    "title": "The Story of Sin"
+  },
+  "cinematheque:5567067": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "Our Hero, Balthazar"
   },
   "cinematheque:5567071": {
    "first_seen": 1791849600,
@@ -1085,6 +1130,11 @@
    "last_seen": 1792022400,
    "title": "Ken Russell's the Devils"
   },
+  "cinematheque:5567483": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "Marie Antoinette / Making Marie Antoinette"
+  },
   "cinematheque:5567485": {
    "first_seen": 1791849600,
    "last_seen": 1792022400,
@@ -1104,6 +1154,16 @@
    "first_seen": 1791849600,
    "last_seen": 1792022400,
    "title": "Ken Russell's the Devils"
+  },
+  "cinematheque:5567493": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "The Exorcist"
+  },
+  "cinematheque:5567497": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "Abbott and Costello Meet Frankenstein"
   },
   "cinematheque:5567505": {
    "first_seen": 1791849600,
@@ -1210,6 +1270,11 @@
    "last_seen": 1792022400,
    "title": "Cameron Winter at Carnegie Hall"
   },
+  "cinematheque:5568703": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "The Game"
+  },
   "cinematheque:5568756": {
    "first_seen": 1791849600,
    "last_seen": 1792022400,
@@ -1249,6 +1314,11 @@
    "first_seen": 1791849600,
    "last_seen": 1792022400,
    "title": "Kwaidan"
+  },
+  "cinematheque:5570412": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "My Brother's Killer"
   },
   "cinematheque:5570480": {
    "first_seen": 1791849600,
@@ -9980,15 +10050,30 @@
    "last_seen": 1792022400,
    "title": "A Serbian Film"
   },
+  "url:https://americancinematheque.com/now-showing/abbott-and-costello-meet-frankenstein-10-25-2026|2026-10-25": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "Abbott and Costello Meet Frankenstein"
+  },
   "url:https://americancinematheque.com/now-showing/against-the-grain-block-9-11-07-2026|2026-11-07": {
    "first_seen": 1791849600,
    "last_seen": 1792022400,
    "title": "Against the Grain: Block #9"
   },
+  "url:https://americancinematheque.com/now-showing/all-the-long-nights-11-15-2026|2026-11-15": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "All the Long Nights"
+  },
   "url:https://americancinematheque.com/now-showing/arachnophobia-10-25-2026|2026-10-25": {
    "first_seen": 1791849600,
    "last_seen": 1792022400,
    "title": "Arachnophobia"
+  },
+  "url:https://americancinematheque.com/now-showing/arsenic-and-old-lace-11-01-2026|2026-11-01": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "Sam Wasson Presents ARSENIC AND OLD LACE"
   },
   "url:https://americancinematheque.com/now-showing/avital-ash-presents-the-artist-10-25-2026|2026-10-25": {
    "first_seen": 1791849600,
@@ -10014,6 +10099,11 @@
    "first_seen": 1791849600,
    "last_seen": 1792022400,
    "title": "Begotten"
+  },
+  "url:https://americancinematheque.com/now-showing/bela-lugosi-meets-a-brooklyn-gorilla-11-15-2026|2026-11-15": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "Bela Lugosi Meets a Brooklyn Gorilla"
   },
   "url:https://americancinematheque.com/now-showing/bird-in-hand-10-14-2026|2026-10-14": {
    "first_seen": 1791849600,
@@ -10175,6 +10265,11 @@
    "last_seen": 1792022400,
    "title": "Death Becomes Her"
   },
+  "url:https://americancinematheque.com/now-showing/deja-vu-11-14-2026|2026-11-14": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "D\u00e9j\u00e0 Vu"
+  },
   "url:https://americancinematheque.com/now-showing/discovery-block-4-11-07-2026|2026-11-07": {
    "first_seen": 1791849600,
    "last_seen": 1792022400,
@@ -10335,6 +10430,11 @@
    "last_seen": 1792022400,
    "title": "Kwaidan"
   },
+  "url:https://americancinematheque.com/now-showing/kwaidan-encore-10-29-2026|2026-10-29": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "Kwaidan"
+  },
   "url:https://americancinematheque.com/now-showing/last-night-in-soho-10-25-2026|2026-10-25": {
    "first_seen": 1791849600,
    "last_seen": 1792022400,
@@ -10355,6 +10455,11 @@
    "last_seen": 1791936000,
    "title": "ma\u026cni\u2014towards the ocean, towards the shore"
   },
+  "url:https://americancinematheque.com/now-showing/marie-antoinette-making-marie-antoinette-10-18-2026|2026-10-18": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "Marie Antoinette / Making Marie Antoinette"
+  },
   "url:https://americancinematheque.com/now-showing/marty-10-18-2026|2026-10-18": {
    "first_seen": 1791849600,
    "last_seen": 1792022400,
@@ -10374,6 +10479,11 @@
    "first_seen": 1791849600,
    "last_seen": 1792022400,
    "title": "Mulholland Drive"
+  },
+  "url:https://americancinematheque.com/now-showing/my-brothers-killer-11-03-2026|2026-11-03": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "My Brother's Killer"
   },
   "url:https://americancinematheque.com/now-showing/new-black-hollywood-10-23-2026|2026-10-23": {
    "first_seen": 1791849600,
@@ -10399,6 +10509,11 @@
    "first_seen": 1791849600,
    "last_seen": 1792022400,
    "title": "Opening Night: Block #1"
+  },
+  "url:https://americancinematheque.com/now-showing/our-hero-balthazar-11-04-2026|2026-11-04": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "Our Hero, Balthazar"
   },
   "url:https://americancinematheque.com/now-showing/perdita-durango-10-18-2026|2026-10-18": {
    "first_seen": 1791849600,
@@ -10450,6 +10565,11 @@
    "last_seen": 1792022400,
    "title": "Schindler's List"
   },
+  "url:https://americancinematheque.com/now-showing/scream-10-30-2026|2026-10-30": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "Scream"
+  },
   "url:https://americancinematheque.com/now-showing/snow-white-and-the-seven-dwarfs-10-17-2026|2026-10-17": {
    "first_seen": 1791849600,
    "last_seen": 1792022400,
@@ -10480,6 +10600,16 @@
    "last_seen": 1792022400,
    "title": "The Black Cauldron"
   },
+  "url:https://americancinematheque.com/now-showing/the-exorcist-10-23-2026|2026-10-23": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "The Exorcist"
+  },
+  "url:https://americancinematheque.com/now-showing/the-game-10-21-2026|2026-10-21": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "The Game"
+  },
   "url:https://americancinematheque.com/now-showing/the-greatest-love-of-all-time-the-margin-11-18-2026|2026-11-18": {
    "first_seen": 1791849600,
    "last_seen": 1792022400,
@@ -10504,6 +10634,11 @@
    "first_seen": 1791849600,
    "last_seen": 1792022400,
    "title": "The Musical"
+  },
+  "url:https://americancinematheque.com/now-showing/the-patsy-11-15-2026|2026-11-15": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "The Patsy"
   },
   "url:https://americancinematheque.com/now-showing/the-proof-documentary-showcase-11-07-2026|2026-11-07": {
    "first_seen": 1791849600,
@@ -10549,6 +10684,11 @@
    "first_seen": 1791849600,
    "last_seen": 1792022400,
    "title": "The Women"
+  },
+  "url:https://americancinematheque.com/now-showing/two-seasons-two-strangers-11-14-2026|2026-11-14": {
+   "first_seen": 1792022400,
+   "last_seen": 1792022400,
+   "title": "Two Seasons, Two Strangers"
   },
   "url:https://americancinematheque.com/now-showing/unrequited-love-block-6-11-07-2026|2026-11-07": {
    "first_seen": 1791849600,
@@ -15123,15 +15263,15 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 5,
-  "checks": 9,
-  "last_check": 1792068576,
-  "new": 7,
+  "alerts": 12,
+  "checks": 10,
+  "last_check": 1792086208,
+  "new": 21,
   "tracked": {
    "academy": 120,
-   "amc": 22,
-   "cinematheque": 118,
-   "revivalhub": 1225
+   "amc": 21,
+   "cinematheque": 132,
+   "revivalhub": 1224
   }
  }
 }
