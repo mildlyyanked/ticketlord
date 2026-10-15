@@ -15124,14 +15124,14 @@
  ],
  "stats": {
   "alerts": 5,
-  "checks": 7,
-  "last_check": 1792028709,
+  "checks": 8,
+  "last_check": 1792048716,
   "new": 7,
   "tracked": {
    "academy": 120,
    "amc": 22,
-   "cinematheque": 121,
-   "revivalhub": 1259
+   "cinematheque": 118,
+   "revivalhub": 1225
   }
  }
 }
