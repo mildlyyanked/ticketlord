@@ -1165,6 +1165,11 @@
    "last_seen": 1792108800,
    "title": "Abbott and Costello Meet Frankenstein"
   },
+  "cinematheque:5567499": {
+   "first_seen": 1792108800,
+   "last_seen": 1792108800,
+   "title": "Being Heumann"
+  },
   "cinematheque:5567505": {
    "first_seen": 1791849600,
    "last_seen": 1792108800,
@@ -10100,6 +10105,11 @@
    "last_seen": 1792108800,
    "title": "Begotten"
   },
+  "url:https://americancinematheque.com/now-showing/being-heumann-10-26-2026|2026-10-26": {
+   "first_seen": 1792108800,
+   "last_seen": 1792108800,
+   "title": "Being Heumann"
+  },
   "url:https://americancinematheque.com/now-showing/bela-lugosi-meets-a-brooklyn-gorilla-11-15-2026|2026-11-15": {
    "first_seen": 1792022400,
    "last_seen": 1792108800,
@@ -15263,16 +15273,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 0,
-  "checks": 2,
-  "last_check": 1792159864,
+  "alerts": 1,
+  "checks": 3,
+  "last_check": 1792186656,
   "last_digest": "2026-10-15",
-  "new": 0,
+  "new": 1,
   "tracked": {
    "academy": 120,
    "amc": 21,
-   "cinematheque": 128,
-   "revivalhub": 1184
+   "cinematheque": 129,
+   "revivalhub": 1178
   }
  }
 }
