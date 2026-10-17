@@ -15274,15 +15274,15 @@
  ],
  "stats": {
   "alerts": 0,
-  "checks": 3,
-  "last_check": 1792255032,
+  "checks": 4,
+  "last_check": 1792262913,
   "last_digest": "2026-10-16",
   "new": 0,
   "tracked": {
    "academy": 120,
-   "amc": 17,
+   "amc": 16,
    "cinematheque": 122,
-   "revivalhub": 1131
+   "revivalhub": 1130
   }
  }
 }
