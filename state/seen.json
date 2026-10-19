@@ -715,6 +715,36 @@
    "last_seen": 1792368000,
    "title": "Wicker"
   },
+  "amc:amc-st-147951260": {
+   "first_seen": 1792368000,
+   "last_seen": 1792368000,
+   "title": "Minotaur"
+  },
+  "amc:amc-st-147951261": {
+   "first_seen": 1792368000,
+   "last_seen": 1792368000,
+   "title": "Minotaur"
+  },
+  "amc:amc-st-147951262": {
+   "first_seen": 1792368000,
+   "last_seen": 1792368000,
+   "title": "Minotaur"
+  },
+  "amc:amc-st-147951263": {
+   "first_seen": 1792368000,
+   "last_seen": 1792368000,
+   "title": "Minotaur Special Intro with Andrey Zvyagintsev"
+  },
+  "amc:amc-st-147951264": {
+   "first_seen": 1792368000,
+   "last_seen": 1792368000,
+   "title": "Minotaur Special Intro with Andrey Zvyagintsev"
+  },
+  "amc:amc-st-147951265": {
+   "first_seen": 1792368000,
+   "last_seen": 1792368000,
+   "title": "Minotaur"
+  },
   "cinematheque:5563671": {
    "first_seen": 1791849600,
    "last_seen": 1792281600,
@@ -10035,6 +10065,36 @@
    "last_seen": 1792368000,
    "title": "DEAD OF NIGHT"
   },
+  "url:https://amctheatres.com/showtimes/all/2026-11-21/centurycity/all/147951260|2026-11-21": {
+   "first_seen": 1792368000,
+   "last_seen": 1792368000,
+   "title": "Minotaur"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-11-21/centurycity/all/147951264|2026-11-21": {
+   "first_seen": 1792368000,
+   "last_seen": 1792368000,
+   "title": "Minotaur Special Intro with Andrey Zvyagintsev"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-11-22/centurycity/all/147951261|2026-11-22": {
+   "first_seen": 1792368000,
+   "last_seen": 1792368000,
+   "title": "Minotaur"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-11-22/centurycity/all/147951263|2026-11-22": {
+   "first_seen": 1792368000,
+   "last_seen": 1792368000,
+   "title": "Minotaur Special Intro with Andrey Zvyagintsev"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-11-22/centurycity/all/147951265|2026-11-22": {
+   "first_seen": 1792368000,
+   "last_seen": 1792368000,
+   "title": "Minotaur"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-11-23/centurycity/all/147951262|2026-11-23": {
+   "first_seen": 1792368000,
+   "last_seen": 1792368000,
+   "title": "Minotaur"
+  },
   "url:https://americancinematheque.com/now-showing/21st-annual-horrorthon-10-24-2026|2026-10-24": {
    "first_seen": 1791849600,
    "last_seen": 1792368000,
@@ -15273,16 +15333,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 0,
-  "checks": 1,
-  "last_check": 1792414597,
+  "alerts": 2,
+  "checks": 2,
+  "last_check": 1792437271,
   "last_digest": "2026-10-18",
-  "new": 0,
+  "new": 6,
   "tracked": {
    "academy": 120,
-   "amc": 12,
+   "amc": 18,
    "cinematheque": 103,
-   "revivalhub": 1020
+   "revivalhub": 1017
   }
  }
 }
