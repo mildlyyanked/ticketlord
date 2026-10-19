@@ -15273,11 +15273,15 @@
   "revivalhub"
  ],
  "stats": {
+  "alerts": 0,
+  "checks": 1,
+  "last_check": 1792414597,
   "last_digest": "2026-10-18",
+  "new": 0,
   "tracked": {
    "academy": 120,
    "amc": 12,
-   "cinematheque": 113,
+   "cinematheque": 103,
    "revivalhub": 1020
   }
  }
