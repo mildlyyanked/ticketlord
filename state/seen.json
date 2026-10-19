@@ -715,6 +715,11 @@
    "last_seen": 1792368000,
    "title": "Wicker"
   },
+  "amc:amc-st-147742076": {
+   "first_seen": 1792368000,
+   "last_seen": 1792368000,
+   "title": "The Only Living Pickpocket in New York"
+  },
   "amc:amc-st-147951260": {
    "first_seen": 1792368000,
    "last_seen": 1792368000,
@@ -744,6 +749,11 @@
    "first_seen": 1792368000,
    "last_seen": 1792368000,
    "title": "Minotaur"
+  },
+  "amc:amc-st-147956536": {
+   "first_seen": 1792368000,
+   "last_seen": 1792368000,
+   "title": "The Only Living Pickpocket in New York"
   },
   "cinematheque:5563671": {
    "first_seen": 1791849600,
@@ -1239,6 +1249,11 @@
    "first_seen": 1791849600,
    "last_seen": 1792368000,
    "title": "The Shining"
+  },
+  "cinematheque:5567555": {
+   "first_seen": 1792368000,
+   "last_seen": 1792368000,
+   "title": "Werewolf by Night"
   },
   "cinematheque:5567557": {
    "first_seen": 1791849600,
@@ -10010,6 +10025,11 @@
    "last_seen": 1792368000,
    "title": "Wicker"
   },
+  "url:https://amctheatres.com/showtimes/all/2026-10-23/burbank/all/147742076|2026-10-23": {
+   "first_seen": 1792368000,
+   "last_seen": 1792368000,
+   "title": "The Only Living Pickpocket in New York"
+  },
   "url:https://amctheatres.com/showtimes/all/2026-10-23/centurycity/all/147020596|2026-10-23": {
    "first_seen": 1792022400,
    "last_seen": 1792368000,
@@ -10054,6 +10074,11 @@
    "first_seen": 1792022400,
    "last_seen": 1792022400,
    "title": "Wicker Special Intro with Alex Huston Fischer and Eleanor Wilson"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-10-25/thegrove/all/147956536|2026-10-25": {
+   "first_seen": 1792368000,
+   "last_seen": 1792368000,
+   "title": "The Only Living Pickpocket in New York"
   },
   "url:https://amctheatres.com/showtimes/all/2026-10-26/burbank/all/147395798|2026-10-26": {
    "first_seen": 1791849600,
@@ -10769,6 +10794,11 @@
    "first_seen": 1791849600,
    "last_seen": 1792368000,
    "title": "\"Venus on the Half-Shell\" / THE BEAST"
+  },
+  "url:https://americancinematheque.com/now-showing/werewolf-by-night-10-24-2026|2026-10-24": {
+   "first_seen": 1792368000,
+   "last_seen": 1792368000,
+   "title": "Werewolf by Night"
   },
   "url:https://americancinematheque.com/now-showing/whalefall-10-14-2026|2026-10-14": {
    "first_seen": 1791849600,
@@ -15333,16 +15363,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 2,
-  "checks": 2,
-  "last_check": 1792437271,
+  "alerts": 5,
+  "checks": 3,
+  "last_check": 1792450948,
   "last_digest": "2026-10-18",
-  "new": 6,
+  "new": 9,
   "tracked": {
-   "academy": 120,
-   "amc": 18,
-   "cinematheque": 103,
-   "revivalhub": 1017
+   "academy": 119,
+   "amc": 20,
+   "cinematheque": 104,
+   "revivalhub": 1010
   }
  }
 }
