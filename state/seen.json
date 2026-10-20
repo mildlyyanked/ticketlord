@@ -755,6 +755,11 @@
    "last_seen": 1792454400,
    "title": "The Only Living Pickpocket in New York"
   },
+  "amc:amc-st-147997904": {
+   "first_seen": 1792454400,
+   "last_seen": 1792454400,
+   "title": "The Only Living Pickpocket in New York"
+  },
   "amc:amc-st-148045754": {
    "first_seen": 1792454400,
    "last_seen": 1792454400,
@@ -10380,6 +10385,11 @@
    "last_seen": 1792454400,
    "title": "Terrestrial In-Person"
   },
+  "url:https://amctheatres.com/showtimes/all/2026-10-24/thegrove/all/147997904|2026-10-24": {
+   "first_seen": 1792454400,
+   "last_seen": 1792454400,
+   "title": "The Only Living Pickpocket in New York"
+  },
   "url:https://amctheatres.com/showtimes/all/2026-10-25/burbank/all/147212718|2026-10-25": {
    "first_seen": 1792022400,
    "last_seen": 1792454400,
@@ -15893,16 +15903,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 17,
-  "checks": 7,
-  "last_check": 1792518927,
+  "alerts": 18,
+  "checks": 8,
+  "last_check": 1792531909,
   "last_digest": "2026-10-18",
-  "new": 56,
+  "new": 57,
   "tracked": {
    "academy": 118,
-   "amc": 24,
+   "amc": 25,
    "cinematheque": 102,
-   "revivalhub": 1038
+   "revivalhub": 1031
   }
  }
 }
