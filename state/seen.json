@@ -15844,8 +15844,8 @@
  ],
  "stats": {
   "alerts": 15,
-  "checks": 5,
-  "last_check": 1792481113,
+  "checks": 6,
+  "last_check": 1792500932,
   "last_digest": "2026-10-18",
   "new": 51,
   "tracked": {
