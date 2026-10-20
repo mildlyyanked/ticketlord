@@ -755,6 +755,26 @@
    "last_seen": 1792454400,
    "title": "The Only Living Pickpocket in New York"
   },
+  "amc:amc-st-148045754": {
+   "first_seen": 1792454400,
+   "last_seen": 1792454400,
+   "title": "Terrestrial In-Person"
+  },
+  "amc:amc-st-148045755": {
+   "first_seen": 1792454400,
+   "last_seen": 1792454400,
+   "title": "Terrestrial In-Person"
+  },
+  "amc:amc-st-148045756": {
+   "first_seen": 1792454400,
+   "last_seen": 1792454400,
+   "title": "Terrestrial In-Person"
+  },
+  "amc:amc-st-148045757": {
+   "first_seen": 1792454400,
+   "last_seen": 1792454400,
+   "title": "Terrestrial In-Person"
+  },
   "cinematheque:5563671": {
    "first_seen": 1791849600,
    "last_seen": 1792281600,
@@ -834,6 +854,11 @@
    "first_seen": 1791849600,
    "last_seen": 1792454400,
    "title": "New Black Hollywood"
+  },
+  "cinematheque:5566841": {
+   "first_seen": 1792454400,
+   "last_seen": 1792454400,
+   "title": "The Last Picture Show"
   },
   "cinematheque:5566847": {
    "first_seen": 1791849600,
@@ -10305,6 +10330,11 @@
    "last_seen": 1792454400,
    "title": "Wicker"
   },
+  "url:https://amctheatres.com/showtimes/all/2026-10-22/citywalk/all/148045754|2026-10-22": {
+   "first_seen": 1792454400,
+   "last_seen": 1792454400,
+   "title": "Terrestrial In-Person"
+  },
   "url:https://amctheatres.com/showtimes/all/2026-10-23/burbank/all/147742076|2026-10-23": {
    "first_seen": 1792368000,
    "last_seen": 1792454400,
@@ -10325,6 +10355,11 @@
    "last_seen": 1792454400,
    "title": "Wicker"
   },
+  "url:https://amctheatres.com/showtimes/all/2026-10-23/citywalk/all/148045755|2026-10-23": {
+   "first_seen": 1792454400,
+   "last_seen": 1792454400,
+   "title": "Terrestrial In-Person"
+  },
   "url:https://amctheatres.com/showtimes/all/2026-10-24/burbank/all/147212705|2026-10-24": {
    "first_seen": 1792022400,
    "last_seen": 1792454400,
@@ -10340,6 +10375,11 @@
    "last_seen": 1792454400,
    "title": "Once Upon a Time in Harlem"
   },
+  "url:https://amctheatres.com/showtimes/all/2026-10-24/citywalk/all/148045756|2026-10-24": {
+   "first_seen": 1792454400,
+   "last_seen": 1792454400,
+   "title": "Terrestrial In-Person"
+  },
   "url:https://amctheatres.com/showtimes/all/2026-10-25/burbank/all/147212718|2026-10-25": {
    "first_seen": 1792022400,
    "last_seen": 1792454400,
@@ -10354,6 +10394,11 @@
    "first_seen": 1792022400,
    "last_seen": 1792022400,
    "title": "Wicker Special Intro with Alex Huston Fischer and Eleanor Wilson"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-10-25/citywalk/all/148045757|2026-10-25": {
+   "first_seen": 1792454400,
+   "last_seen": 1792454400,
+   "title": "Terrestrial In-Person"
   },
   "url:https://amctheatres.com/showtimes/all/2026-10-25/thegrove/all/147956536|2026-10-25": {
    "first_seen": 1792368000,
@@ -11004,6 +11049,11 @@
    "first_seen": 1791849600,
    "last_seen": 1792454400,
    "title": "The Innocents"
+  },
+  "url:https://americancinematheque.com/now-showing/the-last-picture-show-11-20-2026|2026-11-20": {
+   "first_seen": 1792454400,
+   "last_seen": 1792454400,
+   "title": "The Last Picture Show"
   },
   "url:https://americancinematheque.com/now-showing/the-musical-11-05-2026|2026-11-05": {
    "first_seen": 1791849600,
@@ -15843,16 +15893,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 15,
-  "checks": 6,
-  "last_check": 1792500932,
+  "alerts": 17,
+  "checks": 7,
+  "last_check": 1792518927,
   "last_digest": "2026-10-18",
-  "new": 51,
+  "new": 56,
   "tracked": {
    "academy": 118,
-   "amc": 20,
-   "cinematheque": 101,
-   "revivalhub": 1039
+   "amc": 24,
+   "cinematheque": 102,
+   "revivalhub": 1038
   }
  }
 }
