@@ -1120,6 +1120,11 @@
    "last_seen": 1792540800,
    "title": "Jigoku"
   },
+  "cinematheque:5567406": {
+   "first_seen": 1792540800,
+   "last_seen": 1792540800,
+   "title": "The Scout"
+  },
   "cinematheque:5567410": {
    "first_seen": 1791849600,
    "last_seen": 1792540800,
@@ -11085,6 +11090,11 @@
    "last_seen": 1792540800,
    "title": "The Rocky Horror Picture Show"
   },
+  "url:https://americancinematheque.com/now-showing/the-scout-10-30-2026|2026-10-30": {
+   "first_seen": 1792540800,
+   "last_seen": 1792540800,
+   "title": "The Scout"
+  },
   "url:https://americancinematheque.com/now-showing/the-shining-10-24-2026|2026-10-24": {
    "first_seen": 1791849600,
    "last_seen": 1792540800,
@@ -15903,16 +15913,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 0,
-  "checks": 3,
-  "last_check": 1792610025,
+  "alerts": 1,
+  "checks": 4,
+  "last_check": 1792622383,
   "last_digest": "2026-10-20",
-  "new": 0,
+  "new": 1,
   "tracked": {
-   "academy": 118,
+   "academy": 117,
    "amc": 25,
-   "cinematheque": 99,
-   "revivalhub": 993
+   "cinematheque": 100,
+   "revivalhub": 985
   }
  }
 }
