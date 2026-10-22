@@ -780,6 +780,31 @@
    "last_seen": 1792627200,
    "title": "Terrestrial In-Person"
   },
+  "amc:amc-st-148168071": {
+   "first_seen": 1792627200,
+   "last_seen": 1792627200,
+   "title": "Club Kid with"
+  },
+  "amc:amc-st-148168073": {
+   "first_seen": 1792627200,
+   "last_seen": 1792627200,
+   "title": "Club Kid with"
+  },
+  "amc:amc-st-148168569": {
+   "first_seen": 1792627200,
+   "last_seen": 1792627200,
+   "title": "Club Kid with"
+  },
+  "amc:amc-st-148168570": {
+   "first_seen": 1792627200,
+   "last_seen": 1792627200,
+   "title": "Club Kid with"
+  },
+  "amc:amc-st-148168571": {
+   "first_seen": 1792627200,
+   "last_seen": 1792627200,
+   "title": "Club Kid with"
+  },
   "cinematheque:5563671": {
    "first_seen": 1791849600,
    "last_seen": 1792281600,
@@ -879,6 +904,11 @@
    "first_seen": 1791849600,
    "last_seen": 1792627200,
    "title": "Cameron Winter at Carnegie Hall"
+  },
+  "cinematheque:5566931": {
+   "first_seen": 1792627200,
+   "last_seen": 1792627200,
+   "title": "Avedon"
   },
   "cinematheque:5566951": {
    "first_seen": 1791849600,
@@ -10425,6 +10455,31 @@
    "last_seen": 1792627200,
    "title": "FATHERLAND"
   },
+  "url:https://amctheatres.com/showtimes/all/2026-11-06/thegrove/all/148168570|2026-11-06": {
+   "first_seen": 1792627200,
+   "last_seen": 1792627200,
+   "title": "Club Kid with"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-11-07/centurycity/all/148168073|2026-11-07": {
+   "first_seen": 1792627200,
+   "last_seen": 1792627200,
+   "title": "Club Kid with"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-11-07/thegrove/all/148168571|2026-11-07": {
+   "first_seen": 1792627200,
+   "last_seen": 1792627200,
+   "title": "Club Kid with"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-11-08/centurycity/all/148168071|2026-11-08": {
+   "first_seen": 1792627200,
+   "last_seen": 1792627200,
+   "title": "Club Kid with"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-11-08/thegrove/all/148168569|2026-11-08": {
+   "first_seen": 1792627200,
+   "last_seen": 1792627200,
+   "title": "Club Kid with"
+  },
   "url:https://amctheatres.com/showtimes/all/2026-11-13/burbank/all/147388089|2026-11-13": {
    "first_seen": 1791849600,
    "last_seen": 1792627200,
@@ -10504,6 +10559,11 @@
    "first_seen": 1792022400,
    "last_seen": 1792627200,
    "title": "Sam Wasson Presents ARSENIC AND OLD LACE"
+  },
+  "url:https://americancinematheque.com/now-showing/avedon-11-06-2026|2026-11-06": {
+   "first_seen": 1792627200,
+   "last_seen": 1792627200,
+   "title": "Avedon"
   },
   "url:https://americancinematheque.com/now-showing/avital-ash-presents-the-artist-10-25-2026|2026-10-25": {
    "first_seen": 1791849600,
@@ -15913,16 +15973,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 0,
-  "checks": 1,
-  "last_check": 1792671485,
+  "alerts": 3,
+  "checks": 2,
+  "last_check": 1792690393,
   "last_digest": "2026-10-21",
-  "new": 0,
+  "new": 6,
   "tracked": {
    "academy": 116,
-   "amc": 25,
-   "cinematheque": 97,
-   "revivalhub": 935
+   "amc": 30,
+   "cinematheque": 98,
+   "revivalhub": 934
   }
  }
 }
