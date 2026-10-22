@@ -930,6 +930,11 @@
    "last_seen": 1792627200,
    "title": "\"A Private Collection\" / IMMORAL TALES"
   },
+  "cinematheque:5566987": {
+   "first_seen": 1792627200,
+   "last_seen": 1792627200,
+   "title": "Simon Raymonde Presents DEAD MEN DON'T WEAR PLAID"
+  },
   "cinematheque:5566989": {
    "first_seen": 1791849600,
    "last_seen": 1792627200,
@@ -11065,6 +11070,11 @@
    "last_seen": 1792627200,
    "title": "Scream"
   },
+  "url:https://americancinematheque.com/now-showing/simon-raymonde-presents-dead-men-dont-wear-plaid-11-08-2026|2026-11-08": {
+   "first_seen": 1792627200,
+   "last_seen": 1792627200,
+   "title": "Simon Raymonde Presents DEAD MEN DON'T WEAR PLAID"
+  },
   "url:https://americancinematheque.com/now-showing/snow-white-and-the-seven-dwarfs-10-17-2026|2026-10-17": {
    "first_seen": 1791849600,
    "last_seen": 1792281600,
@@ -15973,16 +15983,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 3,
-  "checks": 3,
-  "last_check": 1792701902,
+  "alerts": 4,
+  "checks": 4,
+  "last_check": 1792713431,
   "last_digest": "2026-10-21",
-  "new": 6,
+  "new": 7,
   "tracked": {
    "academy": 116,
    "amc": 30,
-   "cinematheque": 98,
-   "revivalhub": 932
+   "cinematheque": 99,
+   "revivalhub": 928
   }
  }
 }
