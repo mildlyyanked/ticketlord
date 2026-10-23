@@ -890,10 +890,25 @@
    "last_seen": 1792713600,
    "title": "The Last Picture Show"
   },
+  "cinematheque:5566843": {
+   "first_seen": 1792713600,
+   "last_seen": 1792713600,
+   "title": "Dawn of the Dead"
+  },
+  "cinematheque:5566845": {
+   "first_seen": 1792713600,
+   "last_seen": 1792713600,
+   "title": "Altered States"
+  },
   "cinematheque:5566847": {
    "first_seen": 1791849600,
    "last_seen": 1792713600,
    "title": "The Twelve Chairs"
+  },
+  "cinematheque:5566849": {
+   "first_seen": 1792713600,
+   "last_seen": 1792713600,
+   "title": "Raise the Red Lantern"
   },
   "cinematheque:5566907": {
    "first_seen": 1791849600,
@@ -914,6 +929,11 @@
    "first_seen": 1791849600,
    "last_seen": 1792713600,
    "title": "Cameron Winter at Carnegie Hall"
+  },
+  "cinematheque:5566957": {
+   "first_seen": 1792713600,
+   "last_seen": 1792713600,
+   "title": "Planes, Trains and Automobiles"
   },
   "cinematheque:5566965": {
    "first_seen": 1792022400,
@@ -950,6 +970,11 @@
    "last_seen": 1792713600,
    "title": "\"Rosalie\" / BLANCHE"
   },
+  "cinematheque:5567031": {
+   "first_seen": 1792713600,
+   "last_seen": 1792713600,
+   "title": "Minorities in Film Presents The Make News Make Noise Showcase"
+  },
   "cinematheque:5567033": {
    "first_seen": 1791849600,
    "last_seen": 1792713600,
@@ -957,6 +982,11 @@
   },
   "cinematheque:5567067": {
    "first_seen": 1792022400,
+   "last_seen": 1792713600,
+   "title": "Our Hero, Balthazar"
+  },
+  "cinematheque:5567069": {
+   "first_seen": 1792713600,
    "last_seen": 1792713600,
    "title": "Our Hero, Balthazar"
   },
@@ -1159,6 +1189,11 @@
    "first_seen": 1792540800,
    "last_seen": 1792713600,
    "title": "The Scout"
+  },
+  "cinematheque:5567408": {
+   "first_seen": 1792713600,
+   "last_seen": 1792713600,
+   "title": "Happiness"
   },
   "cinematheque:5567410": {
    "first_seen": 1791849600,
@@ -1429,6 +1464,11 @@
    "first_seen": 1791849600,
    "last_seen": 1792195200,
    "title": "City of Ghosts"
+  },
+  "cinematheque:5570154": {
+   "first_seen": 1792713600,
+   "last_seen": 1792713600,
+   "title": "Mikey and Nicky"
   },
   "cinematheque:5570377": {
    "first_seen": 1791849600,
@@ -10555,6 +10595,11 @@
    "last_seen": 1792713600,
    "title": "All the Long Nights"
   },
+  "url:https://americancinematheque.com/now-showing/altered-states-11-01-2026|2026-11-01": {
+   "first_seen": 1792713600,
+   "last_seen": 1792713600,
+   "title": "Altered States"
+  },
   "url:https://americancinematheque.com/now-showing/arachnophobia-10-25-2026|2026-10-25": {
    "first_seen": 1791849600,
    "last_seen": 1792713600,
@@ -10760,6 +10805,11 @@
    "last_seen": 1792713600,
    "title": "Creature from the Black Lagoon 3D"
   },
+  "url:https://americancinematheque.com/now-showing/dawn-of-the-dead-11-27-2026|2026-11-27": {
+   "first_seen": 1792713600,
+   "last_seen": 1792713600,
+   "title": "Dawn of the Dead"
+  },
   "url:https://americancinematheque.com/now-showing/death-becomes-her-10-31-2026|2026-10-31": {
    "first_seen": 1791849600,
    "last_seen": 1792713600,
@@ -10799,6 +10849,11 @@
    "first_seen": 1791849600,
    "last_seen": 1792713600,
    "title": "\"Gavotte\" / LULU"
+  },
+  "url:https://americancinematheque.com/now-showing/happiness-10-30-2026|2026-10-30": {
+   "first_seen": 1792713600,
+   "last_seen": 1792713600,
+   "title": "Happiness"
   },
   "url:https://americancinematheque.com/now-showing/her-wedding-night-11-08-2026|2026-11-08": {
    "first_seen": 1791849600,
@@ -10965,6 +11020,16 @@
    "last_seen": 1792368000,
    "title": "Marty"
   },
+  "url:https://americancinematheque.com/now-showing/mikey-and-nicky-11-01-2026|2026-11-01": {
+   "first_seen": 1792713600,
+   "last_seen": 1792713600,
+   "title": "Mikey and Nicky"
+  },
+  "url:https://americancinematheque.com/now-showing/minorities-in-film-presents-the-make-news-showcase-11-21-2026|2026-11-21": {
+   "first_seen": 1792713600,
+   "last_seen": 1792713600,
+   "title": "Minorities in Film Presents The Make News Make Noise Showcase"
+  },
   "url:https://americancinematheque.com/now-showing/monster-house-10-13-2026|2026-10-13": {
    "first_seen": 1791849600,
    "last_seen": 1791936000,
@@ -11010,6 +11075,11 @@
    "last_seen": 1792713600,
    "title": "Opening Night: Block #1"
   },
+  "url:https://americancinematheque.com/now-showing/our-hero-balthazar-11-04-2026-1|2026-11-04": {
+   "first_seen": 1792713600,
+   "last_seen": 1792713600,
+   "title": "Our Hero, Balthazar"
+  },
   "url:https://americancinematheque.com/now-showing/our-hero-balthazar-11-04-2026|2026-11-04": {
    "first_seen": 1792022400,
    "last_seen": 1792713600,
@@ -11025,6 +11095,11 @@
    "last_seen": 1792713600,
    "title": "Phantom of the Paradise"
   },
+  "url:https://americancinematheque.com/now-showing/planes-trains-and-automobiles-11-25-2026|2026-11-25": {
+   "first_seen": 1792713600,
+   "last_seen": 1792713600,
+   "title": "Planes, Trains and Automobiles"
+  },
   "url:https://americancinematheque.com/now-showing/poltergeist-10-31-2026|2026-10-31": {
    "first_seen": 1791849600,
    "last_seen": 1792713600,
@@ -11039,6 +11114,11 @@
    "first_seen": 1791849600,
    "last_seen": 1792713600,
    "title": "Queen of the Damned"
+  },
+  "url:https://americancinematheque.com/now-showing/raise-the-red-lantern-11-07-2026|2026-11-07": {
+   "first_seen": 1792713600,
+   "last_seen": 1792713600,
+   "title": "Raise the Red Lantern"
   },
   "url:https://americancinematheque.com/now-showing/raw-10-31-2026|2026-10-31": {
    "first_seen": 1791849600,
@@ -15983,16 +16063,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 0,
-  "checks": 2,
-  "last_check": 1792765332,
+  "alerts": 3,
+  "checks": 3,
+  "last_check": 1792780803,
   "last_digest": "2026-10-22",
-  "new": 0,
+  "new": 8,
   "tracked": {
    "academy": 115,
    "amc": 27,
-   "cinematheque": 96,
-   "revivalhub": 898
+   "cinematheque": 104,
+   "revivalhub": 897
   }
  }
 }
