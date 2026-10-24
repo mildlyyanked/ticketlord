@@ -16064,15 +16064,15 @@
  ],
  "stats": {
   "alerts": 0,
-  "checks": 2,
-  "last_check": 1792848777,
+  "checks": 3,
+  "last_check": 1792860777,
   "last_digest": "2026-10-23",
   "new": 0,
   "tracked": {
    "academy": 112,
    "amc": 22,
    "cinematheque": 98,
-   "revivalhub": 840
+   "revivalhub": 839
   }
  }
 }
