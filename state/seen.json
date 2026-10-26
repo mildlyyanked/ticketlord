@@ -20369,15 +20369,15 @@
  ],
  "stats": {
   "alerts": 78,
-  "checks": 9,
-  "last_check": 1793045192,
+  "checks": 10,
+  "last_check": 1793058523,
   "last_digest": "2026-10-24",
   "new": 449,
   "tracked": {
    "academy": 106,
    "amc": 13,
    "cinematheque": 85,
-   "revivalhub": 1170
+   "revivalhub": 1163
   }
  }
 }
