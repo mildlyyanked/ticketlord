@@ -920,6 +920,11 @@
    "last_seen": 1792972800,
    "title": "Cameron Winter at Carnegie Hall"
   },
+  "cinematheque:5566923": {
+   "first_seen": 1792972800,
+   "last_seen": 1792972800,
+   "title": "Hoppers"
+  },
   "cinematheque:5566931": {
    "first_seen": 1792627200,
    "last_seen": 1792972800,
@@ -13310,6 +13315,11 @@
    "last_seen": 1792972800,
    "title": "Homecoming: Block #5"
   },
+  "url:https://americancinematheque.com/now-showing/hoppers-11-02-2026|2026-11-02": {
+   "first_seen": 1792972800,
+   "last_seen": 1792972800,
+   "title": "Hoppers"
+  },
   "url:https://americancinematheque.com/now-showing/it-10-25-2026|2026-10-25": {
    "first_seen": 1791849600,
    "last_seen": 1792972800,
@@ -20358,16 +20368,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 77,
-  "checks": 8,
-  "last_check": 1793023649,
+  "alerts": 78,
+  "checks": 9,
+  "last_check": 1793045192,
   "last_digest": "2026-10-24",
-  "new": 448,
+  "new": 449,
   "tracked": {
    "academy": 106,
    "amc": 13,
-   "cinematheque": 84,
-   "revivalhub": 1175
+   "cinematheque": 85,
+   "revivalhub": 1170
   }
  }
 }
