@@ -820,6 +820,11 @@
    "last_seen": 1793059200,
    "title": "All of a Sudden"
   },
+  "amc:amc-st-148375157": {
+   "first_seen": 1793059200,
+   "last_seen": 1793059200,
+   "title": "Wicker"
+  },
   "cinematheque:5563671": {
    "first_seen": 1791849600,
    "last_seen": 1792281600,
@@ -974,6 +979,11 @@
    "first_seen": 1793059200,
    "last_seen": 1793059200,
    "title": "Bullet Train"
+  },
+  "cinematheque:5566975": {
+   "first_seen": 1793059200,
+   "last_seen": 1793059200,
+   "title": "The Greg Proops Film Club Presents PARIS BLUES"
   },
   "cinematheque:5566977": {
    "first_seen": 1793059200,
@@ -1604,6 +1614,11 @@
    "first_seen": 1791849600,
    "last_seen": 1793059200,
    "title": "Bump in the Night: Block #3"
+  },
+  "cinematheque:5571267": {
+   "first_seen": 1793059200,
+   "last_seen": 1793059200,
+   "title": "EAST OF EDEN (2026) / EAST OF EDEN in 35mm (1955)"
   },
   "revivalhub:rec04fG1C0bfOaplI": {
    "first_seen": 1791792198,
@@ -12975,6 +12990,11 @@
    "last_seen": 1792972800,
    "title": "FATHERLAND"
   },
+  "url:https://amctheatres.com/showtimes/all/2026-10-29/AMCTheAmericanaatBrand18/all/148375157|2026-10-29": {
+   "first_seen": 1793059200,
+   "last_seen": 1793059200,
+   "title": "Wicker"
+  },
   "url:https://amctheatres.com/showtimes/all/2026-11-06/thegrove/all/148168570|2026-11-06": {
    "first_seen": 1792627200,
    "last_seen": 1793059200,
@@ -13344,6 +13364,11 @@
    "first_seen": 1791849600,
    "last_seen": 1792800000,
    "title": "Dracula"
+  },
+  "url:https://americancinematheque.com/now-showing/east-of-eden-east-of-eden-11-11-2026|2026-11-11": {
+   "first_seen": 1793059200,
+   "last_seen": 1793059200,
+   "title": "EAST OF EDEN (2026) / EAST OF EDEN in 35mm (1955)"
   },
   "url:https://americancinematheque.com/now-showing/ed-wood-10-25-2026|2026-10-25": {
    "first_seen": 1791849600,
@@ -13724,6 +13749,11 @@
    "first_seen": 1791849600,
    "last_seen": 1792108800,
    "title": "Let's Scare Jessica to Death"
+  },
+  "url:https://americancinematheque.com/now-showing/the-greg-proops-film-club-presents-paris-blues-11-06-2026|2026-11-06": {
+   "first_seen": 1793059200,
+   "last_seen": 1793059200,
+   "title": "The Greg Proops Film Club Presents PARIS BLUES"
   },
   "url:https://americancinematheque.com/now-showing/the-haunting-10-31-2026|2026-10-31": {
    "first_seen": 1791849600,
@@ -20448,16 +20478,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 6,
-  "checks": 3,
-  "last_check": 1793133366,
+  "alerts": 9,
+  "checks": 4,
+  "last_check": 1793145509,
   "last_digest": "2026-10-26",
-  "new": 8,
+  "new": 11,
   "tracked": {
    "academy": 104,
-   "amc": 15,
-   "cinematheque": 87,
-   "revivalhub": 1119
+   "amc": 16,
+   "cinematheque": 89,
+   "revivalhub": 1113
   }
  }
 }
