@@ -20368,12 +20368,16 @@
   "revivalhub"
  ],
  "stats": {
+  "alerts": 0,
+  "checks": 1,
+  "last_check": 1793096577,
   "last_digest": "2026-10-26",
+  "new": 0,
   "tracked": {
    "academy": 104,
    "amc": 12,
-   "cinematheque": 85,
-   "revivalhub": 1126
+   "cinematheque": 82,
+   "revivalhub": 1124
   }
  }
 }
