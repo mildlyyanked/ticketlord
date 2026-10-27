@@ -805,6 +805,21 @@
    "last_seen": 1793059200,
    "title": "Club Kid with"
   },
+  "amc:amc-st-148194375": {
+   "first_seen": 1793059200,
+   "last_seen": 1793059200,
+   "title": "All of a Sudden"
+  },
+  "amc:amc-st-148194376": {
+   "first_seen": 1793059200,
+   "last_seen": 1793059200,
+   "title": "All of a Sudden"
+  },
+  "amc:amc-st-148194377": {
+   "first_seen": 1793059200,
+   "last_seen": 1793059200,
+   "title": "All of a Sudden"
+  },
   "cinematheque:5563671": {
    "first_seen": 1791849600,
    "last_seen": 1792281600,
@@ -910,6 +925,11 @@
    "last_seen": 1793059200,
    "title": "Raise the Red Lantern"
   },
+  "cinematheque:5566893": {
+   "first_seen": 1793059200,
+   "last_seen": 1793059200,
+   "title": "How to Rob a Bank"
+  },
   "cinematheque:5566907": {
    "first_seen": 1791849600,
    "last_seen": 1793059200,
@@ -950,6 +970,16 @@
    "last_seen": 1793059200,
    "title": "The Wild Party"
   },
+  "cinematheque:5566969": {
+   "first_seen": 1793059200,
+   "last_seen": 1793059200,
+   "title": "Bullet Train"
+  },
+  "cinematheque:5566977": {
+   "first_seen": 1793059200,
+   "last_seen": 1793059200,
+   "title": "The Fall Guy"
+  },
   "cinematheque:5566985": {
    "first_seen": 1791849600,
    "last_seen": 1793059200,
@@ -964,6 +994,11 @@
    "first_seen": 1791849600,
    "last_seen": 1793059200,
    "title": "Her Wedding Night"
+  },
+  "cinematheque:5566991": {
+   "first_seen": 1793059200,
+   "last_seen": 1793059200,
+   "title": "Atomic Blonde"
   },
   "cinematheque:5567015": {
    "first_seen": 1792022400,
@@ -1479,6 +1514,11 @@
    "first_seen": 1791849600,
    "last_seen": 1792368000,
    "title": "Kwaidan"
+  },
+  "cinematheque:5570409": {
+   "first_seen": 1793059200,
+   "last_seen": 1793059200,
+   "title": "Deadpool 2"
   },
   "cinematheque:5570412": {
    "first_seen": 1792022400,
@@ -12965,6 +13005,21 @@
    "last_seen": 1793059200,
    "title": "DEAD OF NIGHT"
   },
+  "url:https://amctheatres.com/showtimes/all/2026-11-13/centurycity/all/148194375|2026-11-13": {
+   "first_seen": 1793059200,
+   "last_seen": 1793059200,
+   "title": "All of a Sudden"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-11-14/centurycity/all/148194376|2026-11-14": {
+   "first_seen": 1793059200,
+   "last_seen": 1793059200,
+   "title": "All of a Sudden"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-11-15/centurycity/all/148194377|2026-11-15": {
+   "first_seen": 1793059200,
+   "last_seen": 1793059200,
+   "title": "All of a Sudden"
+  },
   "url:https://amctheatres.com/showtimes/all/2026-11-21/centurycity/all/147951260|2026-11-21": {
    "first_seen": 1792368000,
    "last_seen": 1793059200,
@@ -13045,6 +13100,11 @@
    "last_seen": 1793059200,
    "title": "Sam Wasson Presents ARSENIC AND OLD LACE"
   },
+  "url:https://americancinematheque.com/now-showing/atomic-blonde-11-08-2026|2026-11-08": {
+   "first_seen": 1793059200,
+   "last_seen": 1793059200,
+   "title": "Atomic Blonde"
+  },
   "url:https://americancinematheque.com/now-showing/avedon-11-06-2026|2026-11-06": {
    "first_seen": 1792627200,
    "last_seen": 1793059200,
@@ -13094,6 +13154,11 @@
    "first_seen": 1791849600,
    "last_seen": 1792886400,
    "title": "Broadway Melody of 1940"
+  },
+  "url:https://americancinematheque.com/now-showing/bullet-train-11-01-2026|2026-11-01": {
+   "first_seen": 1793059200,
+   "last_seen": 1793059200,
+   "title": "Bullet Train"
   },
   "url:https://americancinematheque.com/now-showing/bump-in-the-night-block-3-10-06-2026|2026-11-06": {
    "first_seen": 1791849600,
@@ -13245,6 +13310,11 @@
    "last_seen": 1793059200,
    "title": "Dawn of the Dead"
   },
+  "url:https://americancinematheque.com/now-showing/deadpool-2-11-03-2026|2026-11-03": {
+   "first_seen": 1793059200,
+   "last_seen": 1793059200,
+   "title": "Deadpool 2"
+  },
   "url:https://americancinematheque.com/now-showing/death-becomes-her-10-31-2026|2026-10-31": {
    "first_seen": 1791849600,
    "last_seen": 1793059200,
@@ -13319,6 +13389,11 @@
    "first_seen": 1792972800,
    "last_seen": 1793059200,
    "title": "Hoppers"
+  },
+  "url:https://americancinematheque.com/now-showing/how-to-rob-a-bank-11-07-2026|2026-11-07": {
+   "first_seen": 1793059200,
+   "last_seen": 1793059200,
+   "title": "How to Rob a Bank"
   },
   "url:https://americancinematheque.com/now-showing/it-10-25-2026|2026-10-25": {
    "first_seen": 1791849600,
@@ -13629,6 +13704,11 @@
    "first_seen": 1792022400,
    "last_seen": 1792800000,
    "title": "The Exorcist"
+  },
+  "url:https://americancinematheque.com/now-showing/the-fall-guy-11-06-2026|2026-11-06": {
+   "first_seen": 1793059200,
+   "last_seen": 1793059200,
+   "title": "The Fall Guy"
   },
   "url:https://americancinematheque.com/now-showing/the-game-10-21-2026|2026-10-21": {
    "first_seen": 1792022400,
@@ -20368,16 +20448,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 0,
-  "checks": 2,
-  "last_check": 1793116746,
+  "alerts": 6,
+  "checks": 3,
+  "last_check": 1793133366,
   "last_digest": "2026-10-26",
-  "new": 0,
+  "new": 8,
   "tracked": {
    "academy": 104,
-   "amc": 12,
-   "cinematheque": 82,
-   "revivalhub": 1124
+   "amc": 15,
+   "cinematheque": 87,
+   "revivalhub": 1119
   }
  }
 }
