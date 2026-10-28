@@ -965,6 +965,16 @@
    "last_seen": 1793145600,
    "title": "Hoppers"
   },
+  "cinematheque:5566925": {
+   "first_seen": 1793145600,
+   "last_seen": 1793145600,
+   "title": "Paper Tiger / Paterson"
+  },
+  "cinematheque:5566927": {
+   "first_seen": 1793145600,
+   "last_seen": 1793145600,
+   "title": "Godzilla Minus One / Godzilla Minus Zero"
+  },
   "cinematheque:5566931": {
    "first_seen": 1792627200,
    "last_seen": 1793145600,
@@ -13410,6 +13420,11 @@
    "last_seen": 1793145600,
    "title": "\"Gavotte\" / LULU"
   },
+  "url:https://americancinematheque.com/now-showing/godzilla-minus-one-godzilla-minus-zero-11-04-2026|2026-11-04": {
+   "first_seen": 1793145600,
+   "last_seen": 1793145600,
+   "title": "Godzilla Minus One / Godzilla Minus Zero"
+  },
   "url:https://americancinematheque.com/now-showing/happiness-10-30-2026|2026-10-30": {
    "first_seen": 1792713600,
    "last_seen": 1793145600,
@@ -13654,6 +13669,11 @@
    "first_seen": 1792022400,
    "last_seen": 1793145600,
    "title": "Our Hero, Balthazar"
+  },
+  "url:https://americancinematheque.com/now-showing/paper-tiger-paterson-11-03-2026|2026-11-03": {
+   "first_seen": 1793145600,
+   "last_seen": 1793145600,
+   "title": "Paper Tiger / Paterson"
   },
   "url:https://americancinematheque.com/now-showing/perdita-durango-10-18-2026|2026-10-18": {
    "first_seen": 1791849600,
@@ -20508,16 +20528,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 0,
-  "checks": 2,
-  "last_check": 1793207947,
+  "alerts": 2,
+  "checks": 3,
+  "last_check": 1793224383,
   "last_digest": "2026-10-27",
-  "new": 0,
+  "new": 2,
   "tracked": {
    "academy": 104,
    "amc": 19,
-   "cinematheque": 87,
-   "revivalhub": 1083
+   "cinematheque": 89,
+   "revivalhub": 1075
   }
  }
 }
