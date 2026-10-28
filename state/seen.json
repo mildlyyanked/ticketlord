@@ -20509,15 +20509,15 @@
  ],
  "stats": {
   "alerts": 0,
-  "checks": 1,
-  "last_check": 1793187215,
+  "checks": 2,
+  "last_check": 1793207947,
   "last_digest": "2026-10-27",
   "new": 0,
   "tracked": {
    "academy": 104,
    "amc": 19,
    "cinematheque": 87,
-   "revivalhub": 1084
+   "revivalhub": 1083
   }
  }
 }
