@@ -930,6 +930,11 @@
    "last_seen": 1792800000,
    "title": "New Black Hollywood"
   },
+  "cinematheque:5566839": {
+   "first_seen": 1793232000,
+   "last_seen": 1793232000,
+   "title": "LA LA LAND in 70mm"
+  },
   "cinematheque:5566841": {
    "first_seen": 1792454400,
    "last_seen": 1793232000,
@@ -954,6 +959,11 @@
    "first_seen": 1792713600,
    "last_seen": 1793232000,
    "title": "Raise the Red Lantern"
+  },
+  "cinematheque:5566857": {
+   "first_seen": 1793232000,
+   "last_seen": 1793232000,
+   "title": "LA LA LAND in 70mm"
   },
   "cinematheque:5566893": {
    "first_seen": 1793059200,
@@ -1044,6 +1054,16 @@
    "first_seen": 1793059200,
    "last_seen": 1793232000,
    "title": "Atomic Blonde"
+  },
+  "cinematheque:5567007": {
+   "first_seen": 1793232000,
+   "last_seen": 1793232000,
+   "title": "All of a Sudden"
+  },
+  "cinematheque:5567009": {
+   "first_seen": 1793232000,
+   "last_seen": 1793232000,
+   "title": "Benedetta"
   },
   "cinematheque:5567015": {
    "first_seen": 1792022400,
@@ -14035,6 +14055,11 @@
    "last_seen": 1793232000,
    "title": "Against the Grain: Block #9"
   },
+  "url:https://americancinematheque.com/now-showing/all-of-a-sudden-11-14-2026|2026-11-14": {
+   "first_seen": 1793232000,
+   "last_seen": 1793232000,
+   "title": "All of a Sudden"
+  },
   "url:https://americancinematheque.com/now-showing/all-the-long-nights-11-15-2026|2026-11-15": {
    "first_seen": 1792022400,
    "last_seen": 1793232000,
@@ -14099,6 +14124,11 @@
    "first_seen": 1792022400,
    "last_seen": 1793232000,
    "title": "Bela Lugosi Meets a Brooklyn Gorilla"
+  },
+  "url:https://americancinematheque.com/now-showing/benedetta-11-14-2026|2026-11-14": {
+   "first_seen": 1793232000,
+   "last_seen": 1793232000,
+   "title": "Benedetta"
   },
   "url:https://americancinematheque.com/now-showing/bird-in-hand-10-14-2026|2026-10-14": {
    "first_seen": 1791849600,
@@ -14469,6 +14499,16 @@
    "first_seen": 1792022400,
    "last_seen": 1793232000,
    "title": "Kwaidan"
+  },
+  "url:https://americancinematheque.com/now-showing/la-la-land-in-70mm-11-13-2026|2026-11-13": {
+   "first_seen": 1793232000,
+   "last_seen": 1793232000,
+   "title": "LA LA LAND in 70mm"
+  },
+  "url:https://americancinematheque.com/now-showing/la-la-land-in-70mm-11-14-2026|2026-11-14": {
+   "first_seen": 1793232000,
+   "last_seen": 1793232000,
+   "title": "LA LA LAND in 70mm"
   },
   "url:https://americancinematheque.com/now-showing/last-night-in-soho-10-25-2026|2026-10-25": {
    "first_seen": 1791849600,
@@ -22138,16 +22178,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 14,
-  "checks": 6,
-  "last_check": 1793287780,
+  "alerts": 17,
+  "checks": 7,
+  "last_check": 1793305800,
   "last_digest": "2026-10-27",
-  "new": 169,
+  "new": 173,
   "tracked": {
    "academy": 103,
    "amc": 21,
-   "cinematheque": 87,
-   "revivalhub": 1199
+   "cinematheque": 91,
+   "revivalhub": 1195
   }
  }
 }
