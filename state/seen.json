@@ -820,6 +820,16 @@
    "last_seen": 1793232000,
    "title": "All of a Sudden"
   },
+  "amc:amc-st-148198844": {
+   "first_seen": 1793232000,
+   "last_seen": 1793232000,
+   "title": "PAPER TIGER"
+  },
+  "amc:amc-st-148198847": {
+   "first_seen": 1793232000,
+   "last_seen": 1793232000,
+   "title": "PAPER TIGER"
+  },
   "amc:amc-st-148312327": {
    "first_seen": 1793145600,
    "last_seen": 1793232000,
@@ -13945,6 +13955,16 @@
    "last_seen": 1793232000,
    "title": "All of a Sudden"
   },
+  "url:https://amctheatres.com/showtimes/all/2026-11-14/centurycity/all/148198844|2026-11-14": {
+   "first_seen": 1793232000,
+   "last_seen": 1793232000,
+   "title": "PAPER TIGER"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-11-14/thegrove/all/148198847|2026-11-14": {
+   "first_seen": 1793232000,
+   "last_seen": 1793232000,
+   "title": "PAPER TIGER"
+  },
   "url:https://amctheatres.com/showtimes/all/2026-11-15/centurycity/all/148194377|2026-11-15": {
    "first_seen": 1793059200,
    "last_seen": 1793232000,
@@ -22118,14 +22138,14 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 12,
-  "checks": 5,
-  "last_check": 1793262090,
+  "alerts": 14,
+  "checks": 6,
+  "last_check": 1793287780,
   "last_digest": "2026-10-27",
-  "new": 167,
+  "new": 169,
   "tracked": {
    "academy": 103,
-   "amc": 19,
+   "amc": 21,
    "cinematheque": 87,
    "revivalhub": 1199
   }
