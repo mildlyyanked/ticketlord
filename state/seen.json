@@ -1005,6 +1005,11 @@
    "last_seen": 1793318400,
    "title": "How to Rob a Bank"
   },
+  "cinematheque:5566897": {
+   "first_seen": 1793318400,
+   "last_seen": 1793318400,
+   "title": "Pan's Labyrinth 3D"
+  },
   "cinematheque:5566907": {
    "first_seen": 1791849600,
    "last_seen": 1793318400,
@@ -1044,6 +1049,11 @@
    "first_seen": 1793318400,
    "last_seen": 1793318400,
    "title": "Teenage Sex and Death at Camp Miasma"
+  },
+  "cinematheque:5566941": {
+   "first_seen": 1793318400,
+   "last_seen": 1793318400,
+   "title": "Gentle Monster"
   },
   "cinematheque:5566951": {
    "first_seen": 1791849600,
@@ -1140,6 +1150,11 @@
    "last_seen": 1793318400,
    "title": "Bela Lugosi Meets a Brooklyn Gorilla"
   },
+  "cinematheque:5567017": {
+   "first_seen": 1793318400,
+   "last_seen": 1793318400,
+   "title": "The Beast"
+  },
   "cinematheque:5567019": {
    "first_seen": 1793318400,
    "last_seen": 1793318400,
@@ -1179,6 +1194,11 @@
    "first_seen": 1791849600,
    "last_seen": 1793318400,
    "title": "The Musical"
+  },
+  "cinematheque:5567081": {
+   "first_seen": 1793318400,
+   "last_seen": 1793318400,
+   "title": "One Fine Morning"
   },
   "cinematheque:5567083": {
    "first_seen": 1791849600,
@@ -1769,6 +1789,11 @@
    "first_seen": 1793318400,
    "last_seen": 1793318400,
    "title": "If I Go Will They Miss Me"
+  },
+  "cinematheque:5571487": {
+   "first_seen": 1793318400,
+   "last_seen": 1793318400,
+   "title": "Blue Is the Warmest Color"
   },
   "revivalhub:rec02RivSsZosA3kj": {
    "first_seen": 1793232000,
@@ -14250,6 +14275,11 @@
    "last_seen": 1792022400,
    "title": "Bird in Hand"
   },
+  "url:https://americancinematheque.com/now-showing/blue-is-the-warmest-color-11-14-2026|2026-11-14": {
+   "first_seen": 1793318400,
+   "last_seen": 1793318400,
+   "title": "Blue Is the Warmest Color"
+  },
   "url:https://americancinematheque.com/now-showing/blue-velvet-11-06-2026|2026-11-06": {
    "first_seen": 1793318400,
    "last_seen": 1793318400,
@@ -14464,6 +14494,11 @@
    "first_seen": 1791849600,
    "last_seen": 1793318400,
    "title": "\"Gavotte\" / LULU"
+  },
+  "url:https://americancinematheque.com/now-showing/gentle-monster-11-13-2026|2026-11-13": {
+   "first_seen": 1793318400,
+   "last_seen": 1793318400,
+   "title": "Gentle Monster"
   },
   "url:https://americancinematheque.com/now-showing/godzilla-minus-one-godzilla-minus-zero-11-04-2026|2026-11-04": {
    "first_seen": 1793145600,
@@ -14735,6 +14770,11 @@
    "last_seen": 1792540800,
    "title": "Nightmare Alley"
   },
+  "url:https://americancinematheque.com/now-showing/one-fine-morning-11-12-2026|2026-11-12": {
+   "first_seen": 1793318400,
+   "last_seen": 1793318400,
+   "title": "One Fine Morning"
+  },
   "url:https://americancinematheque.com/now-showing/opening-night-block-1-11-07-2026|2026-11-06": {
    "first_seen": 1791849600,
    "last_seen": 1793318400,
@@ -14749,6 +14789,11 @@
    "first_seen": 1792022400,
    "last_seen": 1793318400,
    "title": "Our Hero, Balthazar"
+  },
+  "url:https://americancinematheque.com/now-showing/pans-labyrinth-in-3d-11-08-2026|2026-11-08": {
+   "first_seen": 1793318400,
+   "last_seen": 1793318400,
+   "title": "Pan's Labyrinth 3D"
   },
   "url:https://americancinematheque.com/now-showing/paper-tiger-paterson-11-03-2026|2026-11-03": {
    "first_seen": 1793145600,
@@ -14879,6 +14924,11 @@
    "first_seen": 1791849600,
    "last_seen": 1793318400,
    "title": "The Addams Family"
+  },
+  "url:https://americancinematheque.com/now-showing/the-beast-11-15-2026|2026-11-15": {
+   "first_seen": 1793318400,
+   "last_seen": 1793318400,
+   "title": "The Beast"
   },
   "url:https://americancinematheque.com/now-showing/the-birds-10-31-2026|2026-10-31": {
    "first_seen": 1791849600,
@@ -22368,16 +22418,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 1,
-  "checks": 2,
-  "last_check": 1793386100,
+  "alerts": 6,
+  "checks": 3,
+  "last_check": 1793400911,
   "last_digest": "2026-10-29",
-  "new": 1,
+  "new": 6,
   "tracked": {
-   "academy": 102,
-   "amc": 21,
-   "cinematheque": 106,
-   "revivalhub": 1157
+   "academy": 101,
+   "amc": 20,
+   "cinematheque": 111,
+   "revivalhub": 1149
   }
  }
 }
