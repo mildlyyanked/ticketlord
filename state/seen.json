@@ -1040,6 +1040,11 @@
    "last_seen": 1793318400,
    "title": "Avedon"
   },
+  "cinematheque:5566937": {
+   "first_seen": 1793318400,
+   "last_seen": 1793318400,
+   "title": "Teenage Sex and Death at Camp Miasma"
+  },
   "cinematheque:5566951": {
    "first_seen": 1791849600,
    "last_seen": 1793318400,
@@ -14865,6 +14870,11 @@
    "last_seen": 1792281600,
    "title": "Spanning Time"
   },
+  "url:https://americancinematheque.com/now-showing/teenage-sex-and-death-at-camp-miasma-11-11-2026|2026-11-11": {
+   "first_seen": 1793318400,
+   "last_seen": 1793318400,
+   "title": "Teenage Sex and Death at Camp Miasma"
+  },
   "url:https://americancinematheque.com/now-showing/the-addams-family-10-29-2026|2026-10-29": {
    "first_seen": 1791849600,
    "last_seen": 1793318400,
@@ -22358,16 +22368,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 0,
-  "checks": 1,
-  "last_check": 1793366814,
+  "alerts": 1,
+  "checks": 2,
+  "last_check": 1793386100,
   "last_digest": "2026-10-29",
-  "new": 0,
+  "new": 1,
   "tracked": {
    "academy": 102,
    "amc": 21,
-   "cinematheque": 105,
-   "revivalhub": 1158
+   "cinematheque": 106,
+   "revivalhub": 1157
   }
  }
 }
