@@ -22419,15 +22419,15 @@
  ],
  "stats": {
   "alerts": 0,
-  "checks": 3,
-  "last_check": 1793475009,
+  "checks": 4,
+  "last_check": 1793486790,
   "last_digest": "2026-10-30",
   "new": 0,
   "tracked": {
-   "academy": 99,
+   "academy": 98,
    "amc": 19,
    "cinematheque": 105,
-   "revivalhub": 1085
+   "revivalhub": 1066
   }
  }
 }
