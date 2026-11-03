@@ -855,6 +855,16 @@
    "last_seen": 1793318400,
    "title": "Wicker"
   },
+  "amc:amc-st-148445999": {
+   "first_seen": 1793664000,
+   "last_seen": 1793664000,
+   "title": "TANGLES"
+  },
+  "amc:amc-st-148506250": {
+   "first_seen": 1793664000,
+   "last_seen": 1793664000,
+   "title": "TANGLES"
+  },
   "cinematheque:5563671": {
    "first_seen": 1791849600,
    "last_seen": 1792281600,
@@ -1219,6 +1229,11 @@
    "first_seen": 1791849600,
    "last_seen": 1793664000,
    "title": "The Musical"
+  },
+  "cinematheque:5567077": {
+   "first_seen": 1793664000,
+   "last_seen": 1793664000,
+   "title": "Gugu's World"
   },
   "cinematheque:5567079": {
    "first_seen": 1793577600,
@@ -1699,6 +1714,11 @@
    "first_seen": 1793318400,
    "last_seen": 1793664000,
    "title": "Raise the Red Lantern"
+  },
+  "cinematheque:5569560": {
+   "first_seen": 1793664000,
+   "last_seen": 1793664000,
+   "title": "Tenzing"
   },
   "cinematheque:5569772": {
    "first_seen": 1791849600,
@@ -15275,6 +15295,16 @@
    "last_seen": 1793664000,
    "title": "Minotaur"
   },
+  "url:https://amctheatres.com/showtimes/all/2026-11-23/centurycity/all/148506250|2026-11-23": {
+   "first_seen": 1793664000,
+   "last_seen": 1793664000,
+   "title": "TANGLES"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-11-24/centurycity/all/148445999|2026-11-24": {
+   "first_seen": 1793664000,
+   "last_seen": 1793664000,
+   "title": "TANGLES"
+  },
   "url:https://americancinematheque.com/now-showing/21st-annual-horrorthon-10-24-2026|2026-10-24": {
    "first_seen": 1791849600,
    "last_seen": 1792886400,
@@ -15629,6 +15659,11 @@
    "first_seen": 1793145600,
    "last_seen": 1793664000,
    "title": "Godzilla Minus One / Godzilla Minus Zero"
+  },
+  "url:https://americancinematheque.com/now-showing/gugus-world-11-11-2026|2026-11-11": {
+   "first_seen": 1793664000,
+   "last_seen": 1793664000,
+   "title": "Gugu's World"
   },
   "url:https://americancinematheque.com/now-showing/happiness-10-30-2026|2026-10-30": {
    "first_seen": 1792713600,
@@ -16064,6 +16099,11 @@
    "first_seen": 1793318400,
    "last_seen": 1793664000,
    "title": "Teenage Sex and Death at Camp Miasma"
+  },
+  "url:https://americancinematheque.com/now-showing/tenzing-11-16-2026|2026-11-16": {
+   "first_seen": 1793664000,
+   "last_seen": 1793664000,
+   "title": "Tenzing"
   },
   "url:https://americancinematheque.com/now-showing/the-addams-family-10-29-2026|2026-10-29": {
    "first_seen": 1791849600,
@@ -24373,16 +24413,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 6,
-  "checks": 4,
-  "last_check": 1793716561,
+  "alerts": 9,
+  "checks": 5,
+  "last_check": 1793738177,
   "last_digest": "2026-11-01",
-  "new": 8,
+  "new": 12,
   "tracked": {
    "academy": 90,
-   "amc": 19,
-   "cinematheque": 93,
-   "revivalhub": 1114
+   "amc": 21,
+   "cinematheque": 95,
+   "revivalhub": 1112
   }
  }
 }
