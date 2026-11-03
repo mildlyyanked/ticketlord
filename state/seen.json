@@ -24374,14 +24374,14 @@
  ],
  "stats": {
   "alerts": 6,
-  "checks": 3,
-  "last_check": 1793687418,
+  "checks": 4,
+  "last_check": 1793716561,
   "last_digest": "2026-11-01",
   "new": 8,
   "tracked": {
    "academy": 90,
    "amc": 19,
-   "cinematheque": 96,
+   "cinematheque": 93,
    "revivalhub": 1114
   }
  }
