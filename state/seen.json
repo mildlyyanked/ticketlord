@@ -720,6 +720,16 @@
    "last_seen": 1792800000,
    "title": "The Only Living Pickpocket in New York"
   },
+  "amc:amc-st-147900956": {
+   "first_seen": 1793750400,
+   "last_seen": 1793750400,
+   "title": "Club Kid Special Intro with Jordan Firstman and Finneas"
+  },
+  "amc:amc-st-147900969": {
+   "first_seen": 1793750400,
+   "last_seen": 1793750400,
+   "title": "Club Kid Special Intro with Jordan Firstman and Finneas"
+  },
   "amc:amc-st-147906516": {
    "first_seen": 1793318400,
    "last_seen": 1793750400,
@@ -884,6 +894,31 @@
    "first_seen": 1793664000,
    "last_seen": 1793750400,
    "title": "TANGLES"
+  },
+  "amc:amc-st-148580647": {
+   "first_seen": 1793750400,
+   "last_seen": 1793750400,
+   "title": "JOSEPHINE With In-Person"
+  },
+  "amc:amc-st-148580648": {
+   "first_seen": 1793750400,
+   "last_seen": 1793750400,
+   "title": "JOSEPHINE With In-Person"
+  },
+  "amc:amc-st-148580649": {
+   "first_seen": 1793750400,
+   "last_seen": 1793750400,
+   "title": "JOSEPHINE With In-Person"
+  },
+  "amc:amc-st-148580650": {
+   "first_seen": 1793750400,
+   "last_seen": 1793750400,
+   "title": "JOSEPHINE With In-Person"
+  },
+  "amc:amc-st-148581140": {
+   "first_seen": 1793750400,
+   "last_seen": 1793750400,
+   "title": "JOSEPHINE With In-Person"
   },
   "cinematheque:5563671": {
    "first_seen": 1791849600,
@@ -1099,6 +1134,11 @@
    "first_seen": 1793577600,
    "last_seen": 1793750400,
    "title": "The Debut"
+  },
+  "cinematheque:5566949": {
+   "first_seen": 1793750400,
+   "last_seen": 1793750400,
+   "title": "Musk"
   },
   "cinematheque:5566951": {
    "first_seen": 1791849600,
@@ -1844,6 +1884,16 @@
    "first_seen": 1791849600,
    "last_seen": 1792195200,
    "title": "Mulholland Drive"
+  },
+  "cinematheque:5570892": {
+   "first_seen": 1793750400,
+   "last_seen": 1793750400,
+   "title": "The Body"
+  },
+  "cinematheque:5570894": {
+   "first_seen": 1793750400,
+   "last_seen": 1793750400,
+   "title": "The Body"
   },
   "cinematheque:5570896": {
    "first_seen": 1791849600,
@@ -15250,6 +15300,11 @@
    "last_seen": 1793750400,
    "title": "Club Kid with"
   },
+  "url:https://amctheatres.com/showtimes/all/2026-11-07/thegrove/all/147900969|2026-11-07": {
+   "first_seen": 1793750400,
+   "last_seen": 1793750400,
+   "title": "Club Kid Special Intro with Jordan Firstman and Finneas"
+  },
   "url:https://amctheatres.com/showtimes/all/2026-11-07/thegrove/all/148168571|2026-11-07": {
    "first_seen": 1792627200,
    "last_seen": 1793750400,
@@ -15269,6 +15324,11 @@
    "first_seen": 1793750400,
    "last_seen": 1793750400,
    "title": "Club Kid Special Intro with Jordan Firstman"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-11-08/thegrove/all/147900956|2026-11-08": {
+   "first_seen": 1793750400,
+   "last_seen": 1793750400,
+   "title": "Club Kid Special Intro with Jordan Firstman and Finneas"
   },
   "url:https://amctheatres.com/showtimes/all/2026-11-08/thegrove/all/148168569|2026-11-08": {
    "first_seen": 1792627200,
@@ -15309,6 +15369,31 @@
    "first_seen": 1793145600,
    "last_seen": 1793750400,
    "title": "All of a Sudden Intro with Director Ryusuke Hamaguchi and Cast"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-11-19/centurycity/all/148581140|2026-11-19": {
+   "first_seen": 1793750400,
+   "last_seen": 1793750400,
+   "title": "JOSEPHINE With In-Person"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-11-20/burbank/all/148580647|2026-11-20": {
+   "first_seen": 1793750400,
+   "last_seen": 1793750400,
+   "title": "JOSEPHINE With In-Person"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-11-20/burbank/all/148580648|2026-11-20": {
+   "first_seen": 1793750400,
+   "last_seen": 1793750400,
+   "title": "JOSEPHINE With In-Person"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-11-21/burbank/all/148580649|2026-11-21": {
+   "first_seen": 1793750400,
+   "last_seen": 1793750400,
+   "title": "JOSEPHINE With In-Person"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-11-21/burbank/all/148580650|2026-11-21": {
+   "first_seen": 1793750400,
+   "last_seen": 1793750400,
+   "title": "JOSEPHINE With In-Person"
   },
   "url:https://amctheatres.com/showtimes/all/2026-11-21/centurycity/all/147951260|2026-11-21": {
    "first_seen": 1792368000,
@@ -15965,6 +16050,11 @@
    "last_seen": 1792195200,
    "title": "Mulholland Drive"
   },
+  "url:https://americancinematheque.com/now-showing/musk-11-19-2026|2026-11-19": {
+   "first_seen": 1793750400,
+   "last_seen": 1793750400,
+   "title": "Musk"
+  },
   "url:https://americancinematheque.com/now-showing/my-brothers-killer-11-03-2026|2026-11-03": {
    "first_seen": 1792022400,
    "last_seen": 1793750400,
@@ -16179,6 +16269,16 @@
    "first_seen": 1791849600,
    "last_seen": 1792886400,
    "title": "The Black Cauldron"
+  },
+  "url:https://americancinematheque.com/now-showing/the-body-730pm-11-10-2026|2026-11-10": {
+   "first_seen": 1793750400,
+   "last_seen": 1793750400,
+   "title": "The Body"
+  },
+  "url:https://americancinematheque.com/now-showing/the-body-8pm-11-10-2026|2026-11-10": {
+   "first_seen": 1793750400,
+   "last_seen": 1793750400,
+   "title": "The Body"
   },
   "url:https://americancinematheque.com/now-showing/the-debut-11-16-2026|2026-11-16": {
    "first_seen": 1793577600,
@@ -24468,16 +24568,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 0,
-  "checks": 1,
-  "last_check": 1793806952,
+  "alerts": 5,
+  "checks": 2,
+  "last_check": 1793828941,
   "last_digest": "2026-11-03",
-  "new": 0,
+  "new": 10,
   "tracked": {
-   "academy": 90,
-   "amc": 25,
-   "cinematheque": 93,
-   "revivalhub": 1080
+   "academy": 89,
+   "amc": 32,
+   "cinematheque": 96,
+   "revivalhub": 1078
   }
  }
 }
