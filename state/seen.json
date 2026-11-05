@@ -1030,6 +1030,11 @@
    "last_seen": 1793836800,
    "title": "Cinematic Void Presents 3 WOMEN"
   },
+  "cinematheque:5566476": {
+   "first_seen": 1793836800,
+   "last_seen": 1793836800,
+   "title": "Logan"
+  },
   "cinematheque:5566482": {
    "first_seen": 1791849600,
    "last_seen": 1792800000,
@@ -1145,6 +1150,16 @@
    "last_seen": 1793836800,
    "title": "Avedon"
   },
+  "cinematheque:5566933": {
+   "first_seen": 1793836800,
+   "last_seen": 1793836800,
+   "title": "Godzilla Minus Zero"
+  },
+  "cinematheque:5566935": {
+   "first_seen": 1793836800,
+   "last_seen": 1793836800,
+   "title": "Paterson"
+  },
   "cinematheque:5566937": {
    "first_seen": 1793318400,
    "last_seen": 1793836800,
@@ -1250,6 +1265,11 @@
    "last_seen": 1793836800,
    "title": "Happiness"
   },
+  "cinematheque:5566995": {
+   "first_seen": 1793836800,
+   "last_seen": 1793836800,
+   "title": "Blue Velvet"
+  },
   "cinematheque:5566997": {
    "first_seen": 1793318400,
    "last_seen": 1793836800,
@@ -1289,6 +1309,16 @@
    "first_seen": 1791849600,
    "last_seen": 1793836800,
    "title": "\"Rosalie\" / BLANCHE"
+  },
+  "cinematheque:5567023": {
+   "first_seen": 1793836800,
+   "last_seen": 1793836800,
+   "title": "Ash and Crayons"
+  },
+  "cinematheque:5567025": {
+   "first_seen": 1793836800,
+   "last_seen": 1793836800,
+   "title": "Green Room"
   },
   "cinematheque:5567031": {
    "first_seen": 1792713600,
@@ -1955,10 +1985,30 @@
    "last_seen": 1793836800,
    "title": "Blue Is the Warmest Color"
   },
+  "cinematheque:5571555": {
+   "first_seen": 1793836800,
+   "last_seen": 1793836800,
+   "title": "\"The Music Store\""
+  },
+  "cinematheque:5571626": {
+   "first_seen": 1793836800,
+   "last_seen": 1793836800,
+   "title": "LA LA LAND in 70mm"
+  },
   "cinematheque:5571635": {
    "first_seen": 1793577600,
    "last_seen": 1793836800,
    "title": "The Birds"
+  },
+  "cinematheque:5571652": {
+   "first_seen": 1793836800,
+   "last_seen": 1793836800,
+   "title": "Star Trek: First Contact"
+  },
+  "cinematheque:5571775": {
+   "first_seen": 1793836800,
+   "last_seen": 1793836800,
+   "title": "Excalibur"
   },
   "revivalhub:rec02RivSsZosA3kj": {
    "first_seen": 1793232000,
@@ -15560,6 +15610,11 @@
    "last_seen": 1793577600,
    "title": "Sam Wasson Presents ARSENIC AND OLD LACE"
   },
+  "url:https://americancinematheque.com/now-showing/ash-and-crayons-11-13-2026|2026-11-13": {
+   "first_seen": 1793836800,
+   "last_seen": 1793836800,
+   "title": "Ash and Crayons"
+  },
   "url:https://americancinematheque.com/now-showing/atomic-blonde-11-08-2026|2026-11-08": {
    "first_seen": 1793059200,
    "last_seen": 1793836800,
@@ -15627,6 +15682,11 @@
   },
   "url:https://americancinematheque.com/now-showing/blue-velvet-11-06-2026|2026-11-06": {
    "first_seen": 1793318400,
+   "last_seen": 1793836800,
+   "title": "Blue Velvet"
+  },
+  "url:https://americancinematheque.com/now-showing/blue-velvet-11-13-2026|2026-11-13": {
+   "first_seen": 1793836800,
    "last_seen": 1793836800,
    "title": "Blue Velvet"
   },
@@ -15835,6 +15895,11 @@
    "last_seen": 1792972800,
    "title": "Ed Wood"
   },
+  "url:https://americancinematheque.com/now-showing/excalibur-11-29-2026|2026-11-29": {
+   "first_seen": 1793836800,
+   "last_seen": 1793836800,
+   "title": "Excalibur"
+  },
   "url:https://americancinematheque.com/now-showing/gavotte-lulu-11-12-2026|2026-11-12": {
    "first_seen": 1791849600,
    "last_seen": 1793836800,
@@ -15849,6 +15914,16 @@
    "first_seen": 1793145600,
    "last_seen": 1793836800,
    "title": "Godzilla Minus One / Godzilla Minus Zero"
+  },
+  "url:https://americancinematheque.com/now-showing/godzilla-minus-zero-11-09-2026|2026-11-09": {
+   "first_seen": 1793836800,
+   "last_seen": 1793836800,
+   "title": "Godzilla Minus Zero"
+  },
+  "url:https://americancinematheque.com/now-showing/green-room-11-20-2026|2026-11-20": {
+   "first_seen": 1793836800,
+   "last_seen": 1793836800,
+   "title": "Green Room"
   },
   "url:https://americancinematheque.com/now-showing/gugus-world-11-11-2026|2026-11-11": {
    "first_seen": 1793664000,
@@ -16045,6 +16120,11 @@
    "last_seen": 1793836800,
    "title": "LA LA LAND in 70mm"
   },
+  "url:https://americancinematheque.com/now-showing/la-la-land-in-70mm-11-15-2026|2026-11-15": {
+   "first_seen": 1793836800,
+   "last_seen": 1793836800,
+   "title": "LA LA LAND in 70mm"
+  },
   "url:https://americancinematheque.com/now-showing/last-night-in-soho-10-25-2026|2026-10-25": {
    "first_seen": 1791849600,
    "last_seen": 1792972800,
@@ -16059,6 +16139,11 @@
    "first_seen": 1793318400,
    "last_seen": 1793836800,
    "title": "LAWRENCE OF ARABIA in 70MM"
+  },
+  "url:https://americancinematheque.com/now-showing/logan-11-30-2026|2026-11-30": {
+   "first_seen": 1793836800,
+   "last_seen": 1793836800,
+   "title": "Logan"
   },
   "url:https://americancinematheque.com/now-showing/lost-highway-10-17-2026|2026-10-17": {
    "first_seen": 1791849600,
@@ -16169,6 +16254,11 @@
    "first_seen": 1793145600,
    "last_seen": 1793750400,
    "title": "Paper Tiger / Paterson"
+  },
+  "url:https://americancinematheque.com/now-showing/paterson-11-10-2026|2026-11-10": {
+   "first_seen": 1793836800,
+   "last_seen": 1793836800,
+   "title": "Paterson"
   },
   "url:https://americancinematheque.com/now-showing/perdita-durango-10-18-2026|2026-10-18": {
    "first_seen": 1791849600,
@@ -16290,6 +16380,11 @@
    "last_seen": 1792281600,
    "title": "Spanning Time"
   },
+  "url:https://americancinematheque.com/now-showing/star-trek-first-contact-11-28-2026|2026-11-28": {
+   "first_seen": 1793836800,
+   "last_seen": 1793836800,
+   "title": "Star Trek: First Contact"
+  },
   "url:https://americancinematheque.com/now-showing/teenage-sex-and-death-at-camp-miasma-11-11-2026|2026-11-11": {
    "first_seen": 1793318400,
    "last_seen": 1793836800,
@@ -16389,6 +16484,11 @@
    "first_seen": 1792454400,
    "last_seen": 1793836800,
    "title": "The Last Picture Show"
+  },
+  "url:https://americancinematheque.com/now-showing/the-music-store-11-12-2026|2026-11-11": {
+   "first_seen": 1793836800,
+   "last_seen": 1793836800,
+   "title": "\"The Music Store\""
   },
   "url:https://americancinematheque.com/now-showing/the-musical-11-05-2026|2026-11-05": {
    "first_seen": 1791849600,
@@ -24628,16 +24728,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 10,
-  "checks": 5,
-  "last_check": 1793901427,
+  "alerts": 13,
+  "checks": 6,
+  "last_check": 1793921560,
   "last_digest": "2026-11-03",
-  "new": 16,
+  "new": 26,
   "tracked": {
    "academy": 86,
    "amc": 36,
-   "cinematheque": 94,
-   "revivalhub": 1034
+   "cinematheque": 104,
+   "revivalhub": 1032
   }
  }
 }
