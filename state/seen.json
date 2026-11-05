@@ -24609,15 +24609,15 @@
  ],
  "stats": {
   "alerts": 8,
-  "checks": 3,
-  "last_check": 1793844908,
+  "checks": 4,
+  "last_check": 1793872071,
   "last_digest": "2026-11-03",
   "new": 14,
   "tracked": {
-   "academy": 88,
+   "academy": 86,
    "amc": 35,
-   "cinematheque": 96,
-   "revivalhub": 1071
+   "cinematheque": 93,
+   "revivalhub": 1034
   }
  }
 }
