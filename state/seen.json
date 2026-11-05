@@ -905,6 +905,11 @@
    "last_seen": 1793318400,
    "title": "Wicker"
   },
+  "amc:amc-st-148435554": {
+   "first_seen": 1793836800,
+   "last_seen": 1793836800,
+   "title": "Elsinore"
+  },
   "amc:amc-st-148445999": {
    "first_seen": 1793664000,
    "last_seen": 1793836800,
@@ -1859,6 +1864,11 @@
    "first_seen": 1791849600,
    "last_seen": 1793836800,
    "title": "Cameron Winter at Carnegie Hall"
+  },
+  "cinematheque:5570716": {
+   "first_seen": 1793836800,
+   "last_seen": 1793836800,
+   "title": "Backrooms"
   },
   "cinematheque:5570828": {
    "first_seen": 1791849600,
@@ -15385,6 +15395,11 @@
    "last_seen": 1793836800,
    "title": "All of a Sudden"
   },
+  "url:https://amctheatres.com/showtimes/all/2026-11-13/thegrove/all/148435554|2026-11-13": {
+   "first_seen": 1793836800,
+   "last_seen": 1793836800,
+   "title": "Elsinore"
+  },
   "url:https://amctheatres.com/showtimes/all/2026-11-14/centurycity/all/148194376|2026-11-14": {
    "first_seen": 1793059200,
    "last_seen": 1793836800,
@@ -15564,6 +15579,11 @@
    "first_seen": 1791849600,
    "last_seen": 1793318400,
    "title": "Avital Ash Workshops Her Suicide Note"
+  },
+  "url:https://americancinematheque.com/now-showing/backrooms-11-13-2026|2026-11-13": {
+   "first_seen": 1793836800,
+   "last_seen": 1793836800,
+   "title": "Backrooms"
   },
   "url:https://americancinematheque.com/now-showing/begotten-10-16-2026|2026-10-16": {
    "first_seen": 1791849600,
@@ -24608,15 +24628,15 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 8,
-  "checks": 4,
-  "last_check": 1793872071,
+  "alerts": 10,
+  "checks": 5,
+  "last_check": 1793901427,
   "last_digest": "2026-11-03",
-  "new": 14,
+  "new": 16,
   "tracked": {
    "academy": 86,
-   "amc": 35,
-   "cinematheque": 93,
+   "amc": 36,
+   "cinematheque": 94,
    "revivalhub": 1034
   }
  }
