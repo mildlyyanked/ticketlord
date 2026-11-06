@@ -945,6 +945,11 @@
    "last_seen": 1793923200,
    "title": "JOSEPHINE With In-Person"
   },
+  "amc:amc-st-148601268": {
+   "first_seen": 1793923200,
+   "last_seen": 1793923200,
+   "title": "TANGLES"
+  },
   "cinematheque:5563671": {
    "first_seen": 1791849600,
    "last_seen": 1792281600,
@@ -1085,6 +1090,11 @@
    "last_seen": 1793923200,
    "title": "LA LA LAND in 70mm"
   },
+  "cinematheque:5566859": {
+   "first_seen": 1793923200,
+   "last_seen": 1793923200,
+   "title": "La Bola Negra"
+  },
   "cinematheque:5566863": {
    "first_seen": 1793318400,
    "last_seen": 1793923200,
@@ -1122,6 +1132,11 @@
   },
   "cinematheque:5566911": {
    "first_seen": 1791849600,
+   "last_seen": 1793923200,
+   "title": "Cameron Winter at Carnegie Hall"
+  },
+  "cinematheque:5566913": {
+   "first_seen": 1793923200,
    "last_seen": 1793923200,
    "title": "Cameron Winter at Carnegie Hall"
   },
@@ -2005,10 +2020,30 @@
    "last_seen": 1793923200,
    "title": "The Birds"
   },
+  "cinematheque:5571648": {
+   "first_seen": 1793923200,
+   "last_seen": 1793923200,
+   "title": "Primetime / Licorice Pizza"
+  },
   "cinematheque:5571652": {
    "first_seen": 1793836800,
    "last_seen": 1793923200,
    "title": "Star Trek: First Contact"
+  },
+  "cinematheque:5571731": {
+   "first_seen": 1793923200,
+   "last_seen": 1793923200,
+   "title": "Cameron Winter at Carnegie Hall"
+  },
+  "cinematheque:5571733": {
+   "first_seen": 1793923200,
+   "last_seen": 1793923200,
+   "title": "Cameron Winter at Carnegie Hall"
+  },
+  "cinematheque:5571735": {
+   "first_seen": 1793923200,
+   "last_seen": 1793923200,
+   "title": "Cameron Winter at Carnegie Hall"
   },
   "cinematheque:5571775": {
    "first_seen": 1793836800,
@@ -15545,6 +15580,11 @@
    "last_seen": 1793923200,
    "title": "TANGLES"
   },
+  "url:https://amctheatres.com/showtimes/all/2026-11-24/centurycity/all/148601268|2026-11-24": {
+   "first_seen": 1793923200,
+   "last_seen": 1793923200,
+   "title": "TANGLES"
+  },
   "url:https://americancinematheque.com/now-showing/21st-annual-horrorthon-10-24-2026|2026-10-24": {
    "first_seen": 1791849600,
    "last_seen": 1792886400,
@@ -15745,6 +15785,11 @@
    "last_seen": 1793923200,
    "title": "Cameron Winter at Carnegie Hall"
   },
+  "url:https://americancinematheque.com/now-showing/cameron-winter-at-carnegie-hall-11-22-2026|2026-11-22": {
+   "first_seen": 1793923200,
+   "last_seen": 1793923200,
+   "title": "Cameron Winter at Carnegie Hall"
+  },
   "url:https://americancinematheque.com/now-showing/cameron-winter-at-carnegie-hall-11-23-2026-10pm|2026-11-23": {
    "first_seen": 1791849600,
    "last_seen": 1793923200,
@@ -15757,6 +15802,11 @@
   },
   "url:https://americancinematheque.com/now-showing/cameron-winter-at-carnegie-hall-11-23-2026-530pm|2026-11-23": {
    "first_seen": 1791849600,
+   "last_seen": 1793923200,
+   "title": "Cameron Winter at Carnegie Hall"
+  },
+  "url:https://americancinematheque.com/now-showing/cameron-winter-at-carnegie-hall-11-23-2026|2026-11-23": {
+   "first_seen": 1793923200,
    "last_seen": 1793923200,
    "title": "Cameron Winter at Carnegie Hall"
   },
@@ -15775,6 +15825,11 @@
    "last_seen": 1793923200,
    "title": "Cameron Winter at Carnegie Hall"
   },
+  "url:https://americancinematheque.com/now-showing/cameron-winter-at-carnegie-hall-11-24-2026|2026-11-24": {
+   "first_seen": 1793923200,
+   "last_seen": 1793923200,
+   "title": "Cameron Winter at Carnegie Hall"
+  },
   "url:https://americancinematheque.com/now-showing/cameron-winter-at-carnegie-hall-11-25-2026-10pm|2026-11-25": {
    "first_seen": 1791849600,
    "last_seen": 1793923200,
@@ -15787,6 +15842,11 @@
   },
   "url:https://americancinematheque.com/now-showing/cameron-winter-at-carnegie-hall-11-25-2026-8pm|2026-11-25": {
    "first_seen": 1791849600,
+   "last_seen": 1793923200,
+   "title": "Cameron Winter at Carnegie Hall"
+  },
+  "url:https://americancinematheque.com/now-showing/cameron-winter-at-carnegie-hall-11-25-2026|2026-11-25": {
+   "first_seen": 1793923200,
    "last_seen": 1793923200,
    "title": "Cameron Winter at Carnegie Hall"
   },
@@ -16120,6 +16180,11 @@
    "last_seen": 1793318400,
    "title": "Kwaidan"
   },
+  "url:https://americancinematheque.com/now-showing/la-bola-negra-11-14-2026|2026-11-14": {
+   "first_seen": 1793923200,
+   "last_seen": 1793923200,
+   "title": "La Bola Negra"
+  },
   "url:https://americancinematheque.com/now-showing/la-la-land-in-70mm-11-13-2026|2026-11-13": {
    "first_seen": 1793232000,
    "last_seen": 1793923200,
@@ -16299,6 +16364,11 @@
    "first_seen": 1793577600,
    "last_seen": 1793923200,
    "title": "Possible Love"
+  },
+  "url:https://americancinematheque.com/now-showing/primetime-licorice-pizza-11-15-2026|2026-11-15": {
+   "first_seen": 1793923200,
+   "last_seen": 1793923200,
+   "title": "Primetime / Licorice Pizza"
   },
   "url:https://americancinematheque.com/now-showing/psycho-10-31-2026|2026-10-31": {
    "first_seen": 1791849600,
@@ -24738,16 +24808,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 1,
-  "checks": 2,
-  "last_check": 1793989244,
+  "alerts": 6,
+  "checks": 3,
+  "last_check": 1794007663,
   "last_digest": "2026-11-05",
-  "new": 1,
+  "new": 8,
   "tracked": {
    "academy": 85,
-   "amc": 36,
-   "cinematheque": 102,
-   "revivalhub": 1011
+   "amc": 37,
+   "cinematheque": 108,
+   "revivalhub": 1006
   }
  }
 }
