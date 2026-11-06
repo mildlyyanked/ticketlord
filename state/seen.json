@@ -24728,12 +24728,16 @@
   "revivalhub"
  ],
  "stats": {
+  "alerts": 0,
+  "checks": 1,
+  "last_check": 1793964439,
   "last_digest": "2026-11-05",
+  "new": 0,
   "tracked": {
-   "academy": 86,
+   "academy": 85,
    "amc": 36,
-   "cinematheque": 104,
-   "revivalhub": 1016
+   "cinematheque": 101,
+   "revivalhub": 1012
   }
  }
 }
