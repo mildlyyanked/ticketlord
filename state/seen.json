@@ -1165,6 +1165,11 @@
    "last_seen": 1793923200,
    "title": "Teenage Sex and Death at Camp Miasma"
   },
+  "cinematheque:5566939": {
+   "first_seen": 1793923200,
+   "last_seen": 1793923200,
+   "title": "CLUB KID in 35mm"
+  },
   "cinematheque:5566941": {
    "first_seen": 1793318400,
    "last_seen": 1793923200,
@@ -15835,6 +15840,11 @@
    "last_seen": 1792800000,
    "title": "Closure"
   },
+  "url:https://americancinematheque.com/now-showing/club-kid-11-12-2026|2026-11-12": {
+   "first_seen": 1793923200,
+   "last_seen": 1793923200,
+   "title": "CLUB KID in 35mm"
+  },
   "url:https://americancinematheque.com/now-showing/clue-10-18-2026|2026-10-18": {
    "first_seen": 1791849600,
    "last_seen": 1792368000,
@@ -24728,16 +24738,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 0,
-  "checks": 1,
-  "last_check": 1793964439,
+  "alerts": 1,
+  "checks": 2,
+  "last_check": 1793989244,
   "last_digest": "2026-11-05",
-  "new": 0,
+  "new": 1,
   "tracked": {
    "academy": 85,
    "amc": 36,
-   "cinematheque": 101,
-   "revivalhub": 1012
+   "cinematheque": 102,
+   "revivalhub": 1011
   }
  }
 }
