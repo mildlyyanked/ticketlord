@@ -24809,15 +24809,15 @@
  ],
  "stats": {
   "alerts": 0,
-  "checks": 1,
-  "last_check": 1794145783,
+  "checks": 2,
+  "last_check": 1794163529,
   "last_digest": "2026-11-07",
   "new": 0,
   "tracked": {
-   "academy": 65,
+   "academy": 64,
    "amc": 28,
    "cinematheque": 82,
-   "revivalhub": 912
+   "revivalhub": 908
   }
  }
 }
