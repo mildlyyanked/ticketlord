@@ -7325,6 +7325,11 @@
    "last_seen": 1793318400,
    "title": "Possible Love"
   },
+  "revivalhub:recLeJdMbccg9jsnI": {
+   "first_seen": 1794182400,
+   "last_seen": 1794182400,
+   "title": "The Water Is Always Warm"
+  },
   "revivalhub:recLejQpHWtwW4CEu": {
    "first_seen": 1791792198,
    "last_seen": 1792195200,
@@ -21350,6 +21355,11 @@
    "last_seen": 1794182400,
    "title": "The Fantasy of Deer Warrior"
   },
+  "url:https://eventbrite.com/e/the-water-is-always-warm-la-premiere-tickets-2004250440019|2026-11-14": {
+   "first_seen": 1794182400,
+   "last_seen": 1794182400,
+   "title": "The Water Is Always Warm"
+  },
   "url:https://eventbrite.com/e/the-wolf-house-la-casa-lobo-presented-by-el-cine-tickets-2002317738256|2026-10-14": {
    "first_seen": 1791849600,
    "last_seen": 1792022400,
@@ -27498,16 +27508,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 45,
-  "checks": 4,
-  "last_check": 1794191623,
+  "alerts": 46,
+  "checks": 5,
+  "last_check": 1794219234,
   "last_digest": "2026-11-07",
-  "new": 272,
+  "new": 273,
   "tracked": {
-   "academy": 48,
+   "academy": 47,
    "amc": 22,
-   "cinematheque": 82,
-   "revivalhub": 1147
+   "cinematheque": 77,
+   "revivalhub": 1135
   }
  }
 }
