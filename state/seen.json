@@ -1125,6 +1125,11 @@
    "last_seen": 1794182400,
    "title": "THREE BILLBOARDS OUTSIDE EBBING, MISSOURI / WILD HORSE NINE / Surprise Film"
   },
+  "cinematheque:5566903": {
+   "first_seen": 1794182400,
+   "last_seen": 1794182400,
+   "title": "You Can See Everything"
+  },
   "cinematheque:5566907": {
    "first_seen": 1791849600,
    "last_seen": 1794182400,
@@ -18305,6 +18310,11 @@
    "last_seen": 1794096000,
    "title": "Women in Love"
   },
+  "url:https://americancinematheque.com/now-showing/you-can-see-everything-11-15-2026|2026-11-15": {
+   "first_seen": 1794182400,
+   "last_seen": 1794182400,
+   "title": "You Can See Everything"
+  },
   "url:https://americancinematheque.com/series/proof-proof-of-concept-film-festival-2026|2026-11-06": {
    "first_seen": 1791849600,
    "last_seen": 1793923200,
@@ -27508,16 +27518,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 46,
-  "checks": 5,
-  "last_check": 1794219234,
+  "alerts": 47,
+  "checks": 6,
+  "last_check": 1794258032,
   "last_digest": "2026-11-07",
-  "new": 273,
+  "new": 274,
   "tracked": {
    "academy": 47,
    "amc": 22,
-   "cinematheque": 77,
-   "revivalhub": 1135
+   "cinematheque": 78,
+   "revivalhub": 1132
   }
  }
 }
