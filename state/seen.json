@@ -1315,6 +1315,11 @@
    "last_seen": 1794268800,
    "title": "If I Go Will They Miss Me"
   },
+  "cinematheque:5566999": {
+   "first_seen": 1794268800,
+   "last_seen": 1794268800,
+   "title": "The Violinist"
+  },
   "cinematheque:5567001": {
    "first_seen": 1793318400,
    "last_seen": 1794268800,
@@ -18335,6 +18340,11 @@
    "last_seen": 1793577600,
    "title": "The Twelve Chairs"
   },
+  "url:https://americancinematheque.com/now-showing/the-violinist-11-20-2026|2026-11-20": {
+   "first_seen": 1794268800,
+   "last_seen": 1794268800,
+   "title": "The Violinist"
+  },
   "url:https://americancinematheque.com/now-showing/the-wild-party-11-01-2026|2026-11-01": {
    "first_seen": 1791849600,
    "last_seen": 1793577600,
@@ -27618,15 +27628,15 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 0,
-  "checks": 1,
-  "last_check": 1794310806,
+  "alerts": 1,
+  "checks": 2,
+  "last_check": 1794339458,
   "last_digest": "2026-11-09",
-  "new": 0,
+  "new": 1,
   "tracked": {
    "academy": 45,
    "amc": 22,
-   "cinematheque": 85,
+   "cinematheque": 86,
    "revivalhub": 1096
   }
  }
