@@ -955,6 +955,11 @@
    "last_seen": 1794355200,
    "title": "PAPER TIGER"
   },
+  "amc:amc-st-148725442": {
+   "first_seen": 1794355200,
+   "last_seen": 1794355200,
+   "title": "I Play Rocky"
+  },
   "cinematheque:5563671": {
    "first_seen": 1791849600,
    "last_seen": 1792281600,
@@ -17175,6 +17180,11 @@
    "last_seen": 1794355200,
    "title": "Elsinore"
   },
+  "url:https://amctheatres.com/showtimes/all/2026-11-14/burbank/all/148725442|2026-11-14": {
+   "first_seen": 1794355200,
+   "last_seen": 1794355200,
+   "title": "I Play Rocky"
+  },
   "url:https://amctheatres.com/showtimes/all/2026-11-14/centurycity/all/148194376|2026-11-14": {
    "first_seen": 1793059200,
    "last_seen": 1794355200,
@@ -27648,16 +27658,12 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 3,
-  "checks": 3,
-  "last_check": 1794357235,
-  "last_digest": "2026-11-09",
-  "new": 3,
+  "last_digest": "2026-11-10",
   "tracked": {
    "academy": 45,
-   "amc": 23,
+   "amc": 24,
    "cinematheque": 86,
-   "revivalhub": 1088
+   "revivalhub": 1061
   }
  }
 }
