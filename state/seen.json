@@ -950,6 +950,16 @@
    "last_seen": 1794355200,
    "title": "TANGLES"
   },
+  "amc:amc-st-148624762": {
+   "first_seen": 1794355200,
+   "last_seen": 1794355200,
+   "title": "Club Kid"
+  },
+  "amc:amc-st-148624763": {
+   "first_seen": 1794355200,
+   "last_seen": 1794355200,
+   "title": "Club Kid Special Intro with Jordan Firstman"
+  },
   "amc:amc-st-148693172": {
    "first_seen": 1794355200,
    "last_seen": 1794355200,
@@ -1224,6 +1234,11 @@
    "first_seen": 1793577600,
    "last_seen": 1794355200,
    "title": "The Debut"
+  },
+  "cinematheque:5566945": {
+   "first_seen": 1794355200,
+   "last_seen": 1794355200,
+   "title": "The Spiral"
   },
   "cinematheque:5566949": {
    "first_seen": 1793750400,
@@ -17195,6 +17210,16 @@
    "last_seen": 1794355200,
    "title": "PAPER TIGER"
   },
+  "url:https://amctheatres.com/showtimes/all/2026-11-14/centurycity/all/148624762|2026-11-14": {
+   "first_seen": 1794355200,
+   "last_seen": 1794355200,
+   "title": "Club Kid"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-11-14/centurycity/all/148624763|2026-11-14": {
+   "first_seen": 1794355200,
+   "last_seen": 1794355200,
+   "title": "Club Kid Special Intro with Jordan Firstman"
+  },
   "url:https://amctheatres.com/showtimes/all/2026-11-14/thegrove/all/148198847|2026-11-14": {
    "first_seen": 1793232000,
    "last_seen": 1794355200,
@@ -18344,6 +18369,11 @@
    "first_seen": 1791849600,
    "last_seen": 1792108800,
    "title": "The Sixth Sense"
+  },
+  "url:https://americancinematheque.com/now-showing/the-spiral-11-17-2026|2026-11-17": {
+   "first_seen": 1794355200,
+   "last_seen": 1794355200,
+   "title": "The Spiral"
   },
   "url:https://americancinematheque.com/now-showing/the-story-of-sin-11-21-2026|2026-11-21": {
    "first_seen": 1791849600,
@@ -27658,16 +27688,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 0,
-  "checks": 1,
-  "last_check": 1794409425,
+  "alerts": 3,
+  "checks": 2,
+  "last_check": 1794433882,
   "last_digest": "2026-11-10",
-  "new": 0,
+  "new": 3,
   "tracked": {
    "academy": 45,
-   "amc": 24,
+   "amc": 26,
    "cinematheque": 83,
-   "revivalhub": 1061
+   "revivalhub": 1057
   }
  }
 }
