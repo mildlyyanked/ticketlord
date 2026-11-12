@@ -1165,6 +1165,11 @@
    "last_seen": 1794441600,
    "title": "Cameron Winter at Carnegie Hall"
   },
+  "cinematheque:5566909": {
+   "first_seen": 1794441600,
+   "last_seen": 1794441600,
+   "title": "The Mosquito Bowl"
+  },
   "cinematheque:5566911": {
    "first_seen": 1791849600,
    "last_seen": 1794441600,
@@ -1405,6 +1410,11 @@
    "last_seen": 1794441600,
    "title": "Russell Goldman Presents GOLD DIGGERS OF 1933"
   },
+  "cinematheque:5567039": {
+   "first_seen": 1794441600,
+   "last_seen": 1794441600,
+   "title": "Lone Survivor"
+  },
   "cinematheque:5567043": {
    "first_seen": 1794268800,
    "last_seen": 1794441600,
@@ -1449,6 +1459,11 @@
    "first_seen": 1791849600,
    "last_seen": 1794441600,
    "title": "\"The Greatest Love of All Time\" / THE MARGIN"
+  },
+  "cinematheque:5567091": {
+   "first_seen": 1794441600,
+   "last_seen": 1794441600,
+   "title": "Friday Night Lights"
   },
   "cinematheque:5567097": {
    "first_seen": 1791849600,
@@ -17705,6 +17720,11 @@
    "last_seen": 1794441600,
    "title": "Excalibur"
   },
+  "url:https://americancinematheque.com/now-showing/friday-night-lights-11-19-2026|2026-11-19": {
+   "first_seen": 1794441600,
+   "last_seen": 1794441600,
+   "title": "Friday Night Lights"
+  },
   "url:https://americancinematheque.com/now-showing/from-dusk-til-dawn-11-25-2026|2026-11-25": {
    "first_seen": 1794268800,
    "last_seen": 1794441600,
@@ -17964,6 +17984,11 @@
    "first_seen": 1793836800,
    "last_seen": 1794441600,
    "title": "Logan"
+  },
+  "url:https://americancinematheque.com/now-showing/lone-survivor-11-22-2026|2026-11-22": {
+   "first_seen": 1794441600,
+   "last_seen": 1794441600,
+   "title": "Lone Survivor"
   },
   "url:https://americancinematheque.com/now-showing/lost-highway-10-17-2026|2026-10-17": {
    "first_seen": 1791849600,
@@ -18319,6 +18344,11 @@
    "first_seen": 1792454400,
    "last_seen": 1794441600,
    "title": "The Last Picture Show"
+  },
+  "url:https://americancinematheque.com/now-showing/the-mosquito-bowl-11-21-2026|2026-11-21": {
+   "first_seen": 1794441600,
+   "last_seen": 1794441600,
+   "title": "The Mosquito Bowl"
   },
   "url:https://americancinematheque.com/now-showing/the-music-store-11-12-2026|2026-11-11": {
    "first_seen": 1793836800,
@@ -27688,15 +27718,15 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 3,
-  "checks": 4,
-  "last_check": 1794480816,
+  "alerts": 6,
+  "checks": 5,
+  "last_check": 1794509291,
   "last_digest": "2026-11-10",
-  "new": 3,
+  "new": 6,
   "tracked": {
    "academy": 43,
    "amc": 26,
-   "cinematheque": 79,
+   "cinematheque": 82,
    "revivalhub": 1016
   }
  }
