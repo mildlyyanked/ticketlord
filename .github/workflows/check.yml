@@ -16,6 +16,10 @@ on:
         description: "Only list what each source finds (no notifications)"
         type: boolean
         default: false
+      keep_checking:
+        description: "Keep checking every 10 minutes for ~5.5 hours (public repo only)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -67,7 +71,7 @@ jobs:
           fi
           git config user.name "ticketlord-bot"
           git config user.email "ticketlord-bot@users.noreply.github.com"
-          if [ "${{ github.event_name }}" = "schedule" ]; then
+          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ inputs.keep_checking }}" = "true" ]; then
             bash scripts/loop.sh
           else
             if [ "${{ inputs.test_notification }}" = "true" ]; then ticketlord test-notify; echo "----"; fi
