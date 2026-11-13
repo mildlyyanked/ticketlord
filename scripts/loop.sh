@@ -14,11 +14,12 @@ interval=$(( ${TICKETLORD_LOOP_INTERVAL:-10} * 60 ))
 duration=$(( ${TICKETLORD_LOOP_MINUTES:-340} * 60 ))
 
 private=$(curl -fsS -H "Authorization: Bearer ${GITHUB_TOKEN}" \
-  "https://api.github.com/repos/${GITHUB_REPOSITORY}" | python3 -c 'import json,sys; print(json.load(sys.stdin)["private"])' 2>/dev/null || echo "True")
-if [ "$private" != "False" ]; then
-  echo "Repository is private (or visibility unknown): one check only, to stay within the free Actions minutes."
-  duration=0
-fi
+  "https://api.github.com/repos/${GITHUB_REPOSITORY}" | python3 -c 'import json,sys; print(json.load(sys.stdin)["private"])' 2>/dev/null || echo "unknown")
+case "$private" in
+  False) echo "Repository is public: checking every $((interval / 60)) min for $((duration / 60)) min." ;;
+  True) echo "Repository is private: one check only, to stay within the free Actions minutes."; duration=0 ;;
+  *) echo "::warning::Couldn't read the repository's visibility: one check only, to be safe with Actions minutes."; duration=0 ;;
+esac
 
 seen_hash() {  # fingerprint of the screenings recorded so far (not the check-in counters)
   python3 -c 'import hashlib,json,sys; print(hashlib.sha1(json.dumps(json.load(open(sys.argv[1]))["seen"], sort_keys=True).encode()).hexdigest())' state/seen.json 2>/dev/null
