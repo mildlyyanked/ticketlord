@@ -1075,6 +1075,11 @@
    "last_seen": 1792800000,
    "title": "New Black Hollywood"
   },
+  "cinematheque:5566719": {
+   "first_seen": 1794528000,
+   "last_seen": 1794528000,
+   "title": "Filipi\u00f1ana"
+  },
   "cinematheque:5566727": {
    "first_seen": 1794528000,
    "last_seen": 1794528000,
@@ -17950,6 +17955,11 @@
    "last_seen": 1794528000,
    "title": "Excalibur"
   },
+  "url:https://americancinematheque.com/now-showing/filipinana-12-02-2026|2026-12-02": {
+   "first_seen": 1794528000,
+   "last_seen": 1794528000,
+   "title": "Filipi\u00f1ana"
+  },
   "url:https://americancinematheque.com/now-showing/friday-night-lights-11-19-2026|2026-11-19": {
    "first_seen": 1794441600,
    "last_seen": 1794528000,
@@ -28028,16 +28038,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 2,
-  "checks": 69,
-  "last_check": 1794601427,
+  "alerts": 3,
+  "checks": 77,
+  "last_check": 1794609204,
   "last_digest": "2026-11-12",
-  "new": 2,
+  "new": 3,
   "tracked": {
-   "academy": 43,
+   "academy": 42,
    "amc": 27,
-   "cinematheque": 109,
-   "revivalhub": 986
+   "cinematheque": 110,
+   "revivalhub": 981
   }
  }
 }
