@@ -1340,6 +1340,11 @@
    "last_seen": 1794528000,
    "title": "Being There / Dr. Strangelove"
   },
+  "cinematheque:5566963": {
+   "first_seen": 1794528000,
+   "last_seen": 1794528000,
+   "title": "Tangles"
+  },
   "cinematheque:5566965": {
    "first_seen": 1792022400,
    "last_seen": 1793577600,
@@ -18500,6 +18505,11 @@
    "last_seen": 1794528000,
    "title": "Student Confidential"
   },
+  "url:https://americancinematheque.com/now-showing/tangles-11-30-2026|2026-11-30": {
+   "first_seen": 1794528000,
+   "last_seen": 1794528000,
+   "title": "Tangles"
+  },
   "url:https://americancinematheque.com/now-showing/teenage-sex-and-death-at-camp-miasma-11-11-2026|2026-11-11": {
    "first_seen": 1793318400,
    "last_seen": 1794441600,
@@ -28018,15 +28028,15 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 1,
-  "checks": 44,
-  "last_check": 1794586352,
+  "alerts": 2,
+  "checks": 55,
+  "last_check": 1794592986,
   "last_digest": "2026-11-12",
-  "new": 1,
+  "new": 2,
   "tracked": {
    "academy": 43,
    "amc": 27,
-   "cinematheque": 108,
+   "cinematheque": 109,
    "revivalhub": 989
   }
  }
