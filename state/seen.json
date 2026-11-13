@@ -28008,16 +28008,12 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 9,
-  "checks": 6,
-  "last_check": 1794528424,
-  "last_digest": "2026-11-10",
-  "new": 35,
+  "last_digest": "2026-11-12",
   "tracked": {
    "academy": 43,
    "amc": 26,
    "cinematheque": 111,
-   "revivalhub": 1013
+   "revivalhub": 989
   }
  }
 }
