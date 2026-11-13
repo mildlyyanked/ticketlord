@@ -50,14 +50,18 @@ Install **ntfy** ([iOS](https://apps.apple.com/app/ntfy/id1625396347) / [Android
 and subscribe to a topic with a hard-to-guess name, e.g. `ticketlord-7f3k2q9x`. Anyone who knows the name can read the topic.
 
 ### 2a. Run it for free on GitHub Actions (recommended)
-This repo includes `.github/workflows/check.yml`. It runs twice an hour and commits `state/seen.json` back to the repo.
+This repo includes `.github/workflows/check.yml`, which commits `state/seen.json` back to the repo.
+
+GitHub only starts scheduled workflows a few times a day (about every 5 hours here), however often the
+schedule asks. So on a **public** repo, where Actions minutes are free, each scheduled run stays up for about
+5½ hours and checks **every 10 minutes** (`scripts/loop.sh`); the next scheduled run takes over. On a **private**
+repo (2,000 free minutes a month) each run checks once, so checks are hours apart there.
+`TICKETLORD_LOOP_INTERVAL` (minutes between checks) and `TICKETLORD_LOOP_MINUTES` (length of one run) tune it.
 
 1. Repo **Settings → Secrets and variables → Actions → Secrets**: add `NTFY_TOPIC` (and/or the Pushover/Telegram secrets).
+   Secrets stay hidden even on a public repo.
 2. Optionally, list keywords one per line in `keywords.txt`, and/or under **Variables** add `TICKETLORD_KEYWORDS` (comma-separated). Both lists apply. Add `TICKETLORD_ONLY_KEYWORDS=1` to mute non-matches.
-3. **Actions → Check screenings → Run workflow** once to seed. Tick **Also send a test push to my phone** to confirm notifications arrive. Scheduled runs take over from there.
-
-> GitHub only runs scheduled workflows on the default branch, and it may delay or skip runs at busy times.
-> Revival Hub publishes new listings in batches and its feed is cached for up to an hour, so faster checks gain little.
+3. **Actions → Check screenings → Run workflow** once to seed. Scheduled runs take over from there.
 
 ### 2b. Or run it on your own machine / a Raspberry Pi / a VPS
 ```bash

@@ -2,8 +2,9 @@ name: Check screenings
 
 on:
   schedule:
-    # Twice an hour, off the busy :00 slot. GitHub silently drops many runs of very frequent
-    # schedules, and the Revival Hub feed is cached for up to an hour anyway.
+    # GitHub honours only a few of these a day. On a public repo each scheduled run therefore keeps
+    # checking every 10 minutes for ~5.5 hours (scripts/loop.sh) and the next run takes over; on a
+    # private repo it checks once, to stay within the free Actions minutes.
     - cron: "7,37 * * * *"
   workflow_dispatch:
     inputs:
@@ -26,7 +27,7 @@ concurrency:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
@@ -45,6 +46,9 @@ jobs:
           TICKETLORD_WIDE_RELEASE: ${{ vars.TICKETLORD_WIDE_RELEASE }}
           TICKETLORD_DIGEST_HOUR: ${{ vars.TICKETLORD_DIGEST_HOUR }}
           TICKETLORD_STATE_FILE: state/seen.json
+          TICKETLORD_LOOP_INTERVAL: ${{ vars.TICKETLORD_LOOP_INTERVAL }}
+          TICKETLORD_LOOP_MINUTES: ${{ vars.TICKETLORD_LOOP_MINUTES }}
+          GITHUB_TOKEN: ${{ github.token }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
           PUSHOVER_USER_KEY: ${{ secrets.PUSHOVER_USER_KEY }}
@@ -61,8 +65,14 @@ jobs:
             echo "::warning::No notification channel set up yet. Add an NTFY_TOPIC secret under Settings > Secrets and variables > Actions."
             exit 0
           fi
-          if [ "${{ inputs.test_notification }}" = "true" ]; then ticketlord test-notify; echo "----"; fi
-          ticketlord check
+          git config user.name "ticketlord-bot"
+          git config user.email "ticketlord-bot@users.noreply.github.com"
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            bash scripts/loop.sh
+          else
+            if [ "${{ inputs.test_notification }}" = "true" ]; then ticketlord test-notify; echo "----"; fi
+            ticketlord check
+          fi
       - name: Save seen screenings
         if: always()
         run: |
