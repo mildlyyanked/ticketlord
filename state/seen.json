@@ -970,6 +970,11 @@
    "last_seen": 1794528000,
    "title": "I Play Rocky"
   },
+  "amc:amc-st-148743357": {
+   "first_seen": 1794528000,
+   "last_seen": 1794528000,
+   "title": "THE NAPA BOYS"
+  },
   "cinematheque:5563671": {
    "first_seen": 1791849600,
    "last_seen": 1792281600,
@@ -17470,6 +17475,11 @@
    "last_seen": 1794528000,
    "title": "TANGLES"
   },
+  "url:https://amctheatres.com/showtimes/all/2026-12-12/AMCTheAmericanaatBrand18/all/148743357|2026-12-12": {
+   "first_seen": 1794528000,
+   "last_seen": 1794528000,
+   "title": "THE NAPA BOYS"
+  },
   "url:https://americancinematheque.com/now-showing/21st-annual-horrorthon-10-24-2026|2026-10-24": {
    "first_seen": 1791849600,
    "last_seen": 1792886400,
@@ -28008,14 +28018,14 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 0,
-  "checks": 35,
-  "last_check": 1794581208,
+  "alerts": 1,
+  "checks": 44,
+  "last_check": 1794586352,
   "last_digest": "2026-11-12",
-  "new": 0,
+  "new": 1,
   "tracked": {
    "academy": 43,
-   "amc": 26,
+   "amc": 27,
    "cinematheque": 108,
    "revivalhub": 989
   }
