@@ -28039,15 +28039,15 @@
  ],
  "stats": {
   "alerts": 3,
-  "checks": 137,
-  "last_check": 1794666243,
+  "checks": 171,
+  "last_check": 1794690882,
   "last_digest": "2026-11-12",
   "new": 3,
   "tracked": {
-   "academy": 40,
+   "academy": 39,
    "amc": 24,
    "cinematheque": 103,
-   "revivalhub": 935
+   "revivalhub": 922
   }
  }
 }
