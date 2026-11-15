@@ -29913,16 +29913,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 18,
-  "checks": 172,
-  "last_check": 1794710825,
-  "last_digest": "2026-11-12",
-  "new": 194,
+  "alerts": 0,
+  "checks": 31,
+  "last_check": 1794730716,
+  "last_digest": "2026-11-14",
+  "new": 0,
   "tracked": {
-   "academy": 39,
+   "academy": 38,
    "amc": 18,
-   "cinematheque": 103,
-   "revivalhub": 1136
+   "cinematheque": 94,
+   "revivalhub": 1104
   }
  }
 }
