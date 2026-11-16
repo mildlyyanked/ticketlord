@@ -30504,15 +30504,15 @@
  ],
  "stats": {
   "alerts": 1,
-  "checks": 55,
-  "last_check": 1794862350,
+  "checks": 67,
+  "last_check": 1794869580,
   "last_digest": "2026-11-15",
   "new": 1,
   "tracked": {
    "academy": 35,
    "amc": 16,
    "cinematheque": 87,
-   "revivalhub": 1041
+   "revivalhub": 1036
   }
  }
 }
