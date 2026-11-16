@@ -1505,6 +1505,11 @@
    "last_seen": 1794787200,
    "title": "Russell Goldman Presents GOLD DIGGERS OF 1933"
   },
+  "cinematheque:5567037": {
+   "first_seen": 1794787200,
+   "last_seen": 1794787200,
+   "title": "Raise the Red Lantern"
+  },
   "cinematheque:5567039": {
    "first_seen": 1794441600,
    "last_seen": 1794787200,
@@ -19950,6 +19955,11 @@
    "last_seen": 1794787200,
    "title": "Raise the Red Lantern"
   },
+  "url:https://americancinematheque.com/now-showing/raise-the-red-lantern-11-22-2026|2026-11-22": {
+   "first_seen": 1794787200,
+   "last_seen": 1794787200,
+   "title": "Raise the Red Lantern"
+  },
   "url:https://americancinematheque.com/now-showing/ran-11-29-2026|2026-11-29": {
    "first_seen": 1794268800,
    "last_seen": 1794787200,
@@ -30493,16 +30503,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 0,
-  "checks": 33,
-  "last_check": 1794833595,
+  "alerts": 1,
+  "checks": 55,
+  "last_check": 1794862350,
   "last_digest": "2026-11-15",
-  "new": 0,
+  "new": 1,
   "tracked": {
    "academy": 35,
    "amc": 16,
-   "cinematheque": 86,
-   "revivalhub": 1043
+   "cinematheque": 87,
+   "revivalhub": 1041
   }
  }
 }
