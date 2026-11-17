@@ -32109,15 +32109,15 @@
  ],
  "stats": {
   "alerts": 3,
-  "checks": 84,
-  "last_check": 1794956830,
+  "checks": 89,
+  "last_check": 1794959844,
   "last_digest": "2026-11-16",
   "new": 3,
   "tracked": {
    "academy": 161,
    "amc": 16,
    "cinematheque": 89,
-   "revivalhub": 1018
+   "revivalhub": 1016
   }
  }
 }
