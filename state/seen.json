@@ -1715,6 +1715,11 @@
    "last_seen": 1792800000,
    "title": "New Black Hollywood"
   },
+  "cinematheque:5566513": {
+   "first_seen": 1794873600,
+   "last_seen": 1794873600,
+   "title": "Violent Night 2"
+  },
   "cinematheque:5566597": {
    "first_seen": 1794873600,
    "last_seen": 1794873600,
@@ -21765,6 +21770,11 @@
    "last_seen": 1792886400,
    "title": "\"Venus on the Half-Shell\" / THE BEAST"
   },
+  "url:https://americancinematheque.com/now-showing/violent-night-2-12-01-2026|2026-12-01": {
+   "first_seen": 1794873600,
+   "last_seen": 1794873600,
+   "title": "Violent Night 2"
+  },
   "url:https://americancinematheque.com/now-showing/werewolf-by-night-10-24-2026|2026-10-24": {
    "first_seen": 1792368000,
    "last_seen": 1792886400,
@@ -32078,15 +32088,15 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 0,
-  "checks": 55,
-  "last_check": 1794925989,
+  "alerts": 1,
+  "checks": 56,
+  "last_check": 1794939941,
   "last_digest": "2026-11-16",
-  "new": 0,
+  "new": 1,
   "tracked": {
    "academy": 161,
    "amc": 16,
-   "cinematheque": 87,
+   "cinematheque": 88,
    "revivalhub": 1028
   }
  }
