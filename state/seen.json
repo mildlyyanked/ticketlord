@@ -32079,14 +32079,14 @@
  ],
  "stats": {
   "alerts": 0,
-  "checks": 21,
-  "last_check": 1794897093,
+  "checks": 55,
+  "last_check": 1794925989,
   "last_digest": "2026-11-16",
   "new": 0,
   "tracked": {
    "academy": 161,
    "amc": 16,
-   "cinematheque": 91,
+   "cinematheque": 87,
    "revivalhub": 1028
   }
  }
