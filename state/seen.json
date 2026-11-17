@@ -825,6 +825,11 @@
    "last_seen": 1794873600,
    "title": "In Which Annie Gives It Those Ones"
   },
+  "academy:b1d4b43e-beb3-fddb-dc7e-8a21a6c23e22": {
+   "first_seen": 1794873600,
+   "last_seen": 1794873600,
+   "title": "The Quartermass Xperiment with Quartermass 2"
+  },
   "academy:b1e930a8-cb8d-263f-fa4c-89bddf3e1191": {
    "first_seen": 1791849600,
    "last_seen": 1794873600,
@@ -19915,6 +19920,11 @@
    "last_seen": 1794873600,
    "title": "The Pornographers"
   },
+  "url:https://academymuseum.org/en/programs/detail/the-quartermass-xperiment-with-quartermass-2-01a19e17-1f05-dcff-d17e-e33fce2e2c1a|2027-01-15": {
+   "first_seen": 1794873600,
+   "last_seen": 1794873600,
+   "title": "The Quartermass Xperiment with Quartermass 2"
+  },
   "url:https://academymuseum.org/en/programs/detail/the-seven-year-itch-019fce23-41b9-6b5f-6f14-ff1a281254c8|2026-10-19": {
    "first_seen": 1791849600,
    "last_seen": 1792368000,
@@ -32098,16 +32108,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 2,
-  "checks": 78,
-  "last_check": 1794953214,
+  "alerts": 3,
+  "checks": 84,
+  "last_check": 1794956830,
   "last_digest": "2026-11-16",
-  "new": 2,
+  "new": 3,
   "tracked": {
-   "academy": 160,
+   "academy": 161,
    "amc": 16,
    "cinematheque": 89,
-   "revivalhub": 1020
+   "revivalhub": 1018
   }
  }
 }
