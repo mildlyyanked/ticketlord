@@ -32078,16 +32078,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 5,
-  "checks": 68,
-  "last_check": 1794877223,
-  "last_digest": "2026-11-15",
-  "new": 159,
+  "alerts": 0,
+  "checks": 21,
+  "last_check": 1794897093,
+  "last_digest": "2026-11-16",
+  "new": 0,
   "tracked": {
-   "academy": 162,
+   "academy": 161,
    "amc": 16,
    "cinematheque": 91,
-   "revivalhub": 1056
+   "revivalhub": 1028
   }
  }
 }
