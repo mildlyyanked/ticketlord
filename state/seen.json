@@ -32263,16 +32263,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 5,
-  "checks": 91,
-  "last_check": 1794965030,
-  "last_digest": "2026-11-16",
-  "new": 19,
+  "alerts": 0,
+  "checks": 22,
+  "last_check": 1794984322,
+  "last_digest": "2026-11-17",
+  "new": 0,
   "tracked": {
    "academy": 161,
    "amc": 15,
    "cinematheque": 89,
-   "revivalhub": 1090
+   "revivalhub": 1065
   }
  }
 }
