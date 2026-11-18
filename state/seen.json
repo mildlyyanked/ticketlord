@@ -1730,6 +1730,11 @@
    "last_seen": 1794960000,
    "title": "Once Upon a Time in Harlem"
   },
+  "cinematheque:5566603": {
+   "first_seen": 1794960000,
+   "last_seen": 1794960000,
+   "title": "Cinematic Void Presents SPIRIT TASTING"
+  },
   "cinematheque:5566631": {
    "first_seen": 1794873600,
    "last_seen": 1794960000,
@@ -2724,6 +2729,36 @@
    "first_seen": 1794528000,
    "last_seen": 1794960000,
    "title": "The Match Factory Girl"
+  },
+  "cinematheque:5568906": {
+   "first_seen": 1794960000,
+   "last_seen": 1794960000,
+   "title": "Cinematic Void Presents COLD EYES OF FEAR"
+  },
+  "cinematheque:5568942": {
+   "first_seen": 1794960000,
+   "last_seen": 1794960000,
+   "title": "Cinematic Void Presents IDENTIKIT"
+  },
+  "cinematheque:5568982": {
+   "first_seen": 1794960000,
+   "last_seen": 1794960000,
+   "title": "Cinematic Void Presents BODY DOUBLE"
+  },
+  "cinematheque:5569021": {
+   "first_seen": 1794960000,
+   "last_seen": 1794960000,
+   "title": "Cinematic Void Presents THE EYES OF LAURA MARS"
+  },
+  "cinematheque:5569148": {
+   "first_seen": 1794960000,
+   "last_seen": 1794960000,
+   "title": "Cinematic Void Presents TENEBRAE / DEEP RED"
+  },
+  "cinematheque:5569162": {
+   "first_seen": 1794960000,
+   "last_seen": 1794960000,
+   "title": "Cinematic Void Presents DRESSED TO KILL / I KNOW WHO KILLED ME"
   },
   "cinematheque:5569477": {
    "first_seen": 1791849600,
@@ -20870,6 +20905,16 @@
    "last_seen": 1794960000,
    "title": "3 Women"
   },
+  "url:https://americancinematheque.com/now-showing/cinematic-void-presents-body-double-01-18-2027|2027-01-18": {
+   "first_seen": 1794960000,
+   "last_seen": 1794960000,
+   "title": "Cinematic Void Presents BODY DOUBLE"
+  },
+  "url:https://americancinematheque.com/now-showing/cinematic-void-presents-cold-eyes-of-fear-01-04-2027|2027-01-04": {
+   "first_seen": 1794960000,
+   "last_seen": 1794960000,
+   "title": "Cinematic Void Presents COLD EYES OF FEAR"
+  },
   "url:https://americancinematheque.com/now-showing/cinematic-void-presents-dr-butcher-md-10-19-2026|2026-10-19": {
    "first_seen": 1791849600,
    "last_seen": 1792454400,
@@ -20889,6 +20934,11 @@
    "first_seen": 1791849600,
    "last_seen": 1794960000,
    "title": "Fellini's Casanova"
+  },
+  "url:https://americancinematheque.com/now-showing/cinematic-void-presents-identikit-01-11-2027|2027-01-11": {
+   "first_seen": 1794960000,
+   "last_seen": 1794960000,
+   "title": "Cinematic Void Presents IDENTIKIT"
   },
   "url:https://americancinematheque.com/now-showing/cinematic-void-presents-los-leprosos-y-el-sexo-12-14-2026|2026-12-14": {
    "first_seen": 1794528000,
@@ -20914,6 +20964,21 @@
    "first_seen": 1794528000,
    "last_seen": 1794960000,
    "title": "Cinematic Void Presents SANTO Y LA VENGANZA DE LA MOMIA"
+  },
+  "url:https://americancinematheque.com/now-showing/cinematic-void-presents-spirit-tasting-12-05-2026|2026-12-05": {
+   "first_seen": 1794960000,
+   "last_seen": 1794960000,
+   "title": "Cinematic Void Presents SPIRIT TASTING"
+  },
+  "url:https://americancinematheque.com/now-showing/cinematic-void-presents-tenebrae-deep-red-01-08-2027|2027-01-08": {
+   "first_seen": 1794960000,
+   "last_seen": 1794960000,
+   "title": "Cinematic Void Presents TENEBRAE / DEEP RED"
+  },
+  "url:https://americancinematheque.com/now-showing/cinematic-void-presents-the-eyes-of-laura-mars-01-25-2027|2027-01-25": {
+   "first_seen": 1794960000,
+   "last_seen": 1794960000,
+   "title": "Cinematic Void Presents THE EYES OF LAURA MARS"
   },
   "url:https://americancinematheque.com/now-showing/cinematic-void-presents-wr-mysteries-of-the-organism-11-16-2026|2026-11-16": {
    "first_seen": 1791849600,
@@ -20999,6 +21064,11 @@
    "first_seen": 1791849600,
    "last_seen": 1792800000,
    "title": "Dracula"
+  },
+  "url:https://americancinematheque.com/now-showing/dressed-to-kill-i-know-who-killed-me-01-22-2027|2027-01-22": {
+   "first_seen": 1794960000,
+   "last_seen": 1794960000,
+   "title": "Cinematic Void Presents DRESSED TO KILL / I KNOW WHO KILLED ME"
   },
   "url:https://americancinematheque.com/now-showing/east-of-eden-east-of-eden-11-11-2026|2026-11-11": {
    "first_seen": 1793059200,
@@ -32268,16 +32338,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 0,
-  "checks": 64,
-  "last_check": 1795028823,
+  "alerts": 7,
+  "checks": 68,
+  "last_check": 1795031237,
   "last_digest": "2026-11-17",
-  "new": 0,
+  "new": 7,
   "tracked": {
    "academy": 161,
    "amc": 15,
-   "cinematheque": 85,
-   "revivalhub": 1064
+   "cinematheque": 92,
+   "revivalhub": 1063
   }
  }
 }
