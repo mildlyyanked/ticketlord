@@ -19855,6 +19855,11 @@
    "last_seen": 1794960000,
    "title": "The Exorcist"
   },
+  "url:https://academymuseum.org/en/programs/detail/the-family-oppenheim-01a19e2e-7b35-a994-f8ba-1a6aa3f8e957|2026-12-06": {
+   "first_seen": 1794960000,
+   "last_seen": 1794960000,
+   "title": "The Family Oppenheim"
+  },
   "url:https://academymuseum.org/en/programs/detail/the-favourite-019fceb8-441b-b5b9-ada8-4e32ba7253fa|2026-11-22": {
    "first_seen": 1791849600,
    "last_seen": 1794960000,
@@ -32264,15 +32269,15 @@
  ],
  "stats": {
   "alerts": 0,
-  "checks": 56,
-  "last_check": 1795012372,
+  "checks": 64,
+  "last_check": 1795028823,
   "last_digest": "2026-11-17",
   "new": 0,
   "tracked": {
    "academy": 161,
    "amc": 15,
    "cinematheque": 85,
-   "revivalhub": 1065
+   "revivalhub": 1064
   }
  }
 }
