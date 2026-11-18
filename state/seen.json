@@ -32339,15 +32339,15 @@
  ],
  "stats": {
   "alerts": 7,
-  "checks": 68,
-  "last_check": 1795031237,
+  "checks": 90,
+  "last_check": 1795044485,
   "last_digest": "2026-11-17",
   "new": 7,
   "tracked": {
    "academy": 161,
    "amc": 15,
    "cinematheque": 92,
-   "revivalhub": 1063
+   "revivalhub": 1055
   }
  }
 }
