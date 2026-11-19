@@ -1625,6 +1625,11 @@
    "last_seen": 1792281600,
    "title": "Ken Russell's the Devils"
   },
+  "cinematheque:5564184": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Film Girlz Brunch Presents Film Girlz Fest"
+  },
   "cinematheque:5565464": {
    "first_seen": 1791849600,
    "last_seen": 1792281600,
@@ -1730,25 +1735,60 @@
    "last_seen": 1795046400,
    "title": "Fjord / R.m.n."
   },
+  "cinematheque:5566591": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Days of Heaven"
+  },
   "cinematheque:5566597": {
    "first_seen": 1794873600,
    "last_seen": 1795046400,
    "title": "Once Upon a Time in Harlem"
+  },
+  "cinematheque:5566599": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Damage"
   },
   "cinematheque:5566603": {
    "first_seen": 1794960000,
    "last_seen": 1795046400,
    "title": "Cinematic Void Presents SPIRIT TASTING"
   },
+  "cinematheque:5566617": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Tight Lettuce"
+  },
+  "cinematheque:5566627": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Escape from L.a."
+  },
+  "cinematheque:5566629": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "One Way Passage"
+  },
   "cinematheque:5566631": {
    "first_seen": 1794873600,
    "last_seen": 1795046400,
    "title": "Symbiopsychotaxiplasm: Take 2 1/2"
   },
+  "cinematheque:5566635": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "The Ninth Configuration"
+  },
   "cinematheque:5566643": {
    "first_seen": 1794873600,
    "last_seen": 1795046400,
    "title": "William Greaves Documentary Shorts Program"
+  },
+  "cinematheque:5566667": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Brewster Mccloud"
   },
   "cinematheque:5566719": {
    "first_seen": 1794528000,
@@ -1770,6 +1810,11 @@
    "last_seen": 1795046400,
    "title": "Cinematic Void Presents LOS LEPROSOS Y EL SEXO"
   },
+  "cinematheque:5566741": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Body Bags"
+  },
   "cinematheque:5566747": {
    "first_seen": 1794528000,
    "last_seen": 1795046400,
@@ -1784,6 +1829,21 @@
    "first_seen": 1794528000,
    "last_seen": 1795046400,
    "title": "Cinematic Void Presents SANTO CONTRA HOMBRES INFERNALES"
+  },
+  "cinematheque:5566765": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Slave of the Cannibal God"
+  },
+  "cinematheque:5566819": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Batman: Mask of the Phantasm"
+  },
+  "cinematheque:5566823": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Fat City"
   },
   "cinematheque:5566837": {
    "first_seen": 1793318400,
@@ -2215,6 +2275,11 @@
    "last_seen": 1795046400,
    "title": "Mallrats"
   },
+  "cinematheque:5567049": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "That Day, on the Beach"
+  },
   "cinematheque:5567051": {
    "first_seen": 1794528000,
    "last_seen": 1795046400,
@@ -2229,6 +2294,11 @@
    "first_seen": 1794528000,
    "last_seen": 1795046400,
    "title": "Bram Stoker's Dracula"
+  },
+  "cinematheque:5567057": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Divorce Italian Style"
   },
   "cinematheque:5567061": {
    "first_seen": 1794528000,
@@ -2740,6 +2810,11 @@
    "last_seen": 1792886400,
    "title": "21st Annual Horrorthon"
   },
+  "cinematheque:5568817": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "The Curse of the Cat People"
+  },
   "cinematheque:5568819": {
    "first_seen": 1794528000,
    "last_seen": 1795046400,
@@ -2974,6 +3049,11 @@
    "first_seen": 1793318400,
    "last_seen": 1793923200,
    "title": "If I Go Will They Miss Me"
+  },
+  "cinematheque:5571452": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Sundance Short Film Tour"
   },
   "cinematheque:5571487": {
    "first_seen": 1793318400,
@@ -20730,6 +20810,11 @@
    "last_seen": 1794614400,
    "title": "Backrooms"
   },
+  "url:https://americancinematheque.com/now-showing/batman-mask-of-the-phantasm-12-26-2026|2026-12-26": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Batman: Mask of the Phantasm"
+  },
   "url:https://americancinematheque.com/now-showing/begotten-10-16-2026|2026-10-16": {
    "first_seen": 1791849600,
    "last_seen": 1792195200,
@@ -20795,6 +20880,11 @@
    "last_seen": 1795046400,
    "title": "Blue Velvet"
   },
+  "url:https://americancinematheque.com/now-showing/body-bags-12-14-2026|2026-12-14": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Body Bags"
+  },
   "url:https://americancinematheque.com/now-showing/bram-stokers-dracula-11-24-2026|2026-11-24": {
    "first_seen": 1794268800,
    "last_seen": 1795046400,
@@ -20804,6 +20894,11 @@
    "first_seen": 1794528000,
    "last_seen": 1795046400,
    "title": "Bram Stoker's Dracula"
+  },
+  "url:https://americancinematheque.com/now-showing/brewster-mccloud-12-26-2026|2026-12-26": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Brewster Mccloud"
   },
   "url:https://americancinematheque.com/now-showing/broadway-melody-of-1940-10-24-2026|2026-10-24": {
    "first_seen": 1791849600,
@@ -21040,10 +21135,20 @@
    "last_seen": 1793232000,
    "title": "Creature from the Black Lagoon 3D"
   },
+  "url:https://americancinematheque.com/now-showing/damage-12-05-2026|2026-12-05": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Damage"
+  },
   "url:https://americancinematheque.com/now-showing/dawn-of-the-dead-11-27-2026|2026-11-27": {
    "first_seen": 1792713600,
    "last_seen": 1795046400,
    "title": "Dawn of the Dead"
+  },
+  "url:https://americancinematheque.com/now-showing/days-of-heaven-12-04-2026|2026-12-04": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Days of Heaven"
   },
   "url:https://americancinematheque.com/now-showing/days-of-heaven-golden-hour-11-19-2026|2026-11-19": {
    "first_seen": 1794268800,
@@ -21075,6 +21180,11 @@
    "last_seen": 1794096000,
    "title": "Discovery: Block #4"
   },
+  "url:https://americancinematheque.com/now-showing/divorce-italian-style-11-29-2026|2026-11-29": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Divorce Italian Style"
+  },
   "url:https://americancinematheque.com/now-showing/dolemite-is-my-name-10-22-2026|2026-10-22": {
    "first_seen": 1791849600,
    "last_seen": 1792713600,
@@ -21105,6 +21215,11 @@
    "last_seen": 1792972800,
    "title": "Ed Wood"
   },
+  "url:https://americancinematheque.com/now-showing/escape-from-la-12-12-2026|2026-12-12": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Escape from L.a."
+  },
   "url:https://americancinematheque.com/now-showing/everest-the-other-side-12-01-2026|2026-12-01": {
    "first_seen": 1794873600,
    "last_seen": 1795046400,
@@ -21120,10 +21235,20 @@
    "last_seen": 1795046400,
    "title": "Excalibur"
   },
+  "url:https://americancinematheque.com/now-showing/fat-city-12-27-2026|2026-12-27": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Fat City"
+  },
   "url:https://americancinematheque.com/now-showing/filipinana-12-02-2026|2026-12-02": {
    "first_seen": 1794528000,
    "last_seen": 1795046400,
    "title": "Filipi\u00f1ana"
+  },
+  "url:https://americancinematheque.com/now-showing/film-girlz-brunch-presents-film-girlz-fest-12-12-2026|2026-12-12": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Film Girlz Brunch Presents Film Girlz Fest"
   },
   "url:https://americancinematheque.com/now-showing/fjord-12-04-2026|2026-12-04": {
    "first_seen": 1795046400,
@@ -21515,6 +21640,11 @@
    "last_seen": 1794528000,
    "title": "One Fine Morning"
   },
+  "url:https://americancinematheque.com/now-showing/one-way-passage-12-13-2026|2026-12-13": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "One Way Passage"
+  },
   "url:https://americancinematheque.com/now-showing/opening-night-block-1-11-07-2026|2026-11-06": {
    "first_seen": 1791849600,
    "last_seen": 1794009600,
@@ -21670,6 +21800,11 @@
    "last_seen": 1795046400,
    "title": "Singin' in the Rain"
   },
+  "url:https://americancinematheque.com/now-showing/slave-of-the-cannibal-god-12-28-2026|2026-12-28": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Slave of the Cannibal God"
+  },
   "url:https://americancinematheque.com/now-showing/snow-white-and-the-seven-dwarfs-10-17-2026|2026-10-17": {
    "first_seen": 1791849600,
    "last_seen": 1792281600,
@@ -21700,6 +21835,11 @@
    "last_seen": 1795046400,
    "title": "Student Confidential"
   },
+  "url:https://americancinematheque.com/now-showing/sundance-short-film-tour-12-15-2026|2026-12-15": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Sundance Short Film Tour"
+  },
   "url:https://americancinematheque.com/now-showing/symbiopsychotaxiplasm-take-2-12-12-13-2026|2026-12-13": {
    "first_seen": 1794873600,
    "last_seen": 1795046400,
@@ -21727,6 +21867,11 @@
   },
   "url:https://americancinematheque.com/now-showing/that-day-on-the-beach-11-22-2026|2026-11-22": {
    "first_seen": 1794528000,
+   "last_seen": 1795046400,
+   "title": "That Day, on the Beach"
+  },
+  "url:https://americancinematheque.com/now-showing/that-day-on-the-beach-11-28-2026|2026-11-28": {
+   "first_seen": 1795046400,
    "last_seen": 1795046400,
    "title": "That Day, on the Beach"
   },
@@ -21779,6 +21924,11 @@
    "first_seen": 1795046400,
    "last_seen": 1795046400,
    "title": "The Changeling"
+  },
+  "url:https://americancinematheque.com/now-showing/the-curse-of-the-cat-people-12-18-2026|2026-12-18": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "The Curse of the Cat People"
   },
   "url:https://americancinematheque.com/now-showing/the-debut-11-16-2026|2026-11-16": {
    "first_seen": 1793577600,
@@ -21854,6 +22004,11 @@
    "first_seen": 1794268800,
    "last_seen": 1795046400,
    "title": "The New World"
+  },
+  "url:https://americancinematheque.com/now-showing/the-ninth-configuration-12-13-2026|2026-12-13": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "The Ninth Configuration"
   },
   "url:https://americancinematheque.com/now-showing/the-patsy-11-15-2026|2026-11-15": {
    "first_seen": 1792022400,
@@ -21954,6 +22109,11 @@
    "first_seen": 1793750400,
    "last_seen": 1794700800,
    "title": "THREE BILLBOARDS OUTSIDE EBBING, MISSOURI / WILD HORSE NINE / Surprise Film"
+  },
+  "url:https://americancinematheque.com/now-showing/tight-lettuce-12-11-2026|2026-12-11": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Tight Lettuce"
   },
   "url:https://americancinematheque.com/now-showing/to-catch-a-thief-11-17-2026|2026-11-17": {
    "first_seen": 1794268800,
@@ -32433,16 +32593,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 4,
-  "checks": 68,
-  "last_check": 1795118855,
+  "alerts": 7,
+  "checks": 80,
+  "last_check": 1795126096,
   "last_digest": "2026-11-18",
-  "new": 4,
+  "new": 20,
   "tracked": {
    "academy": 160,
    "amc": 15,
-   "cinematheque": 92,
-   "revivalhub": 997
+   "cinematheque": 108,
+   "revivalhub": 994
   }
  }
 }
