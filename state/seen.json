@@ -32394,15 +32394,15 @@
  ],
  "stats": {
   "alerts": 0,
-  "checks": 16,
-  "last_check": 1795067113,
+  "checks": 50,
+  "last_check": 1795094512,
   "last_digest": "2026-11-18",
   "new": 0,
   "tracked": {
    "academy": 160,
    "amc": 15,
-   "cinematheque": 92,
-   "revivalhub": 1000
+   "cinematheque": 88,
+   "revivalhub": 999
   }
  }
 }
