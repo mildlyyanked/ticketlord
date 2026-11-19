@@ -32594,8 +32594,8 @@
  ],
  "stats": {
   "alerts": 7,
-  "checks": 80,
-  "last_check": 1795126096,
+  "checks": 84,
+  "last_check": 1795128510,
   "last_digest": "2026-11-18",
   "new": 20,
   "tracked": {
