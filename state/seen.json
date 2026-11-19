@@ -2195,6 +2195,11 @@
    "last_seen": 1795046400,
    "title": "Lone Survivor"
   },
+  "cinematheque:5567041": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "The Changeling"
+  },
   "cinematheque:5567043": {
    "first_seen": 1794268800,
    "last_seen": 1795046400,
@@ -21770,6 +21775,11 @@
    "last_seen": 1795046400,
    "title": "The Changeling"
   },
+  "url:https://americancinematheque.com/now-showing/the-changeling-11-22-2026|2026-11-22": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "The Changeling"
+  },
   "url:https://americancinematheque.com/now-showing/the-debut-11-16-2026|2026-11-16": {
    "first_seen": 1793577600,
    "last_seen": 1794873600,
@@ -32423,16 +32433,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 3,
-  "checks": 55,
-  "last_check": 1795111009,
+  "alerts": 4,
+  "checks": 68,
+  "last_check": 1795118855,
   "last_digest": "2026-11-18",
-  "new": 3,
+  "new": 4,
   "tracked": {
    "academy": 160,
    "amc": 15,
-   "cinematheque": 91,
-   "revivalhub": 999
+   "cinematheque": 92,
+   "revivalhub": 997
   }
  }
 }
