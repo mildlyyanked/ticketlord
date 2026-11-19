@@ -1725,6 +1725,11 @@
    "last_seen": 1795046400,
    "title": "Violent Night 2"
   },
+  "cinematheque:5566519": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Fjord / R.m.n."
+  },
   "cinematheque:5566597": {
    "first_seen": 1794873600,
    "last_seen": 1795046400,
@@ -1754,6 +1759,11 @@
    "first_seen": 1794528000,
    "last_seen": 1795046400,
    "title": "Cinematic Void Presents SANTO Y LA VENGANZA DE LA MOMIA"
+  },
+  "cinematheque:5566729": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Graduation"
   },
   "cinematheque:5566739": {
    "first_seen": 1794528000,
@@ -2949,6 +2959,11 @@
    "first_seen": 1793059200,
    "last_seen": 1794441600,
    "title": "EAST OF EDEN (2026) / EAST OF EDEN in 35mm (1955)"
+  },
+  "cinematheque:5571432": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "4 Months, 3 Weeks and 2 Days"
   },
   "cinematheque:5571441": {
    "first_seen": 1793318400,
@@ -20595,6 +20610,11 @@
    "last_seen": 1792886400,
    "title": "21st Annual Horrorthon"
   },
+  "url:https://americancinematheque.com/now-showing/4-months-3-weeks-and-2-days-12-03-2026|2026-12-03": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "4 Months, 3 Weeks and 2 Days"
+  },
   "url:https://americancinematheque.com/now-showing/a-clockwork-orange-11-28-2026|2026-11-28": {
    "first_seen": 1794528000,
    "last_seen": 1795046400,
@@ -21100,6 +21120,11 @@
    "last_seen": 1795046400,
    "title": "Filipi\u00f1ana"
   },
+  "url:https://americancinematheque.com/now-showing/fjord-12-04-2026|2026-12-04": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Fjord / R.m.n."
+  },
   "url:https://americancinematheque.com/now-showing/friday-night-lights-11-19-2026|2026-11-19": {
    "first_seen": 1794441600,
    "last_seen": 1795046400,
@@ -21129,6 +21154,11 @@
    "first_seen": 1793836800,
    "last_seen": 1794268800,
    "title": "Godzilla Minus Zero"
+  },
+  "url:https://americancinematheque.com/now-showing/graduation-12-07-2026|2026-12-07": {
+   "first_seen": 1795046400,
+   "last_seen": 1795046400,
+   "title": "Graduation"
   },
   "url:https://americancinematheque.com/now-showing/green-room-11-19-2026|2026-11-19": {
    "first_seen": 1794528000,
@@ -32393,15 +32423,15 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 0,
-  "checks": 50,
-  "last_check": 1795094512,
+  "alerts": 3,
+  "checks": 55,
+  "last_check": 1795111009,
   "last_digest": "2026-11-18",
-  "new": 0,
+  "new": 3,
   "tracked": {
    "academy": 160,
    "amc": 15,
-   "cinematheque": 88,
+   "cinematheque": 91,
    "revivalhub": 999
   }
  }
