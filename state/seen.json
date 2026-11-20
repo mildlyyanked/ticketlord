@@ -1740,6 +1740,11 @@
    "last_seen": 1795132800,
    "title": "The Texas Chainsaw Massacre / the Devil"
   },
+  "cinematheque:5566575": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "Wildwood"
+  },
   "cinematheque:5566591": {
    "first_seen": 1795046400,
    "last_seen": 1795132800,
@@ -22220,6 +22225,11 @@
    "last_seen": 1792195200,
    "title": "Wild at Heart + Nelson Algren Live"
   },
+  "url:https://americancinematheque.com/now-showing/wildwood-12-05-2026|2026-12-05": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "Wildwood"
+  },
   "url:https://americancinematheque.com/now-showing/william-greaves-documentary-shorts-program-12-19-2026|2026-12-19": {
    "first_seen": 1794873600,
    "last_seen": 1795132800,
@@ -32643,15 +32653,15 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 5,
-  "checks": 60,
-  "last_check": 1795197750,
+  "alerts": 6,
+  "checks": 73,
+  "last_check": 1795205591,
   "last_digest": "2026-11-19",
-  "new": 5,
+  "new": 6,
   "tracked": {
    "academy": 159,
    "amc": 14,
-   "cinematheque": 109,
+   "cinematheque": 110,
    "revivalhub": 960
   }
  }
