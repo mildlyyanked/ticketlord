@@ -32594,15 +32594,15 @@
  ],
  "stats": {
   "alerts": 0,
-  "checks": 13,
-  "last_check": 1795151793,
+  "checks": 47,
+  "last_check": 1795177817,
   "last_digest": "2026-11-19",
   "new": 0,
   "tracked": {
    "academy": 159,
    "amc": 14,
-   "cinematheque": 108,
-   "revivalhub": 963
+   "cinematheque": 104,
+   "revivalhub": 961
   }
  }
 }
