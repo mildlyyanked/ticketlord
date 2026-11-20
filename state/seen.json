@@ -1780,6 +1780,11 @@
    "last_seen": 1795132800,
    "title": "Cinematic Void Presents SPIRIT TASTING"
   },
+  "cinematheque:5566607": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "Pawe\u0142 Pawlikowski: Documentaries"
+  },
   "cinematheque:5566617": {
    "first_seen": 1795046400,
    "last_seen": 1795132800,
@@ -21755,6 +21760,11 @@
    "last_seen": 1794355200,
    "title": "Paterson"
   },
+  "url:https://americancinematheque.com/now-showing/pawel-pawlikowski-documentaries-12-06-2026|2026-12-06": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "Pawe\u0142 Pawlikowski: Documentaries"
+  },
   "url:https://americancinematheque.com/now-showing/perdita-durango-10-18-2026|2026-10-18": {
    "first_seen": 1791849600,
    "last_seen": 1792368000,
@@ -32683,15 +32693,15 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 8,
-  "checks": 82,
-  "last_check": 1795214198,
+  "alerts": 9,
+  "checks": 84,
+  "last_check": 1795215405,
   "last_digest": "2026-11-19",
-  "new": 9,
+  "new": 10,
   "tracked": {
    "academy": 159,
    "amc": 16,
-   "cinematheque": 111,
+   "cinematheque": 112,
    "revivalhub": 955
   }
  }
