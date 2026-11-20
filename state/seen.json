@@ -1735,10 +1735,20 @@
    "last_seen": 1795132800,
    "title": "Fjord / R.m.n."
   },
+  "cinematheque:5566531": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "The Texas Chainsaw Massacre / the Devil"
+  },
   "cinematheque:5566591": {
    "first_seen": 1795046400,
    "last_seen": 1795132800,
    "title": "Days of Heaven"
+  },
+  "cinematheque:5566595": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "964 Pinocchio"
   },
   "cinematheque:5566597": {
    "first_seen": 1794873600,
@@ -1804,6 +1814,11 @@
    "first_seen": 1795046400,
    "last_seen": 1795132800,
    "title": "Graduation"
+  },
+  "cinematheque:5566731": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "Hard to Be a God"
   },
   "cinematheque:5566739": {
    "first_seen": 1794528000,
@@ -2299,6 +2314,11 @@
    "first_seen": 1795046400,
    "last_seen": 1795132800,
    "title": "Divorce Italian Style"
+  },
+  "cinematheque:5567059": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "H\u00e4xan"
   },
   "cinematheque:5567061": {
    "first_seen": 1794528000,
@@ -3124,6 +3144,11 @@
    "first_seen": 1794528000,
    "last_seen": 1795132800,
    "title": "The Sacrifice"
+  },
+  "cinematheque:5572266": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "Angst"
   },
   "revivalhub:rec02RivSsZosA3kj": {
    "first_seen": 1793232000,
@@ -20700,6 +20725,11 @@
    "last_seen": 1795132800,
    "title": "4 Months, 3 Weeks and 2 Days"
   },
+  "url:https://americancinematheque.com/now-showing/964-pinocchio-12-04-2026|2026-12-04": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "964 Pinocchio"
+  },
   "url:https://americancinematheque.com/now-showing/a-clockwork-orange-11-28-2026|2026-11-28": {
    "first_seen": 1794528000,
    "last_seen": 1795132800,
@@ -20769,6 +20799,11 @@
    "first_seen": 1793318400,
    "last_seen": 1794096000,
    "title": "Altered States"
+  },
+  "url:https://americancinematheque.com/now-showing/angst-12-08-2026|2026-12-08": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "Angst"
   },
   "url:https://americancinematheque.com/now-showing/arachnophobia-10-25-2026|2026-10-25": {
    "first_seen": 1791849600,
@@ -21320,6 +21355,16 @@
    "last_seen": 1794441600,
    "title": "Happiness"
   },
+  "url:https://americancinematheque.com/now-showing/hard-to-be-a-god-12-09-2026|2026-12-09": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "Hard to Be a God"
+  },
+  "url:https://americancinematheque.com/now-showing/haxan-11-29-2026|2026-11-29": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "H\u00e4xan"
+  },
   "url:https://americancinematheque.com/now-showing/her-wedding-night-11-08-2026|2026-11-08": {
    "first_seen": 1791849600,
    "last_seen": 1794182400,
@@ -21864,6 +21909,11 @@
    "first_seen": 1793664000,
    "last_seen": 1794873600,
    "title": "Tenzing"
+  },
+  "url:https://americancinematheque.com/now-showing/texas-chainsaw-massacre-the-devil-12-10-2026|2026-12-10": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "The Texas Chainsaw Massacre / the Devil"
   },
   "url:https://americancinematheque.com/now-showing/that-day-on-the-beach-11-22-2026|2026-11-22": {
    "first_seen": 1794528000,
@@ -32593,16 +32643,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 0,
-  "checks": 47,
-  "last_check": 1795177817,
+  "alerts": 5,
+  "checks": 60,
+  "last_check": 1795197750,
   "last_digest": "2026-11-19",
-  "new": 0,
+  "new": 5,
   "tracked": {
    "academy": 159,
    "amc": 14,
-   "cinematheque": 104,
-   "revivalhub": 961
+   "cinematheque": 109,
+   "revivalhub": 960
   }
  }
 }
