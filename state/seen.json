@@ -1620,6 +1620,16 @@
    "last_seen": 1795132800,
    "title": "THE NAPA BOYS"
   },
+  "amc:amc-st-148962561": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "TheyDream with Special Filmmaker"
+  },
+  "amc:amc-st-148962562": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "TheyDream with Special Filmmaker"
+  },
   "cinematheque:5563671": {
    "first_seen": 1791849600,
    "last_seen": 1792281600,
@@ -1774,6 +1784,11 @@
    "first_seen": 1795046400,
    "last_seen": 1795132800,
    "title": "Tight Lettuce"
+  },
+  "cinematheque:5566625": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "Alice Doesnt Live Here Anymore"
   },
   "cinematheque:5566627": {
    "first_seen": 1795046400,
@@ -20715,6 +20730,16 @@
    "last_seen": 1795132800,
    "title": "TANGLES"
   },
+  "url:https://amctheatres.com/showtimes/all/2026-12-01/burbank8/all/148962562|2026-12-01": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "TheyDream with Special Filmmaker"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-12-04/burbank8/all/148962561|2026-12-04": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "TheyDream with Special Filmmaker"
+  },
   "url:https://amctheatres.com/showtimes/all/2026-12-12/AMCTheAmericanaatBrand18/all/148743357|2026-12-12": {
    "first_seen": 1794528000,
    "last_seen": 1795132800,
@@ -20774,6 +20799,11 @@
    "first_seen": 1791849600,
    "last_seen": 1794096000,
    "title": "Against the Grain: Block #9"
+  },
+  "url:https://americancinematheque.com/now-showing/alice-doesnt-live-here-anymore-12-12-2026|2026-12-12": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "Alice Doesnt Live Here Anymore"
   },
   "url:https://americancinematheque.com/now-showing/alice-in-wonderland-11-28-2026|2026-11-28": {
    "first_seen": 1794528000,
@@ -32653,16 +32683,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 6,
-  "checks": 81,
-  "last_check": 1795210415,
+  "alerts": 8,
+  "checks": 82,
+  "last_check": 1795214198,
   "last_digest": "2026-11-19",
-  "new": 6,
+  "new": 9,
   "tracked": {
    "academy": 159,
-   "amc": 14,
-   "cinematheque": 110,
-   "revivalhub": 958
+   "amc": 16,
+   "cinematheque": 111,
+   "revivalhub": 955
   }
  }
 }
