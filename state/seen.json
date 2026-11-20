@@ -1745,6 +1745,11 @@
    "last_seen": 1795132800,
    "title": "Fjord / R.m.n."
   },
+  "cinematheque:5566525": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "Fatherland / Last Resort"
+  },
   "cinematheque:5566531": {
    "first_seen": 1795132800,
    "last_seen": 1795132800,
@@ -1775,6 +1780,11 @@
    "last_seen": 1795132800,
    "title": "Damage"
   },
+  "cinematheque:5566601": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "Ida"
+  },
   "cinematheque:5566603": {
    "first_seen": 1794960000,
    "last_seen": 1795132800,
@@ -1784,6 +1794,16 @@
    "first_seen": 1795132800,
    "last_seen": 1795132800,
    "title": "Pawe\u0142 Pawlikowski: Documentaries"
+  },
+  "cinematheque:5566609": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "Cold War"
+  },
+  "cinematheque:5566611": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "My Summer of Love"
   },
   "cinematheque:5566617": {
    "first_seen": 1795046400,
@@ -21200,6 +21220,11 @@
    "last_seen": 1792368000,
    "title": "Clue"
   },
+  "url:https://americancinematheque.com/now-showing/cold-war-12-06-2026|2026-12-06": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "Cold War"
+  },
   "url:https://americancinematheque.com/now-showing/contempt-11-21-2026|2026-11-21": {
    "first_seen": 1794528000,
    "last_seen": 1795132800,
@@ -21314,6 +21339,11 @@
    "first_seen": 1795046400,
    "last_seen": 1795132800,
    "title": "Fat City"
+  },
+  "url:https://americancinematheque.com/now-showing/fatherland-last-resort-12-07-2026|2026-12-07": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "Fatherland / Last Resort"
   },
   "url:https://americancinematheque.com/now-showing/filipinana-12-02-2026|2026-12-02": {
    "first_seen": 1794528000,
@@ -21444,6 +21474,11 @@
    "first_seen": 1793059200,
    "last_seen": 1794096000,
    "title": "How to Rob a Bank"
+  },
+  "url:https://americancinematheque.com/now-showing/ida-12-05-2026|2026-12-05": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "Ida"
   },
   "url:https://americancinematheque.com/now-showing/if-i-go-will-they-miss-me-11-05-2026|2026-11-05": {
    "first_seen": 1793318400,
@@ -21694,6 +21729,11 @@
    "first_seen": 1792022400,
    "last_seen": 1793750400,
    "title": "My Brother's Killer"
+  },
+  "url:https://americancinematheque.com/now-showing/my-summer-of-love-12-06-2026|2026-12-06": {
+   "first_seen": 1795132800,
+   "last_seen": 1795132800,
+   "title": "My Summer of Love"
   },
   "url:https://americancinematheque.com/now-showing/new-black-hollywood-10-23-2026|2026-10-23": {
    "first_seen": 1791849600,
@@ -32693,15 +32733,15 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 9,
-  "checks": 84,
-  "last_check": 1795215405,
+  "alerts": 13,
+  "checks": 85,
+  "last_check": 1795216010,
   "last_digest": "2026-11-19",
-  "new": 10,
+  "new": 14,
   "tracked": {
    "academy": 159,
    "amc": 16,
-   "cinematheque": 112,
+   "cinematheque": 116,
    "revivalhub": 955
   }
  }
