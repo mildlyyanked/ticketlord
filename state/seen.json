@@ -32654,15 +32654,15 @@
  ],
  "stats": {
   "alerts": 6,
-  "checks": 73,
-  "last_check": 1795205591,
+  "checks": 81,
+  "last_check": 1795210415,
   "last_digest": "2026-11-19",
   "new": 6,
   "tracked": {
    "academy": 159,
    "amc": 14,
    "cinematheque": 110,
-   "revivalhub": 960
+   "revivalhub": 958
   }
  }
 }
