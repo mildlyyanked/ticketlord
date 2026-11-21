@@ -6,6 +6,8 @@
 # until shortly before the 6-hour job limit and the next scheduled run takes over. On a private repo
 # (2,000 free minutes a month) that would use up the allowance in days, so it does one check and exits.
 #
+# OFF unless the repository variable TICKETLORD_LOOP is "on". GitHub's usage page bills these minutes
+# (about 1,400 a day) even on a public repo, so it must be a deliberate choice.
 # Settings (repository variables): TICKETLORD_LOOP_INTERVAL minutes between checks (default 10),
 # TICKETLORD_LOOP_MINUTES how long one run keeps going (default 340).
 set -uo pipefail
@@ -20,6 +22,10 @@ case "$private" in
   True) echo "Repository is private: one check only, to stay within the free Actions minutes."; duration=0 ;;
   *) echo "::warning::Couldn't read the repository's visibility: one check only, to be safe with Actions minutes."; duration=0 ;;
 esac
+if [ "${TICKETLORD_LOOP:-off}" != "on" ]; then
+  echo "Looping is off (repository variable TICKETLORD_LOOP is not \"on\"): one check only."
+  duration=0
+fi
 
 seen_hash() {  # fingerprint of the screenings recorded so far (not the check-in counters)
   python3 -c 'import hashlib,json,sys; print(hashlib.sha1(json.dumps(json.load(open(sys.argv[1]))["seen"], sort_keys=True).encode()).hexdigest())' state/seen.json 2>/dev/null

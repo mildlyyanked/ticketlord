@@ -2,9 +2,8 @@ name: Check screenings
 
 on:
   schedule:
-    # GitHub honours only a few of these a day. On a public repo each scheduled run therefore keeps
-    # checking every 10 minutes for ~5.5 hours (scripts/loop.sh) and the next run takes over; on a
-    # private repo it checks once, to stay within the free Actions minutes.
+    # GitHub honours only a few of these a day. Each run checks once (~1 minute). Looping for hours
+    # (scripts/loop.sh) is off unless the TICKETLORD_LOOP variable is "on": it costs ~1,400 min/day.
     - cron: "7,37 * * * *"
   workflow_dispatch:
     inputs:
@@ -31,7 +30,8 @@ concurrency:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 355
+    # Hard cap on billed minutes per run: 15 unless looping was deliberately turned on.
+    timeout-minutes: ${{ vars.TICKETLORD_LOOP == 'on' && 355 || 15 }}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
@@ -50,6 +50,7 @@ jobs:
           TICKETLORD_WIDE_RELEASE: ${{ vars.TICKETLORD_WIDE_RELEASE }}
           TICKETLORD_DIGEST_HOUR: ${{ vars.TICKETLORD_DIGEST_HOUR }}
           TICKETLORD_STATE_FILE: state/seen.json
+          TICKETLORD_LOOP: ${{ vars.TICKETLORD_LOOP }}
           TICKETLORD_LOOP_INTERVAL: ${{ vars.TICKETLORD_LOOP_INTERVAL }}
           TICKETLORD_LOOP_MINUTES: ${{ vars.TICKETLORD_LOOP_MINUTES }}
           GITHUB_TOKEN: ${{ github.token }}

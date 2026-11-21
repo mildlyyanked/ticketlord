@@ -53,10 +53,11 @@ and subscribe to a topic with a hard-to-guess name, e.g. `ticketlord-7f3k2q9x`. 
 This repo includes `.github/workflows/check.yml`, which commits `state/seen.json` back to the repo.
 
 GitHub only starts scheduled workflows a few times a day (about every 5 hours here), however often the
-schedule asks. So on a **public** repo, where Actions minutes are free, each scheduled run stays up for about
-5½ hours and checks **every 10 minutes** (`scripts/loop.sh`); the next scheduled run takes over. On a **private**
-repo (2,000 free minutes a month) each run checks once, so checks are hours apart there.
-`TICKETLORD_LOOP_INTERVAL` (minutes between checks) and `TICKETLORD_LOOP_MINUTES` (length of one run) tune it.
+schedule asks, and each run checks once (about a minute of Actions time).
+
+`scripts/loop.sh` can keep each run alive for ~5½ hours, checking every 10 minutes, but it is **off** unless the
+repository variable `TICKETLORD_LOOP` is `on`: that is about 1,400 Actions minutes a day, and GitHub's usage page
+billed them even with the repo public. `TICKETLORD_LOOP_INTERVAL` and `TICKETLORD_LOOP_MINUTES` tune it.
 
 1. Repo **Settings → Secrets and variables → Actions → Secrets**: add `NTFY_TOPIC` (and/or the Pushover/Telegram secrets).
    Secrets stay hidden even on a public repo.
