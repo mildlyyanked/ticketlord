@@ -32759,15 +32759,15 @@
  ],
  "stats": {
   "alerts": 0,
-  "checks": 6,
-  "last_check": 1795234085,
+  "checks": 40,
+  "last_check": 1795281087,
   "last_digest": "2026-11-20",
   "new": 0,
   "tracked": {
-   "academy": 158,
+   "academy": 157,
    "amc": 14,
-   "cinematheque": 116,
-   "revivalhub": 914
+   "cinematheque": 109,
+   "revivalhub": 900
   }
  }
 }
