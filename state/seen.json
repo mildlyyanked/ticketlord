@@ -32758,16 +32758,12 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 0,
-  "checks": 74,
-  "last_check": 1795307743,
-  "last_digest": "2026-11-20",
-  "new": 0,
+  "last_digest": "2026-11-21",
   "tracked": {
-   "academy": 155,
+   "academy": 154,
    "amc": 10,
    "cinematheque": 109,
-   "revivalhub": 875
+   "revivalhub": 844
   }
  }
 }
