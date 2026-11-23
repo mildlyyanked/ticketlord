@@ -1630,6 +1630,26 @@
    "last_seen": 1795392000,
    "title": "TheyDream with Special Filmmaker"
   },
+  "amc:amc-st-148963151": {
+   "first_seen": 1795392000,
+   "last_seen": 1795392000,
+   "title": "INK"
+  },
+  "amc:amc-st-148963152": {
+   "first_seen": 1795392000,
+   "last_seen": 1795392000,
+   "title": "INK"
+  },
+  "amc:amc-st-148963200": {
+   "first_seen": 1795392000,
+   "last_seen": 1795392000,
+   "title": "INK"
+  },
+  "amc:amc-st-148964483": {
+   "first_seen": 1795392000,
+   "last_seen": 1795392000,
+   "title": "INK"
+  },
   "cinematheque:5563671": {
    "first_seen": 1791849600,
    "last_seen": 1792281600,
@@ -1759,6 +1779,11 @@
    "first_seen": 1795132800,
    "last_seen": 1795392000,
    "title": "Wildwood"
+  },
+  "cinematheque:5566577": {
+   "first_seen": 1795392000,
+   "last_seen": 1795392000,
+   "title": "Tender Loving Care"
   },
   "cinematheque:5566591": {
    "first_seen": 1795046400,
@@ -3184,6 +3209,11 @@
    "first_seen": 1794873600,
    "last_seen": 1795392000,
    "title": "Symbiopsychotaxiplasm: Take One"
+  },
+  "cinematheque:5572189": {
+   "first_seen": 1795392000,
+   "last_seen": 1795392000,
+   "title": "Michael"
   },
   "cinematheque:5572207": {
    "first_seen": 1794528000,
@@ -22315,10 +22345,30 @@
    "last_seen": 1795392000,
    "title": "TheyDream with Special Filmmaker"
   },
+  "url:https://amctheatres.com/showtimes/all/2026-12-10/centurycity/all/148964483|2026-12-10": {
+   "first_seen": 1795392000,
+   "last_seen": 1795392000,
+   "title": "INK"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-12-11/burbank/all/148963151|2026-12-11": {
+   "first_seen": 1795392000,
+   "last_seen": 1795392000,
+   "title": "INK"
+  },
   "url:https://amctheatres.com/showtimes/all/2026-12-12/AMCTheAmericanaatBrand18/all/148743357|2026-12-12": {
    "first_seen": 1794528000,
    "last_seen": 1795392000,
    "title": "THE NAPA BOYS"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-12-12/burbank/all/148963152|2026-12-12": {
+   "first_seen": 1795392000,
+   "last_seen": 1795392000,
+   "title": "INK"
+  },
+  "url:https://amctheatres.com/showtimes/all/2026-12-12/citywalk/all/148963200|2026-12-12": {
+   "first_seen": 1795392000,
+   "last_seen": 1795392000,
+   "title": "INK"
   },
   "url:https://americancinematheque.com/now-showing/21st-annual-horrorthon-10-24-2026|2026-10-24": {
    "first_seen": 1791849600,
@@ -23245,6 +23295,11 @@
    "last_seen": 1795392000,
    "title": "Mccabe & Mrs. Miller"
   },
+  "url:https://americancinematheque.com/now-showing/michael-12-06-2026|2026-12-06": {
+   "first_seen": 1795392000,
+   "last_seen": 1795392000,
+   "title": "Michael"
+  },
   "url:https://americancinematheque.com/now-showing/mikey-and-nicky-11-01-2026|2026-11-01": {
    "first_seen": 1792713600,
    "last_seen": 1793577600,
@@ -23544,6 +23599,11 @@
    "first_seen": 1793318400,
    "last_seen": 1794441600,
    "title": "Teenage Sex and Death at Camp Miasma"
+  },
+  "url:https://americancinematheque.com/now-showing/tender-loving-care-12-05-2026|2026-12-05": {
+   "first_seen": 1795392000,
+   "last_seen": 1795392000,
+   "title": "Tender Loving Care"
   },
   "url:https://americancinematheque.com/now-showing/tenzing-11-16-2026|2026-11-16": {
    "first_seen": 1793664000,
@@ -34948,16 +35008,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 22,
-  "checks": 4,
-  "last_check": 1795426911,
+  "alerts": 27,
+  "checks": 5,
+  "last_check": 1795471151,
   "last_digest": "2026-11-21",
-  "new": 177,
+  "new": 183,
   "tracked": {
    "academy": 152,
-   "amc": 7,
-   "cinematheque": 91,
-   "revivalhub": 1079
+   "amc": 11,
+   "cinematheque": 93,
+   "revivalhub": 1075
   }
  }
 }
