@@ -1795,6 +1795,11 @@
    "last_seen": 1795564800,
    "title": "The Texas Chainsaw Massacre / the Devil"
   },
+  "cinematheque:5566537": {
+   "first_seen": 1795564800,
+   "last_seen": 1795564800,
+   "title": "House of R Presents the Lord of the Rings: The Fellowship of the Ring"
+  },
   "cinematheque:5566575": {
    "first_seen": 1795132800,
    "last_seen": 1795564800,
@@ -23140,6 +23145,11 @@
    "last_seen": 1793664000,
    "title": "Hoppers"
   },
+  "url:https://americancinematheque.com/now-showing/house-of-r-presents-the-lord-of-the-rings-the-fellowship-of-the-ring-12-13-2026|2026-12-13": {
+   "first_seen": 1795564800,
+   "last_seen": 1795564800,
+   "title": "House of R Presents the Lord of the Rings: The Fellowship of the Ring"
+  },
   "url:https://americancinematheque.com/now-showing/how-to-rob-a-bank-11-07-2026|2026-11-07": {
    "first_seen": 1793059200,
    "last_seen": 1794096000,
@@ -35188,16 +35198,16 @@
   "revivalhub"
  ],
  "stats": {
-  "alerts": 3,
-  "checks": 3,
-  "last_check": 1795602147,
+  "alerts": 4,
+  "checks": 4,
+  "last_check": 1795637190,
   "last_digest": "2026-11-23",
-  "new": 3,
+  "new": 4,
   "tracked": {
    "academy": 151,
    "amc": 9,
-   "cinematheque": 90,
-   "revivalhub": 990
+   "cinematheque": 91,
+   "revivalhub": 989
   }
  }
 }
