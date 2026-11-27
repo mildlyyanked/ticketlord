@@ -35204,15 +35204,15 @@
  ],
  "stats": {
   "alerts": 0,
-  "checks": 1,
-  "last_check": 1795787109,
+  "checks": 2,
+  "last_check": 1795819071,
   "last_digest": "2026-11-26",
   "new": 0,
   "tracked": {
    "academy": 151,
    "amc": 9,
    "cinematheque": 85,
-   "revivalhub": 940
+   "revivalhub": 933
   }
  }
 }
